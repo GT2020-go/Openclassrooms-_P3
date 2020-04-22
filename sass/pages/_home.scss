@@ -1,0 +1,9 @@
+main {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+img {
+    width: 40%;
+    height: auto; //to change: do not target img size but the container's size
+}
