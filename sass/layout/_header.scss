@@ -2,6 +2,9 @@ header {
     width: 100vw;
     height: 10vh;
     background: $bgclr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     h1 {
         font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: $txtclr;

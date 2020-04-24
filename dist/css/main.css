@@ -22,6 +22,15 @@ header {
   width: 100vw;
   height: 10vh;
   background: #579c87;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header h1 {
@@ -32,12 +41,29 @@ header h1 {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100vw;
   height: 5vh;
+}
+
+footer nav {
+  width: 100%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #579c87;
 }
 
-footer a {
+footer nav a {
   font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fdcb46;
 }
@@ -56,7 +82,7 @@ main {
 }
 
 .container {
-  width: 50%;
+  width: 80%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
