@@ -1,9 +1,56 @@
 main {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
-img {
-    width: 40%;
-    height: auto; //to change: do not target img size but the container's size
+.container {
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+}
+
+.grid-menus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: start;
+    grid-gap: 2em;
+    margin: 2rem 0 2rem 0;
+    &__linkmenu1 {
+        background: url(/dist/img/menu-1b.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+        width: 100%;
+    }
+    &__linkmenu2 {
+        background: url(/dist/img/menu-2b.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+    &__linkmenu3 {
+        background: url(/dist/img/menu-3b.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+    &__linkmenu4 {
+        background: url(/dist/img/menu-4b.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+.grid-menus> ::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0;
+    padding-bottom: calc(100% / (1190/1684));
 }

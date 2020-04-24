@@ -9,54 +9,37 @@
 }
 
 @font-face {
-  font-family: "uniform";
+  font-family: "uniform-5-regular";
+  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "uniform-3-regular";
   src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
-  position: fixed;
-  background-color: #579c87;
-  font-family: 'uniform', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fdcb46;
-  z-index: 1;
+  background: #579c87;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.2rem;
+  font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fdcb46;
   text-align: center;
+  font-size: 2.2em;
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 5vh;
-  position: fixed;
-  margin-bottom: 0px;
-  background-color: #579c87;
-  font-family: 'uniform-4-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  z-index: 1;
+  background: #579c87;
 }
 
-footer .btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-}
-
-footer .btns a {
+footer a {
+  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fdcb46;
-  font-weight: 900;
 }
 
 main {
@@ -65,12 +48,72 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-img {
-  width: 40%;
-  height: auto;
+.container {
+  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.grid-menus {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  place-items: start;
+  grid-gap: 2em;
+  margin: 2rem 0 2rem 0;
+}
+
+.grid-menus__linkmenu1 {
+  background: url(/dist/img/menu-1b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  width: 100%;
+}
+
+.grid-menus__linkmenu2 {
+  background: url(/dist/img/menu-2b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.grid-menus__linkmenu3 {
+  background: url(/dist/img/menu-3b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.grid-menus__linkmenu4 {
+  background: url(/dist/img/menu-4b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.grid-menus > ::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 0;
+  padding-bottom: calc(100% / (1190/1684));
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,19 +1,9 @@
 footer {
-    width: 100%;
+    width: 100vw;
     height: 5vh;
-    position: fixed;
-    margin-bottom: 0px;
-    background-color: $bgclr;
-    font-family: 'uniform-4-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    z-index: 1;
-    .btns {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        a {
-            color: $txtclr;
-            font-weight: 900;
-        }
+    background: $bgclr;
+    a {
+        font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: $txtclr;
     }
 }

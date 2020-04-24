@@ -1,7 +1,14 @@
 $bgclr: #579c87; //main background color
 $txtclr:#fdcb46; //main text color
 //fonts:
+//main title:
 @font-face {
-    font-family: "uniform";
+    font-family: "uniform-5-regular";
+    src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("truetype");
+}
+
+//footer & buttons:
+@font-face {
+    font-family: "uniform-3-regular";
     src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
 }
