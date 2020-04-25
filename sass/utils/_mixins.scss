@@ -4,6 +4,15 @@
     background-size: cover;
     box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
     width: 100%;
+    display: block;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 1s;
+}
+
+@mixin zoom-opacity {
+    transform: scale(1.2);
+    opacity: 60%;
 }
 
 // transition: transform 1s;

@@ -97,7 +97,6 @@ footer nav a {
 }
 
 .grid-menus__menu--linkmenu1 {
-  display: block;
   background: url(/dist/img/menu-1b.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -105,17 +104,106 @@ footer nav a {
   -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
           box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   width: 100%;
+  display: block;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .grid-menus__menu:hover .grid-menus__menu--linkmenu1 {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  opacity: 60%;
+}
+
+.grid-menus__menu--linkmenu2 {
+  background: url(/dist/img/menu-2b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  width: 100%;
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid-menus__menu:hover .grid-menus__menu--linkmenu2 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 60%;
+}
+
+.grid-menus__menu--linkmenu2 {
+  background: url(/dist/img/menu-2b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  width: 100%;
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid-menus__menu:hover .grid-menus__menu--linkmenu2 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 60%;
+}
+
+.grid-menus__menu--linkmenu3 {
+  background: url(/dist/img/menu-3b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  width: 100%;
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid-menus__menu:hover .grid-menus__menu--linkmenu3 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 60%;
+}
+
+.grid-menus__menu--linkmenu4 {
+  background: url(/dist/img/menu-4b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  width: 100%;
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.grid-menus__menu:hover .grid-menus__menu--linkmenu4 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 60%;
 }
 
 .grid-menus > ::before {

@@ -15,15 +15,52 @@
         width: 100%;
         overflow: hidden;
         &--linkmenu1 {
-            display: block;
             background: url(/dist/img/menu-1b.png);
             @include linkmenu;
-            transform: scale(1);
-            transition: transform 1s;
         }
         &:hover {
             .grid-menus__menu--linkmenu1 {
-                transform: scale(1.2);
+                @include zoom-opacity;
+            }
+        }
+        //-----------------------------
+        &--linkmenu2 {
+            background: url(/dist/img/menu-2b.png);
+            @include linkmenu;
+        }
+        &:hover {
+            .grid-menus__menu--linkmenu2 {
+                @include zoom-opacity;
+            }
+        }
+        //-----------------------------
+        &--linkmenu2 {
+            background: url(/dist/img/menu-2b.png);
+            @include linkmenu;
+        }
+        &:hover {
+            .grid-menus__menu--linkmenu2 {
+                @include zoom-opacity;
+            }
+        }
+        //-----------------------------
+        &--linkmenu3 {
+            background: url(/dist/img/menu-3b.png);
+            @include linkmenu;
+        }
+        &:hover {
+            .grid-menus__menu--linkmenu3 {
+                @include zoom-opacity;
+            }
+        }
+        //-----------------------------
+        &--linkmenu4 {
+            background: url(/dist/img/menu-4b.png);
+            @include linkmenu;
+        }
+        &:hover {
+            .grid-menus__menu--linkmenu4 {
+                @include zoom-opacity;
             }
         }
     }
