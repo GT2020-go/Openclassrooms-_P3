@@ -1,7 +1,4 @@
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100vw;
     height: 5vh;
     nav {
@@ -14,6 +11,7 @@ footer {
         a {
             font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: $txtclr;
+            font-size: 2.5vh;
         }
     }
 }

@@ -34,16 +34,15 @@ header {
 }
 
 header h1 {
-  font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -0.05rem;
+  font-weight: 700;
   color: #fdcb46;
   text-align: center;
-  font-size: 2.2em;
+  font-size: 5vh;
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100vw;
   height: 5vh;
 }
@@ -66,23 +65,11 @@ footer nav {
 footer nav a {
   font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fdcb46;
-}
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-size: 2.5vh;
 }
 
 .container {
-  width: 80%;
+  width: 95vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -97,11 +84,20 @@ main {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   place-items: start;
-  grid-gap: 2em;
-  margin: 2rem 0 2rem 0;
+  grid-gap: 1rem;
+  margin: 1rem;
 }
 
-.grid-menus__linkmenu1 {
+.grid-menus__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.grid-menus__menu--linkmenu1 {
+  display: block;
   background: url(/dist/img/menu-1b.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -109,30 +105,17 @@ main {
   -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
           box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
-.grid-menus__linkmenu2 {
-  background: url(/dist/img/menu-2b.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-
-.grid-menus__linkmenu3 {
-  background: url(/dist/img/menu-3b.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-
-.grid-menus__linkmenu4 {
-  background: url(/dist/img/menu-4b.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
+.grid-menus__menu:hover .grid-menus__menu--linkmenu1 {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .grid-menus > ::before {
@@ -141,5 +124,57 @@ main {
   width: 1px;
   height: 0;
   padding-bottom: calc(100% / (1190/1684));
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container2 p {
+  font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #579c87;
+  color: #fdcb46;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,5 @@
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .container {
-    width: 80%;
+    width: 95vw;
     justify-content: center;
     align-self: center;
 }
@@ -14,36 +8,24 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: start;
-    grid-gap: 2em;
-    margin: 2rem 0 2rem 0;
-    &__linkmenu1 {
-        background: url(/dist/img/menu-1b.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+    grid-gap: 1rem;
+    margin: 1rem;
+    &__menu {
+        display: flex;
         width: 100%;
-    }
-    &__linkmenu2 {
-        background: url(/dist/img/menu-2b.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-    }
-    &__linkmenu3 {
-        background: url(/dist/img/menu-3b.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-    }
-    &__linkmenu4 {
-        background: url(/dist/img/menu-4b.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
+        overflow: hidden;
+        &--linkmenu1 {
+            display: block;
+            background: url(/dist/img/menu-1b.png);
+            @include linkmenu;
+            transform: scale(1);
+            transition: transform 1s;
+        }
+        &:hover {
+            .grid-menus__menu--linkmenu1 {
+                transform: scale(1.2);
+            }
+        }
     }
 }
 

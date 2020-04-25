@@ -1,0 +1,12 @@
+@mixin linkmenu {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+    width: 100%;
+}
+
+// transition: transform 1s;
+//     &:hover {
+//         transform: scale(1.2);
+//     }
