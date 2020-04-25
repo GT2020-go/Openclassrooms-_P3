@@ -5,9 +5,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px #a1c181;
     h1 {
         font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        letter-spacing: -0.05rem;
+        letter-spacing: -0.1rem;
         font-weight: 700;
         color: $txtclr;
         text-align: center;

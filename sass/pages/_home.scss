@@ -8,12 +8,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: start;
-    grid-gap: 1rem;
-    margin: 1rem;
+    grid-gap: 3vh;
+    margin: 2vh 5vw 0 5vw;
     &__menu {
         display: flex;
         width: 100%;
         overflow: hidden;
+        box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
         &--linkmenu1 {
             background: url(/dist/img/menu-1b.png);
             @include linkmenu;
@@ -69,7 +70,7 @@
 .grid-menus> ::before {
     content: "";
     display: inline-block;
-    width: 1px;
+    width: 0;
     height: 0;
     padding-bottom: calc(100% / (1190/1684));
 }

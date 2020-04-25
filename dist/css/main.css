@@ -31,11 +31,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 2px #a1c181;
 }
 
 header h1 {
   font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.1rem;
   font-weight: 700;
   color: #fdcb46;
   text-align: center;
@@ -45,9 +46,12 @@ header h1 {
 footer {
   width: 100vw;
   height: 5vh;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-top: 2px #a1c181;
 }
 
-footer nav {
+footer .btns {
   width: 100%;
   height: inherit;
   display: -webkit-box;
@@ -60,12 +64,116 @@ footer nav {
       -ms-flex-align: center;
           align-items: center;
   background: #579c87;
+  padding: 0 2vw;
 }
 
-footer nav a {
+footer .btns a {
   font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fdcb46;
   font-size: 2.5vh;
+}
+
+.btns__btn:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .container {
@@ -84,8 +192,8 @@ footer nav a {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   place-items: start;
-  grid-gap: 1rem;
-  margin: 1rem;
+  grid-gap: 3vh;
+  margin: 2vh 5vw 0 5vw;
 }
 
 .grid-menus__menu {
@@ -94,6 +202,8 @@ footer nav a {
   display: flex;
   width: 100%;
   overflow: hidden;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
 }
 
 .grid-menus__menu--linkmenu1 {
@@ -101,8 +211,6 @@ footer nav a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   width: 100%;
   display: block;
   -webkit-transform: scale(1);
@@ -123,8 +231,6 @@ footer nav a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   width: 100%;
   display: block;
   -webkit-transform: scale(1);
@@ -145,8 +251,6 @@ footer nav a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   width: 100%;
   display: block;
   -webkit-transform: scale(1);
@@ -167,8 +271,6 @@ footer nav a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   width: 100%;
   display: block;
   -webkit-transform: scale(1);
@@ -189,8 +291,6 @@ footer nav a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-          box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   width: 100%;
   display: block;
   -webkit-transform: scale(1);
@@ -209,7 +309,7 @@ footer nav a {
 .grid-menus > ::before {
   content: "";
   display: inline-block;
-  width: 1px;
+  width: 0;
   height: 0;
   padding-bottom: calc(100% / (1190/1684));
 }
@@ -244,8 +344,8 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .container2 {
@@ -255,14 +355,61 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 1vh 0;
 }
 
 .container2 p {
   font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.7vh;
   background: #579c87;
   color: #fdcb46;
   border-radius: 5px;
-  padding: 8px 20px;
-  margin: 3px;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+p span {
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+p span:nth-child(2) {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+}
+
+p span:nth-child(3) {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
 }
 /*# sourceMappingURL=main.css.map */
