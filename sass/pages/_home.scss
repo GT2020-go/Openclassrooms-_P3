@@ -1,76 +1,74 @@
-.container {
-    width: 95vw;
-    justify-content: center;
-    align-self: center;
-}
-
-.grid-menus {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: start;
-    grid-gap: 3vh;
-    margin: 2vh 5vw 0 5vw;
-    &__menu {
-        display: flex;
-        width: 100%;
-        overflow: hidden;
-        box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-        &--linkmenu1 {
-            background: url(/dist/img/menu-1b.png);
-            @include linkmenu;
-        }
-        &:hover {
-            .grid-menus__menu--linkmenu1 {
-                @include zoom-opacity;
-            }
-        }
-        //-----------------------------
-        &--linkmenu2 {
-            background: url(/dist/img/menu-2b.png);
-            @include linkmenu;
-        }
-        &:hover {
-            .grid-menus__menu--linkmenu2 {
-                @include zoom-opacity;
-            }
-        }
-        //-----------------------------
-        &--linkmenu2 {
-            background: url(/dist/img/menu-2b.png);
-            @include linkmenu;
-        }
-        &:hover {
-            .grid-menus__menu--linkmenu2 {
-                @include zoom-opacity;
-            }
-        }
-        //-----------------------------
-        &--linkmenu3 {
-            background: url(/dist/img/menu-3b.png);
-            @include linkmenu;
-        }
-        &:hover {
-            .grid-menus__menu--linkmenu3 {
-                @include zoom-opacity;
-            }
-        }
-        //-----------------------------
-        &--linkmenu4 {
-            background: url(/dist/img/menu-4b.png);
-            @include linkmenu;
-        }
-        &:hover {
-            .grid-menus__menu--linkmenu4 {
-                @include zoom-opacity;
-            }
-        }
-    }
-}
-
-.grid-menus> ::before {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    padding-bottom: calc(100% / (1190/1684));
-}
+// .container {
+//     width: 95vw;
+//     justify-content: center;
+//     align-self: center;
+// }
+// .grid-menus {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     place-items: start;
+//     grid-gap: 3vh;
+//     margin: 2vh 5vw 0 5vw;
+//     &__menu {
+//         display: flex;
+//         width: 100%;
+//         overflow: hidden;
+//         box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+//         &--linkmenu1 {
+//             background: url(/dist/img/menu-1b.png);
+//             @include linkmenu;
+//         }
+//         &:hover {
+//             .grid-menus__menu--linkmenu1 {
+//                 @include zoom-opacity;
+//             }
+//         }
+//         //-----------------------------
+//         &--linkmenu2 {
+//             background: url(/dist/img/menu-2b.png);
+//             @include linkmenu;
+//         }
+//         &:hover {
+//             .grid-menus__menu--linkmenu2 {
+//                 @include zoom-opacity;
+//             }
+//         }
+//         //-----------------------------
+//         &--linkmenu2 {
+//             background: url(/dist/img/menu-2b.png);
+//             @include linkmenu;
+//         }
+//         &:hover {
+//             .grid-menus__menu--linkmenu2 {
+//                 @include zoom-opacity;
+//             }
+//         }
+//         //-----------------------------
+//         &--linkmenu3 {
+//             background: url(/dist/img/menu-3b.png);
+//             @include linkmenu;
+//         }
+//         &:hover {
+//             .grid-menus__menu--linkmenu3 {
+//                 @include zoom-opacity;
+//             }
+//         }
+//         //-----------------------------
+//         &--linkmenu4 {
+//             background: url(/dist/img/menu-4b.png);
+//             @include linkmenu;
+//         }
+//         &:hover {
+//             .grid-menus__menu--linkmenu4 {
+//                 @include zoom-opacity;
+//             }
+//         }
+//     }
+// }
+// .grid-menus> ::before {
+//     content: "";
+//     display: inline-block;
+//     width: 0;
+//     height: 0;
+//     padding-bottom: calc(100% / (1190/1684));
+// }
