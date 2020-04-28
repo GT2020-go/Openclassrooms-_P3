@@ -33,6 +33,18 @@ section {
         position: relative;
         overflow-y: auto;
         background: orangered;
+        //for the content:
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-content: center;
+        a {
+            display: block;
+            height: 30%;
+            width: 40%;
+            background: rgb(92, 92, 228);
+            margin: 5px;
+        }
     }
     .upnext {
         width: 100vw;

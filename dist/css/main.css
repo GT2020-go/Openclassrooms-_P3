@@ -67,6 +67,24 @@ section .menus {
   position: relative;
   overflow-y: auto;
   background: orangered;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section .menus a {
+  display: block;
+  height: 30%;
+  width: 40%;
+  background: #5c5ce4;
+  margin: 5px;
 }
 
 section .upnext {
