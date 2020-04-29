@@ -42,6 +42,14 @@ header {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   background: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 section {
@@ -94,6 +102,14 @@ section .upnext {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   background: orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 footer {
@@ -103,5 +119,16 @@ footer {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   background: green;
+}
+
+footer .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=main.css.map */
