@@ -1,6 +1,12 @@
 $bgclr: #579c87; //main background color
 $txtclr:#fdcb46; //main text color
 //fonts:
+//special:
+@font-face {
+    font-family: 'Project2';
+    src: url('/dist/fonts/fonts/Project2.eot'), url('./dist/fonts/fonts/Project2.svg'), url('/dist/fonts/fonts/Project2.ttf'), url('/dist/fonts/fonts/Project2.woff');
+}
+
 //main title:
 @font-face {
     font-family: "uniform-5-regular";
@@ -12,3 +18,46 @@ $txtclr:#fdcb46; //main text color
     font-family: "uniform-3-regular";
     src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
 }
+
+//MENU:
+@font-face {
+    font-family: 'PT Serif Caption', serif;
+    src: url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+}
+
+//fonts menu1:
+//font-family: 'Devonshire',cursive;
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
+$bgclr1:#fcdfdb;
+$txtclr1: #3d1319;
+$notegradientstartclr: #ef4860;
+$notegradientendclr: #f6926b;
+//fonts menu2:
+//font-family: 'Croissant One', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+$bgclr2:#fff5fe;
+$h2clr2: #c77412;
+$txtclr21: #c67412;
+$txtclr22: #a56799;
+$txtclr23: #6e4ccc;
+$chicgradientstartclr: #e38913;
+$chicgradientendclr: #8f5bfe;
+//fonts menu3:
+//font-family: 'Dancing Script', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap');
+$bgclr3:#edefef;
+$txtclr3: #000;
+$h2clr3: #0887fb;
+$barclr31: #0228dd;
+$barclr32: #0670f3;
+$barclr33: #229df9;
+$delicegradientstartclr: #001ed9;
+$delicegradientendclr: #0889fb;
+//fonts menu4:
+//font-family: 'Kaushan Script', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+$bgclr4:#fdfffd;
+$txtclr4: #000;
+$h2clr4: #72bf56;
+$goutgradientstartclr: #3d923a;
+$goutgradientendclr: #bcfd7e;

@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../dist/img/menu4/icons/variables.scss"
+        "../dist/fonts/variables.scss"
     ],
     "names": [],
     "file": "variables.css"
