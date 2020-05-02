@@ -1,0 +1,7 @@
+.icon-menu4left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2906;');
+}
+.icon-menu4right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2907;');
+}
+

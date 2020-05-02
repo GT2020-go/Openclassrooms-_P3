@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+@font-face {
+  font-family: "uniform-5-regular";
+  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "uniform-3-regular";
+  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  flex: 0 0 auto;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+section {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+section .menus {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  background: orangered;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+section .menus a {
+  display: block;
+  height: 30%;
+  width: 40%;
+  background: #5c5ce4;
+  margin: 5px;
+}
+
+section .upnext {
+  width: 100vw;
+  height: 5vh;
+  flex: 0 0 auto;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  flex: 0 0 auto;
+  background: green;
+}
+
+footer .btns {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+/*# sourceMappingURL=main.css.map */
