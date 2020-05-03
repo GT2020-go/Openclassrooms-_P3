@@ -1,14 +1,3 @@
-@mixin linkmenu {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    display: block;
-    transform: scale(1);
-    opacity: 1;
-    transition: all 1s;
-}
-
 @mixin zoom-opacity {
     transform: scale(1.2);
     opacity: 60%;
@@ -27,8 +16,16 @@
         padding-top: 0.5em;
         font-weight: 700;
     }
+    h3 {
+        font-family: 'Segoe print', cursive, sans-serif;
+        font-size: 1em;
+        padding-top: 2em;
+    }
+    p {
+        font-family: 'Segoe print', cursive, sans-serif;
+        font-size: .75em;
+    }
     .icon-noteblk:before {
-        content: "\e900";
         font-family: 'Project2';
         font-weight: 500;
         font-size: 2.8em;
@@ -39,6 +36,12 @@
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-text-fill-color: transparent;
+    }
+    .icon-menu1left:before,
+    .icon-menu1right:before {
+        font-family: 'Project2';
+        font-weight: 500;
+        font-size: 6em;
     }
 }
 

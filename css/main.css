@@ -46,7 +46,6 @@ header {
 header h1 {
   display: inline-block;
   vertical-align: middle;
-  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: -0.1rem;
   font-weight: 700;
   color: #fdcb46;
@@ -75,7 +74,6 @@ footer .btns {
 }
 
 footer .btns a {
-  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fdcb46;
   font-size: 2.5vh;
 }
@@ -128,6 +126,7 @@ body {
   height: 100%;
   width: 100%;
   font-size: 80%;
+  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 span,
@@ -149,10 +148,55 @@ section {
   display: flex;
   flex-direction: column;
   align-content: center;
+  align-items: center;
   height: 100%;
 }
 
-section .menus {
+.details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 327.25px;
+  height: 463.1px;
+  padding: 1em;
+  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+}
+
+.starters,
+.maincourses,
+.desserts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.starters__title,
+.maincourses__title,
+.desserts__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dish__name {
+  justify-self: flex-start;
+  margin-right: 1em;
+}
+
+.dish__price {
+  justify-self: flex-end;
+  margin-left: 1em;
+}
+
+.menus {
   flex: 1 1 auto;
   position: relative;
   overflow-y: auto;
@@ -163,7 +207,7 @@ section .menus {
   align-content: center;
 }
 
-section .menus__zoom {
+.menus__zoom {
   width: 148.75px;
   height: 210.5px;
   margin: 10px;
@@ -171,7 +215,7 @@ section .menus__zoom {
   overflow: hidden;
 }
 
-section .menus__zoom__menu {
+.menus__zoom__menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,29 +226,39 @@ section .menus__zoom__menu {
   transition: all 1s;
 }
 
-section .menus__zoom:hover .menus__zoom__menu {
+.menus__zoom:hover .menus__zoom__menu {
   transform: scale(1.2);
   opacity: 60%;
 }
 
-section .menus__zoom--menu1 {
+.menus__zoom--menu1 {
   background: #fcdfdb;
   color: #3d1319;
 }
 
-section .menus__zoom--menu1 h1 {
+.menus__zoom--menu1 h1 {
   font-family: 'Devonshire', cursive;
   font-weight: 500;
 }
 
-section .menus__zoom--menu1 h2 {
+.menus__zoom--menu1 h2 {
   font-family: 'Segoe print', cursive, sans-serif;
   padding-top: 0.5em;
   font-weight: 700;
 }
 
-section .menus__zoom--menu1 .icon-noteblk:before {
-  content: "\e900";
+.menus__zoom--menu1 h3 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: 1em;
+  padding-top: 2em;
+}
+
+.menus__zoom--menu1 p {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: .75em;
+}
+
+.menus__zoom--menu1 .icon-noteblk:before {
   font-family: 'Project2';
   font-weight: 500;
   font-size: 2.8em;
@@ -217,11 +271,18 @@ section .menus__zoom--menu1 .icon-noteblk:before {
   -moz-text-fill-color: transparent;
 }
 
-section .menus__zoom--menu2 {
+.menus__zoom--menu1 .icon-menu1left:before,
+.menus__zoom--menu1 .icon-menu1right:before {
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 6em;
+}
+
+.menus__zoom--menu2 {
   background: #fff5fe;
 }
 
-section .menus__zoom--menu2 h1 {
+.menus__zoom--menu2 h1 {
   font-family: 'Croissant One', cursive;
   font-weight: 500;
   font-size: 1em;
@@ -234,19 +295,19 @@ section .menus__zoom--menu2 h1 {
   -moz-text-fill-color: transparent;
 }
 
-section .menus__zoom--menu2 h2 {
+.menus__zoom--menu2 h2 {
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
   font-size: 2em;
   padding-top: 0.5em;
 }
 
-section .menus__zoom--menu3 {
+.menus__zoom--menu3 {
   background: #edefef;
   color: #000;
 }
 
-section .menus__zoom--menu3 h1 {
+.menus__zoom--menu3 h1 {
   font-family: 'Dancing Script', cursive;
   background-image: linear-gradient(90deg, #001ed9, #0889fb);
   background-size: 100%;
@@ -257,7 +318,7 @@ section .menus__zoom--menu3 h1 {
   -moz-text-fill-color: transparent;
 }
 
-section .menus__zoom--menu3 h2 {
+.menus__zoom--menu3 h2 {
   font-family: 'Segoe print', cursive, sans-serif;
   color: #0887fb;
   font-weight: 500;
@@ -265,12 +326,12 @@ section .menus__zoom--menu3 h2 {
   padding-top: 0.5em;
 }
 
-section .menus__zoom--menu4 {
+.menus__zoom--menu4 {
   background: #fdfffd;
   color: #000;
 }
 
-section .menus__zoom--menu4 h1 {
+.menus__zoom--menu4 h1 {
   font-family: 'Kaushan Script', cursive;
   font-weight: 700;
   background-image: linear-gradient(135deg, #3d923a, #beff7f);
@@ -282,7 +343,7 @@ section .menus__zoom--menu4 h1 {
   -moz-text-fill-color: transparent;
 }
 
-section .menus__zoom--menu4 h2 {
+.menus__zoom--menu4 h2 {
   font-family: 'Segoe print', cursive, sans-serif;
   color: #72bf56;
   font-weight: 500;
@@ -290,7 +351,7 @@ section .menus__zoom--menu4 h2 {
   padding-top: 0.5em;
 }
 
-section .upnext {
+.upnext {
   width: 9em;
   height: 2em;
   flex: 0 0 auto;
@@ -309,7 +370,7 @@ section .upnext {
   align-items: center;
 }
 
-section .upnext p {
+.upnext p {
   font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -325,18 +386,82 @@ section .upnext p {
   }
 }
 
-section p span {
+p span {
   animation-name: blink;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
 
-section p span:nth-child(2) {
+p span:nth-child(2) {
   animation-delay: .5s;
 }
 
-section p span:nth-child(3) {
+p span:nth-child(3) {
   animation-delay: .9s;
+}
+
+.details--menu1 {
+  background: #fcdfdb;
+  color: #3d1319;
+}
+
+.details--menu1 h1 {
+  font-family: 'Devonshire', cursive;
+  font-weight: 500;
+}
+
+.details--menu1 h2 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  padding-top: 0.5em;
+  font-weight: 700;
+}
+
+.details--menu1 h3 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: 1em;
+  padding-top: 2em;
+}
+
+.details--menu1 p {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: .75em;
+}
+
+.details--menu1 .icon-noteblk:before {
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 2.8em;
+  background-image: linear-gradient(90deg, #ef4860, #f6926b);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.details--menu1 .icon-menu1left:before,
+.details--menu1 .icon-menu1right:before {
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 6em;
+}
+
+.title--top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.title--bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.title--bottom .icon-noteblk:before {
+  font-size: 2em;
 }
 /*# sourceMappingURL=main.css.map */
