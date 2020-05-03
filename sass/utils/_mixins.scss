@@ -19,15 +19,19 @@
     color: $txtclr1;
     h1 {
         font-family: 'Devonshire', cursive;
+        font-weight: 500;
     }
     h2 {
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: 'Segoe print', cursive, sans-serif;
+        //font-family: "Comic Sans MS", cursive, sans-serif;
+        padding-top: 0.5em;
+        font-weight: 700;
     }
     .icon-noteblk:before {
         content: "\e900";
         font-family: 'Project2';
         font-weight: 500;
-        font-size: 6em;
+        font-size: 2.8em;
         background-image: linear-gradient(90deg, $notegradientstartclr, $notegradientendclr);
         background-size: 100%;
         background-clip: text;
@@ -42,6 +46,8 @@
     background: $bgclr2;
     h1 {
         font-family: 'Croissant One', cursive;
+        font-weight: 500;
+        font-size: 1em;
         background-image: linear-gradient(135deg, $chicgradientstartclr, $chicgradientendclr);
         background-size: 100%;
         background-clip: text;
@@ -53,6 +59,8 @@
     h2 {
         font-family: 'PT Serif Caption', serif;
         color: $h2clr2;
+        font-size: 2em;
+        padding-top: 0.5em;
     }
 }
 
@@ -72,6 +80,9 @@
     h2 {
         font-family: 'Segoe print', cursive, sans-serif;
         color: $h2clr3;
+        font-weight: 500;
+        font-size: 2em;
+        padding-top: 0.5em;
     }
 }
 
@@ -80,7 +91,8 @@
     color: $txtclr4;
     h1 {
         font-family: 'Kaushan Script', cursive;
-        background-image: linear-gradient(180deg, $goutgradientstartclr, $goutgradientendclr);
+        font-weight: 700;
+        background-image: linear-gradient(135deg, $goutgradientstartclr, $goutgradientendclr);
         background-size: 100%;
         background-clip: text;
         -webkit-background-clip: text;
@@ -91,5 +103,8 @@
     h2 {
         font-family: 'Segoe print', cursive, sans-serif;
         color: $h2clr4;
+        font-weight: 500;
+        font-size: 2em;
+        padding-top: 0.5em;
     }
 }

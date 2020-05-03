@@ -1,18 +1,23 @@
 header {
     width: 100vw;
     height: 10vh;
+    padding-top: .2em;
     flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
     background: $bgclr;
     border-bottom: 2px #a1c181;
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     h1 {
+        display: inline-block;
+        vertical-align: middle;
         font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         letter-spacing: -0.1rem;
         font-weight: 700;
         color: $txtclr;
         text-align: center;
         font-size: 5vh;
+        padding-bottom: 0.2em;
     }
 }

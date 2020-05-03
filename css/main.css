@@ -33,21 +33,26 @@
 header {
   width: 100vw;
   height: 10vh;
+  padding-top: .2em;
   flex: 0 0 auto;
   background: #579c87;
   border-bottom: 2px #a1c181;
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
 }
 
 header h1 {
+  display: inline-block;
+  vertical-align: middle;
   font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: -0.1rem;
   font-weight: 700;
   color: #fdcb46;
   text-align: center;
   font-size: 5vh;
+  padding-bottom: 0.2em;
 }
 
 footer {
@@ -56,9 +61,14 @@ footer {
   flex: 0 0 auto;
   background: #579c87;
   border-top: 2px #a1c181;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 footer .btns {
+  width: 100vw;
+  padding: 0 1em 0 1em;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -117,6 +127,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-size: 80%;
 }
 
 span,
@@ -137,6 +148,7 @@ section {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  align-content: center;
   height: 100%;
 }
 
@@ -151,34 +163,51 @@ section .menus {
   align-content: center;
 }
 
-section .menus a {
+section .menus__zoom {
+  width: 148.75px;
+  height: 210.5px;
+  margin: 10px;
+  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  overflow: hidden;
+}
+
+section .menus__zoom__menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 30%;
-  width: 40%;
-  margin: 5px;
-  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 1s;
 }
 
-section .menus--menu1 {
+section .menus__zoom:hover .menus__zoom__menu {
+  transform: scale(1.2);
+  opacity: 60%;
+}
+
+section .menus__zoom--menu1 {
   background: #fcdfdb;
   color: #3d1319;
 }
 
-section .menus--menu1 h1 {
+section .menus__zoom--menu1 h1 {
   font-family: 'Devonshire', cursive;
+  font-weight: 500;
 }
 
-section .menus--menu1 h2 {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+section .menus__zoom--menu1 h2 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  padding-top: 0.5em;
+  font-weight: 700;
 }
 
-section .menus--menu1 .icon-noteblk:before {
+section .menus__zoom--menu1 .icon-noteblk:before {
   content: "\e900";
   font-family: 'Project2';
   font-weight: 500;
-  font-size: 6em;
+  font-size: 2.8em;
   background-image: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
   background-clip: text;
@@ -188,12 +217,14 @@ section .menus--menu1 .icon-noteblk:before {
   -moz-text-fill-color: transparent;
 }
 
-section .menus--menu2 {
+section .menus__zoom--menu2 {
   background: #fff5fe;
 }
 
-section .menus--menu2 h1 {
+section .menus__zoom--menu2 h1 {
   font-family: 'Croissant One', cursive;
+  font-weight: 500;
+  font-size: 1em;
   background-image: linear-gradient(135deg, #e38913, #8f5bfe);
   background-size: 100%;
   background-clip: text;
@@ -203,17 +234,19 @@ section .menus--menu2 h1 {
   -moz-text-fill-color: transparent;
 }
 
-section .menus--menu2 h2 {
+section .menus__zoom--menu2 h2 {
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
+  font-size: 2em;
+  padding-top: 0.5em;
 }
 
-section .menus--menu3 {
+section .menus__zoom--menu3 {
   background: #edefef;
   color: #000;
 }
 
-section .menus--menu3 h1 {
+section .menus__zoom--menu3 h1 {
   font-family: 'Dancing Script', cursive;
   background-image: linear-gradient(90deg, #001ed9, #0889fb);
   background-size: 100%;
@@ -224,19 +257,23 @@ section .menus--menu3 h1 {
   -moz-text-fill-color: transparent;
 }
 
-section .menus--menu3 h2 {
+section .menus__zoom--menu3 h2 {
   font-family: 'Segoe print', cursive, sans-serif;
   color: #0887fb;
+  font-weight: 500;
+  font-size: 2em;
+  padding-top: 0.5em;
 }
 
-section .menus--menu4 {
+section .menus__zoom--menu4 {
   background: #fdfffd;
   color: #000;
 }
 
-section .menus--menu4 h1 {
+section .menus__zoom--menu4 h1 {
   font-family: 'Kaushan Script', cursive;
-  background-image: linear-gradient(180deg, #3d923a, #bcfd7e);
+  font-weight: 700;
+  background-image: linear-gradient(135deg, #3d923a, #beff7f);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -245,14 +282,17 @@ section .menus--menu4 h1 {
   -moz-text-fill-color: transparent;
 }
 
-section .menus--menu4 h2 {
+section .menus__zoom--menu4 h2 {
   font-family: 'Segoe print', cursive, sans-serif;
   color: #72bf56;
+  font-weight: 500;
+  font-size: 2em;
+  padding-top: 0.5em;
 }
 
 section .upnext {
-  width: 100vw;
-  height: 5vh;
+  width: 9em;
+  height: 2em;
   flex: 0 0 auto;
   font-size: 2.7vh;
   background: #579c87;
@@ -262,6 +302,11 @@ section .upnext {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-self: center;
+  margin: 1em 0 1em 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 section .upnext p {
