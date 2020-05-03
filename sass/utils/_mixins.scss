@@ -20,29 +20,45 @@
         font-family: 'Segoe print', cursive, sans-serif;
         font-size: 1em;
         padding-top: 2em;
+        position: relative;
+        //
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
     }
-    p {
-        font-family: 'Segoe print', cursive, sans-serif;
-        font-size: .75em;
+    h3:hover,
+    h3:focus {
+        background-size: 100% 2px;
     }
-    .icon-noteblk:before {
-        font-family: 'Project2';
-        font-weight: 500;
-        font-size: 2.8em;
-        background-image: linear-gradient(90deg, $notegradientstartclr, $notegradientendclr);
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-    }
-    .icon-menu1left:before,
-    .icon-menu1right:before {
-        font-family: 'Project2';
-        font-weight: 500;
-        font-size: 6em;
-    }
+}
+
+//
+p {
+    font-family: 'Segoe print', cursive, sans-serif;
+    font-size: .75em;
+}
+
+.icon-noteblk:before {
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 2.8em;
+    background-image: linear-gradient(90deg, $notegradientstartclr, $notegradientendclr);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.icon-menu1left:before,
+.icon-menu1right:before {
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 6em;
 }
 
 @mixin stylemenu2 {
