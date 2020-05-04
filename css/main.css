@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-decoration-style: none;
+}
+
+@font-face {
+  font-family: 'Project2';
+  src: url("/dist/fonts/fonts/Project2.eot"), url("./dist/fonts/fonts/Project2.svg"), url("/dist/fonts/fonts/Project2.ttf"), url("/dist/fonts/fonts/Project2.woff");
+}
+
+@font-face {
+  font-family: "uniform-5-regular";
+  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "uniform-3-regular";
+  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'PT Serif Caption', serif;
+  src: url("https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap");
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  padding-top: .2em;
+  flex: 0 0 auto;
+  background: #579c87;
+  border-bottom: 2px #a1c181;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+header h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -0.1rem;
+  font-weight: 700;
+  color: #fdcb46;
+  text-align: center;
+  font-size: 5vh;
+  padding-bottom: 0.2em;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  flex: 0 0 auto;
+  background: #579c87;
+  border-top: 2px #a1c181;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+footer .btns {
+  width: 100vw;
+  padding: 0 1em 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+footer .btns a {
+  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fdcb46;
+  font-size: 2.5vh;
+}
+
+.btns__btn:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 80%;
+}
+
+span,
+h1,
+h2 {
+  text-align: center;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 100%;
+}
+
+section .menus {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  background: #fff;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+section .menus__zoom {
+  width: 148.75px;
+  height: 210.5px;
+  margin: 10px;
+  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  overflow: hidden;
+}
+
+section .menus__zoom__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 1s;
+}
+
+section .menus__zoom:hover .menus__zoom__menu {
+  transform: scale(1.2);
+  opacity: 60%;
+}
+
+section .menus__zoom--menu1 {
+  background: #fcdfdb;
+  color: #3d1319;
+}
+
+section .menus__zoom--menu1 h1 {
+  font-family: 'Devonshire', cursive;
+  font-weight: 500;
+}
+
+section .menus__zoom--menu1 h2 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  padding-top: 0.5em;
+  font-weight: 700;
+}
+
+section .menus__zoom--menu1 .icon-noteblk:before {
+  content: "\e900";
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 2.8em;
+  background-image: linear-gradient(90deg, #ef4860, #f6926b);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+section .menus__zoom--menu2 {
+  background: #fff5fe;
+}
+
+section .menus__zoom--menu2 h1 {
+  font-family: 'Croissant One', cursive;
+  font-weight: 500;
+  font-size: 1em;
+  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+section .menus__zoom--menu2 h2 {
+  font-family: 'PT Serif Caption', serif;
+  color: #c77412;
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+section .menus__zoom--menu3 {
+  background: #edefef;
+  color: #000;
+}
+
+section .menus__zoom--menu3 h1 {
+  font-family: 'Dancing Script', cursive;
+  background-image: linear-gradient(90deg, #001ed9, #0889fb);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+section .menus__zoom--menu3 h2 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  color: #0887fb;
+  font-weight: 500;
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+section .menus__zoom--menu4 {
+  background: #fdfffd;
+  color: #000;
+}
+
+section .menus__zoom--menu4 h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 700;
+  background-image: linear-gradient(135deg, #3d923a, #beff7f);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+section .menus__zoom--menu4 h2 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  color: #72bf56;
+  font-weight: 500;
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+section .upnext {
+  width: 9em;
+  height: 2em;
+  flex: 0 0 auto;
+  font-size: 2.7vh;
+  background: #579c87;
+  color: #fdcb46;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  margin: 1em 0 1em 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+section .upnext p {
+  font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+section p span {
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+
+section p span:nth-child(2) {
+  animation-delay: .5s;
+}
+
+section p span:nth-child(3) {
+  animation-delay: .9s;
+}
+/*# sourceMappingURL=main.css.map */

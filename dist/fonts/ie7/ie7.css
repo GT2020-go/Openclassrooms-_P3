@@ -1,0 +1,28 @@
+.icon-menu3left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x27f5;');
+}
+.icon-menu3right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x27f6;');
+}
+.icon-menu4left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2906;');
+}
+.icon-menu4right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x2907;');
+}
+.icon-menu2right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x25e5;');
+}
+.icon-menu2left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x25e4;');
+}
+.icon-menu1left {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x25c4;');
+}
+.icon-menu1right {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#x25ba;');
+}
+.icon-noteblk {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
+}
+
