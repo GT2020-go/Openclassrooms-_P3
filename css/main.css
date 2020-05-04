@@ -251,6 +251,26 @@ section {
   font-family: 'Segoe print', cursive, sans-serif;
   font-size: 1em;
   padding-top: 2em;
+  display: block;
+  position: relative;
+}
+
+.menus__zoom--menu1 h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 2em;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  left: 0%;
+  position: absolute;
+  background: #3d1319;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.menus__zoom--menu1 h3:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .menus__zoom--menu1 p {
@@ -421,6 +441,26 @@ p span:nth-child(3) {
   font-family: 'Segoe print', cursive, sans-serif;
   font-size: 1em;
   padding-top: 2em;
+  display: block;
+  position: relative;
+}
+
+.details--menu1 h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 2em;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  left: 0%;
+  position: absolute;
+  background: #3d1319;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.details--menu1 h3:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .details--menu1 p {
@@ -446,48 +486,6 @@ p span:nth-child(3) {
   font-family: 'Project2';
   font-weight: 500;
   font-size: 6em;
-}
-
-.title--top {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-.title--bottom {
-  display: flex;
-  flex-direction: row;
-  margin-top: 2em;
-}
-
-.title--bottom .icon-noteblk:before {
-  font-size: 2em;
-}
-
-.details--menu2 {
-  background: #fff5fe;
-}
-
-.details--menu2 h1 {
-  font-family: 'Croissant One', cursive;
-  font-weight: 500;
-  font-size: 1em;
-  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.details--menu2 h2 {
-  font-family: 'PT Serif Caption', serif;
-  color: #c77412;
-  font-size: 2em;
-  padding-top: 0.5em;
 }
 
 .title--top {

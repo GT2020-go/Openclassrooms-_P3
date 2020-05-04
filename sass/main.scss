@@ -82,18 +82,3 @@ section {
 
 @import './pages/home';
 @import './pages/menu1';
-@import './pages/menu2';
-//pour souligner titre >> fonctionne sur codepen
-h3 {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 10px;
-    transition: background-size .3s;
-}
-
-h3:hover,
-h3:focus {
-    background-size: 100% 2px;
-}

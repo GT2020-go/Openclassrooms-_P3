@@ -1,129 +1,133 @@
-@mixin zoom-opacity {
-    transform: scale(1.2);
-    opacity: 60%;
-}
-
-@mixin stylemenu1 {
-    background: $bgclr1;
-    color: $txtclr1;
-    h1 {
-        font-family: 'Devonshire', cursive;
-        font-weight: 500;
+    @mixin zoom-opacity {
+        transform: scale(1.2);
+        opacity: 60%;
     }
-    h2 {
-        font-family: 'Segoe print', cursive, sans-serif;
-        //font-family: "Comic Sans MS", cursive, sans-serif;
-        padding-top: 0.5em;
-        font-weight: 700;
-    }
-    h3 {
-        font-family: 'Segoe print', cursive, sans-serif;
-        font-size: 1em;
-        padding-top: 2em;
-        position: relative;
+    
+    @mixin stylemenu1 {
+        background: $bgclr1;
+        color: $txtclr1;
+        h1 {
+            font-family: 'Devonshire', cursive;
+            font-weight: 500;
+        }
+        h2 {
+            font-family: 'Segoe print', cursive, sans-serif;
+            //font-family: "Comic Sans MS", cursive, sans-serif;
+            padding-top: 0.5em;
+            font-weight: 700;
+        }
+        h3 {
+            font-family: 'Segoe print', cursive, sans-serif;
+            font-size: 1em;
+            padding-top: 2em;
+            display: block;
+            position: relative;
+            //
+            &::after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 2em;
+                content: "";
+                display: inline-block;
+                height: 3px;
+                left: 0%;
+                position: absolute;
+                background: $txtclr1;
+                transition: width 0.3s ease 0s;
+                width: 0;
+            }
+            &:hover::after {
+                width: 100%;
+                left: 0;
+            }
+        }
         //
-        text-decoration: none;
-        background-image: linear-gradient(currentColor, currentColor);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;
+        p {
+            font-family: 'Segoe print', cursive, sans-serif;
+            font-size: .75em;
+        }
+        .icon-noteblk:before {
+            font-family: 'Project2';
+            font-weight: 500;
+            font-size: 2.8em;
+            background-image: linear-gradient(90deg, $notegradientstartclr, $notegradientendclr);
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        .icon-menu1left:before,
+        .icon-menu1right:before {
+            font-family: 'Project2';
+            font-weight: 500;
+            font-size: 6em;
+        }
     }
-    h3:hover,
-    h3:focus {
-        background-size: 100% 2px;
+    
+    @mixin stylemenu2 {
+        background: $bgclr2;
+        h1 {
+            font-family: 'Croissant One', cursive;
+            font-weight: 500;
+            font-size: 1em;
+            background-image: linear-gradient(135deg, $chicgradientstartclr, $chicgradientendclr);
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        h2 {
+            font-family: 'PT Serif Caption', serif;
+            color: $h2clr2;
+            font-size: 2em;
+            padding-top: 0.5em;
+        }
     }
-}
-
-//
-p {
-    font-family: 'Segoe print', cursive, sans-serif;
-    font-size: .75em;
-}
-
-.icon-noteblk:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 2.8em;
-    background-image: linear-gradient(90deg, $notegradientstartclr, $notegradientendclr);
-    background-size: 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.icon-menu1left:before,
-.icon-menu1right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 6em;
-}
-
-@mixin stylemenu2 {
-    background: $bgclr2;
-    h1 {
-        font-family: 'Croissant One', cursive;
-        font-weight: 500;
-        font-size: 1em;
-        background-image: linear-gradient(135deg, $chicgradientstartclr, $chicgradientendclr);
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
+    
+    @mixin stylemenu3 {
+        background: $bgclr3;
+        color: $txtclr3;
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            background-image: linear-gradient(90deg, $delicegradientstartclr, $delicegradientendclr);
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        h2 {
+            font-family: 'Segoe print', cursive, sans-serif;
+            color: $h2clr3;
+            font-weight: 500;
+            font-size: 2em;
+            padding-top: 0.5em;
+        }
     }
-    h2 {
-        font-family: 'PT Serif Caption', serif;
-        color: $h2clr2;
-        font-size: 2em;
-        padding-top: 0.5em;
+    
+    @mixin stylemenu4 {
+        background: $bgclr4;
+        color: $txtclr4;
+        h1 {
+            font-family: 'Kaushan Script', cursive;
+            font-weight: 700;
+            background-image: linear-gradient(135deg, $goutgradientstartclr, $goutgradientendclr);
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+        }
+        h2 {
+            font-family: 'Segoe print', cursive, sans-serif;
+            color: $h2clr4;
+            font-weight: 500;
+            font-size: 2em;
+            padding-top: 0.5em;
+        }
     }
-}
-
-@mixin stylemenu3 {
-    background: $bgclr3;
-    color: $txtclr3;
-    h1 {
-        font-family: 'Dancing Script', cursive;
-        background-image: linear-gradient(90deg, $delicegradientstartclr, $delicegradientendclr);
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-    }
-    h2 {
-        font-family: 'Segoe print', cursive, sans-serif;
-        color: $h2clr3;
-        font-weight: 500;
-        font-size: 2em;
-        padding-top: 0.5em;
-    }
-}
-
-@mixin stylemenu4 {
-    background: $bgclr4;
-    color: $txtclr4;
-    h1 {
-        font-family: 'Kaushan Script', cursive;
-        font-weight: 700;
-        background-image: linear-gradient(135deg, $goutgradientstartclr, $goutgradientendclr);
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-    }
-    h2 {
-        font-family: 'Segoe print', cursive, sans-serif;
-        color: $h2clr4;
-        font-weight: 500;
-        font-size: 2em;
-        padding-top: 0.5em;
-    }
-}
