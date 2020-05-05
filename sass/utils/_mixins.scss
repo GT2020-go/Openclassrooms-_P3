@@ -3,9 +3,28 @@
         opacity: 60%;
     }
     
+    @mixin underline {
+        &::after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 2em;
+            content: "";
+            display: inline-block;
+            height: 2px;
+            left: 0%;
+            position: absolute;
+            background: $txtcolor1;
+            transition: width 0.3s ease 0s;
+            width: 0;
+        }
+        &:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    }
+    
     @mixin stylemenu1 {
-        background: $bgclr1;
-        color: $txtclr1;
+        background: $bgcolor1;
+        color: $txtcolor1;
         h1 {
             font-family: 'Devonshire', cursive;
             font-weight: 500;
@@ -22,23 +41,8 @@
             padding-top: 2em;
             display: block;
             position: relative;
-            //
-            &::after {
-                background: none repeat scroll 0 0 transparent;
-                bottom: 2em;
-                content: "";
-                display: inline-block;
-                height: 3px;
-                left: 0%;
-                position: absolute;
-                background: $txtclr1;
-                transition: width 0.3s ease 0s;
-                width: 0;
-            }
-            &:hover::after {
-                width: 100%;
-                left: 0;
-            }
+            // a mettre en mixin 
+            @include underline {}
         }
         //
         p {
@@ -49,7 +53,7 @@
             font-family: 'Project2';
             font-weight: 500;
             font-size: 2.8em;
-            background-image: linear-gradient(90deg, $notegradientstartclr, $notegradientendclr);
+            background-image: linear-gradient(90deg, $notegradientstartcolor, $notegradientendcolor);
             background-size: 100%;
             background-clip: text;
             -webkit-background-clip: text;
@@ -66,12 +70,12 @@
     }
     
     @mixin stylemenu2 {
-        background: $bgclr2;
+        background: $bgcolor2;
         h1 {
             font-family: 'Croissant One', cursive;
             font-weight: 500;
             font-size: 1em;
-            background-image: linear-gradient(135deg, $chicgradientstartclr, $chicgradientendclr);
+            background-image: linear-gradient(135deg, $chicgradientstartcolor, $chicgradientendcolor);
             background-size: 100%;
             background-clip: text;
             -webkit-background-clip: text;
@@ -81,18 +85,18 @@
         }
         h2 {
             font-family: 'PT Serif Caption', serif;
-            color: $h2clr2;
+            color: $h2color2;
             font-size: 2em;
             padding-top: 0.5em;
         }
     }
     
     @mixin stylemenu3 {
-        background: $bgclr3;
-        color: $txtclr3;
+        background: $bgcolor3;
+        color: $txtcolor3;
         h1 {
             font-family: 'Dancing Script', cursive;
-            background-image: linear-gradient(90deg, $delicegradientstartclr, $delicegradientendclr);
+            background-image: linear-gradient(90deg, $delicegradientstartcolor, $delicegradientendcolor);
             background-size: 100%;
             background-clip: text;
             -webkit-background-clip: text;
@@ -102,7 +106,7 @@
         }
         h2 {
             font-family: 'Segoe print', cursive, sans-serif;
-            color: $h2clr3;
+            color: $h2color3;
             font-weight: 500;
             font-size: 2em;
             padding-top: 0.5em;
@@ -110,12 +114,12 @@
     }
     
     @mixin stylemenu4 {
-        background: $bgclr4;
-        color: $txtclr4;
+        background: $bgcolor4;
+        color: $txtcolor4;
         h1 {
             font-family: 'Kaushan Script', cursive;
             font-weight: 700;
-            background-image: linear-gradient(135deg, $goutgradientstartclr, $goutgradientendclr);
+            background-image: linear-gradient(135deg, $goutgradientstartcolor, $goutgradientendcolor);
             background-size: 100%;
             background-clip: text;
             -webkit-background-clip: text;
@@ -125,7 +129,7 @@
         }
         h2 {
             font-family: 'Segoe print', cursive, sans-serif;
-            color: $h2clr4;
+            color: $h2color4;
             font-weight: 500;
             font-size: 2em;
             padding-top: 0.5em;

@@ -199,7 +199,6 @@ section {
 .menus {
   flex: 1 1 auto;
   position: relative;
-  overflow-y: auto;
   background: #fff;
   display: flex;
   flex-flow: wrap;

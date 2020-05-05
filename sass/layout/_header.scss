@@ -3,7 +3,7 @@ header {
     height: 10vh;
     padding-top: .2em;
     flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-    background: $bgclr;
+    background: $bgcolor;
     border-bottom: 2px #a1c181;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@ header {
         vertical-align: middle;
         letter-spacing: -0.1rem;
         font-weight: 700;
-        color: $txtclr;
+        color: $txtcolor;
         text-align: center;
         font-size: 5vh;
         padding-bottom: 0.2em;

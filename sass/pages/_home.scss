@@ -1,7 +1,6 @@
 .menus {
     flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
     position: relative;
-    overflow-y: auto;
     background: #fff;
     //for the content:
     display: flex;
@@ -49,8 +48,8 @@
     height: 2em;
     flex: 0 0 auto;
     font-size: 2.7vh;
-    background: $bgclr;
-    color: $txtclr;
+    background: $bgcolor;
+    color: $txtcolor;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     display: flex;
