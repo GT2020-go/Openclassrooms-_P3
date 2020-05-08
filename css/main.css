@@ -121,6 +121,85 @@ footer .btns a {
   }
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 80%;
+  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span,
+h1,
+h2 {
+  text-align: center;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 327.25px;
+  height: 463.1px;
+  padding: 1em;
+  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.starters,
+.maincourses,
+.desserts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.starters__title,
+.maincourses__title,
+.desserts__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 -2.2em 0;
+}
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dish__name {
+  justify-self: flex-start;
+  margin-right: 0.5em;
+  padding-left: 2em;
+}
+
+.dish__price {
+  justify-self: flex-end;
+  margin-left: 0.5em;
+  padding-right: 2em;
+}
+
 .menus {
   flex: 1 1 auto;
   position: relative;
@@ -173,8 +252,8 @@ footer .btns a {
 
 .menus__zoom--menu1 h3 {
   font-family: 'Segoe print', cursive, sans-serif;
-  font-size: 1em;
-  padding-top: 2em;
+  font-size: 0.9em;
+  padding-top: 2.2em;
   display: block;
   position: relative;
 }
@@ -199,12 +278,13 @@ footer .btns a {
 
 .menus__zoom--menu1 p {
   font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .75em;
+  font-size: .65em;
+  padding: 0.5em 0 0.2em 0;
 }
 
 .menus__zoom--menu1 .icon-noteblk:before {
   font-family: 'Project2';
-  font-weight: 500;
+  font-weight: 550;
   font-size: 2.8em;
   background-image: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
@@ -447,6 +527,7 @@ p span:nth-child(3) {
 .details--menu1 {
   background: #fcdfdb;
   color: #3d1319;
+  padding: 2em 3em 2em 3em;
 }
 
 .details--menu1 h1 {
@@ -462,8 +543,8 @@ p span:nth-child(3) {
 
 .details--menu1 h3 {
   font-family: 'Segoe print', cursive, sans-serif;
-  font-size: 1em;
-  padding-top: 2em;
+  font-size: 0.9em;
+  padding-top: 2.2em;
   display: block;
   position: relative;
 }
@@ -488,12 +569,13 @@ p span:nth-child(3) {
 
 .details--menu1 p {
   font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .75em;
+  font-size: .65em;
+  padding: 0.5em 0 0.2em 0;
 }
 
 .details--menu1 .icon-noteblk:before {
   font-family: 'Project2';
-  font-weight: 500;
+  font-weight: 550;
   font-size: 2.8em;
   background-image: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
@@ -513,6 +595,7 @@ p span:nth-child(3) {
 
 .details--menu1 .title--top {
   width: 100%;
+  font-size: 1.4em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -527,6 +610,24 @@ p span:nth-child(3) {
 
 .details--menu1 .title--bottom .icon-noteblk:before {
   font-size: 2em;
+}
+
+.details--menu1 .starters__title,
+.details--menu1 .maincourses__title,
+.details--menu1 .desserts__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: -1em 0 -1.5em 0;
+}
+
+.details--menu1 .dish__name {
+  padding-left: 0em;
+}
+
+.details--menu1 .dish__price {
+  font-weight: 700;
+  padding-right: 0em;
 }
 
 .details--menu2 {
@@ -580,7 +681,6 @@ p span:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 2em;
 }
 
 .details--menu2 .title--bottom {
@@ -708,7 +808,6 @@ p span:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 2em;
 }
 
 .details--menu3 .title--bottom {
@@ -907,82 +1006,5 @@ p span:nth-child(3) {
 
 .mentionslegales {
   margin: 1em;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 80%;
-  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-span,
-h1,
-h2 {
-  text-align: center;
-}
-
-main {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  flex: 1 1 auto;
-  position: relative;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.details {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 327.25px;
-  height: 463.1px;
-  padding: 1em;
-  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-
-.starters,
-.maincourses,
-.desserts {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.starters__title,
-.maincourses__title,
-.desserts__title {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.dish {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dish__name {
-  justify-self: flex-start;
-  margin-right: 1em;
-}
-
-.dish__price {
-  justify-self: flex-end;
-  margin-left: 1em;
 }
 /*# sourceMappingURL=main.css.map */

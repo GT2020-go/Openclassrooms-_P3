@@ -4,14 +4,6 @@
 @import './layout/header';
 @import './layout/footer';
 //
-@import './pages/home';
-@import './pages/menu1';
-@import './pages/menu2';
-@import './pages/menu3';
-@import './pages/menu4';
-@import './pages/mentions';
-//
-//
 html,
 body {
     height: 100%;
@@ -49,7 +41,7 @@ section {
     //for the content:
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //justify-content: center;
     align-content: center;
     align-items: center;
     width: 2.75*119px;
@@ -74,6 +66,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 0 0 -2.2em 0;
 }
 
 .dish {
@@ -81,10 +74,21 @@ section {
     justify-content: space-between;
     &__name {
         justify-self: flex-start;
-        margin-right: 1em;
+        margin-right: 0.5em;
+        padding-left: 2em;
     }
     &__price {
         justify-self: flex-end;
-        margin-left: 1em;
+        margin-left: 0.5em;
+        padding-right: 2em;
     }
 }
+
+//
+@import './pages/home';
+@import './pages/menu1';
+@import './pages/menu2';
+@import './pages/menu3';
+@import './pages/menu4';
+@import './pages/mentions';
+//
