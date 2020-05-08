@@ -4,6 +4,10 @@
 @import './layout/header';
 @import './layout/footer';
 //
+@import './pages/home';
+@import './pages/menu1';
+@import './pages/menu2';
+//
 //
 html,
 body {
@@ -81,8 +85,3 @@ section {
         margin-left: 1em;
     }
 }
-
-//
-@import './pages/home';
-@import './pages/menu1';
-@import './pages/menu2';

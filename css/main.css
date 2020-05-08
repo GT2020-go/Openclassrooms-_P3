@@ -121,83 +121,6 @@ footer .btns a {
   }
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-size: 80%;
-  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-span,
-h1,
-h2 {
-  text-align: center;
-}
-
-main {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  flex: 1 1 auto;
-  position: relative;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.details {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 327.25px;
-  height: 463.1px;
-  padding: 1em;
-  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-  margin-top: 1em;
-  margin-bottom: 2em;
-}
-
-.starters,
-.maincourses,
-.desserts {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.starters__title,
-.maincourses__title,
-.desserts__title {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.dish {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dish__name {
-  justify-self: flex-start;
-  margin-right: 1em;
-}
-
-.dish__price {
-  justify-self: flex-end;
-  margin-left: 1em;
-}
-
 .menus {
   flex: 1 1 auto;
   position: relative;
@@ -326,31 +249,13 @@ section {
 .menus__zoom--menu2 h3 {
   font-family: 'ogiremaregular';
   font-size: 1em;
-  padding-top: 3em;
+  padding-top: 3.25em;
   display: block;
   position: relative;
 }
 
-.menus__zoom--menu2 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  position: absolute;
-  background: #3d1319;
-  transition: width 0.3s ease 0s;
-  width: 0;
-}
-
-.menus__zoom--menu2 h3:hover::after {
-  width: 100%;
-  left: 0;
-}
-
 .menus__zoom--menu2 p {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'ogiremaregular';
   font-size: .75em;
 }
 
@@ -358,7 +263,7 @@ section {
 .menus__zoom--menu2 .icon-menu2right:before {
   font-family: 'Project2';
   font-weight: 500;
-  font-size: 7em;
+  font-size: 8em;
 }
 
 .menus__zoom--menu3 {
@@ -572,31 +477,13 @@ p span:nth-child(3) {
 .details--menu2 h3 {
   font-family: 'ogiremaregular';
   font-size: 1em;
-  padding-top: 3em;
+  padding-top: 3.25em;
   display: block;
   position: relative;
 }
 
-.details--menu2 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  position: absolute;
-  background: #3d1319;
-  transition: width 0.3s ease 0s;
-  width: 0;
-}
-
-.details--menu2 h3:hover::after {
-  width: 100%;
-  left: 0;
-}
-
 .details--menu2 p {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'ogiremaregular';
   font-size: .75em;
 }
 
@@ -604,11 +491,12 @@ p span:nth-child(3) {
 .details--menu2 .icon-menu2right:before {
   font-family: 'Project2';
   font-weight: 500;
-  font-size: 7em;
+  font-size: 8em;
 }
 
 .title--top {
   width: 100%;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -620,5 +508,148 @@ p span:nth-child(3) {
   display: flex;
   flex-direction: row;
   margin-top: 0em;
+}
+
+.starters {
+  color: #c67412;
+}
+
+.starters h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #c67412;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.starters h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.maincourses {
+  color: #a56799;
+}
+
+.maincourses h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #a56799;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.maincourses h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.desserts {
+  color: #6e4ccc;
+}
+
+.desserts h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #6e4ccc;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.desserts h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 80%;
+  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span,
+h1,
+h2 {
+  text-align: center;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1 1 auto;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 327.25px;
+  height: 463.1px;
+  padding: 1em;
+  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.starters,
+.maincourses,
+.desserts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.starters__title,
+.maincourses__title,
+.desserts__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dish {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dish__name {
+  justify-self: flex-start;
+  margin-right: 1em;
+}
+
+.dish__price {
+  justify-self: flex-end;
+  margin-left: 1em;
 }
 /*# sourceMappingURL=main.css.map */

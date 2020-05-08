@@ -3,24 +3,6 @@
     opacity: 60%;
 }
 
-// @mixin underline {
-//     &::after {
-//         background: none repeat scroll 0 0 transparent;
-//         bottom: 2em;
-//         content: "";
-//         display: inline-block;
-//         height: 2px;
-//         left: 0%;
-//         position: absolute;
-//         background: $txtcolor1;
-//         transition: width 0.3s ease 0s;
-//         width: 0;
-//     }
-//     &:hover::after {
-//         width: 100%;
-//         left: 0;
-//     }
-// }
 @mixin stylemenu1 {
     background: $bgcolor1;
     color: $txtcolor1;
@@ -106,37 +88,20 @@
     h3 {
         font-family: 'ogiremaregular';
         font-size: 1em;
-        padding-top: 3em;
+        padding-top: 3.25em;
         display: block;
         position: relative;
-        // a mettre en mixin 
-        &::after {
-            background: none repeat scroll 0 0 transparent;
-            bottom: 3em;
-            content: "";
-            display: inline-block;
-            height: 2px;
-            left: 0%;
-            position: absolute;
-            background: $txtcolor1;
-            transition: width 0.3s ease 0s;
-            width: 0;
-        }
-        &:hover::after {
-            width: 100%;
-            left: 0;
-        }
     }
     //
     p {
-        font-family: 'Segoe print', cursive, sans-serif;
+        font-family: 'ogiremaregular';
         font-size: .75em;
     }
     .icon-menu2left:before,
     .icon-menu2right:before {
         font-family: 'Project2';
         font-weight: 500;
-        font-size: 7em;
+        font-size: 8em;
     }
 }
 
