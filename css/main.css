@@ -163,6 +163,8 @@ section {
   height: 463.1px;
   padding: 1em;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 .starters,
@@ -259,7 +261,7 @@ section {
   bottom: 2em;
   content: "";
   display: inline-block;
-  height: 3px;
+  height: 2px;
   left: 0%;
   position: absolute;
   background: #3d1319;
@@ -319,6 +321,44 @@ section {
   color: #c77412;
   font-size: 2em;
   padding-top: 0.5em;
+}
+
+.menus__zoom--menu2 h3 {
+  font-family: 'ogiremaregular';
+  font-size: 1em;
+  padding-top: 3em;
+  display: block;
+  position: relative;
+}
+
+.menus__zoom--menu2 h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #3d1319;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.menus__zoom--menu2 h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.menus__zoom--menu2 p {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: .75em;
+}
+
+.menus__zoom--menu2 .icon-menu2left:before,
+.menus__zoom--menu2 .icon-menu2right:before {
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 7em;
 }
 
 .menus__zoom--menu3 {
@@ -449,7 +489,7 @@ p span:nth-child(3) {
   bottom: 2em;
   content: "";
   display: inline-block;
-  height: 3px;
+  height: 2px;
   left: 0%;
   position: absolute;
   background: #3d1319;
@@ -503,5 +543,82 @@ p span:nth-child(3) {
 
 .title--bottom .icon-noteblk:before {
   font-size: 2em;
+}
+
+.details--menu2 {
+  background: #fff5fe;
+}
+
+.details--menu2 h1 {
+  font-family: 'Croissant One', cursive;
+  font-weight: 500;
+  font-size: 1em;
+  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.details--menu2 h2 {
+  font-family: 'PT Serif Caption', serif;
+  color: #c77412;
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+.details--menu2 h3 {
+  font-family: 'ogiremaregular';
+  font-size: 1em;
+  padding-top: 3em;
+  display: block;
+  position: relative;
+}
+
+.details--menu2 h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: #3d1319;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.details--menu2 h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.details--menu2 p {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: .75em;
+}
+
+.details--menu2 .icon-menu2left:before,
+.details--menu2 .icon-menu2right:before {
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 7em;
+}
+
+.title--top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2em;
+}
+
+.title--bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0em;
 }
 /*# sourceMappingURL=main.css.map */
