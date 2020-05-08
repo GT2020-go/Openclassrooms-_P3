@@ -17,8 +17,12 @@
         }
     }
     .starters {
+        color: $barcolor31;
+        p {
+            color: $txtcolor3;
+        }
         h3 {
-            // a mettre en mixin 
+            color: $txtcolor3;
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 3.3em;
@@ -38,8 +42,12 @@
         }
     }
     .maincourses {
+        color: $barcolor32;
+        p {
+            color: $txtcolor3;
+        }
         h3 {
-            // a mettre en mixin 
+            color: $txtcolor3;
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 3.3em;
@@ -59,8 +67,12 @@
         }
     }
     .desserts {
+        color: $barcolor33;
+        p {
+            color: $txtcolor3;
+        }
         h3 {
-            // a mettre en mixin 
+            color: $txtcolor3;
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 3.3em;
