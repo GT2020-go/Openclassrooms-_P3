@@ -110,6 +110,8 @@
     color: $txtcolor3;
     h1 {
         font-family: 'Dancing Script', cursive;
+        font-weight: 500;
+        font-size: 1.6em;
         background-image: linear-gradient(90deg, $delicegradientstartcolor, $delicegradientendcolor);
         background-size: 100%;
         background-clip: text;
@@ -124,6 +126,24 @@
         font-weight: 500;
         font-size: 2em;
         padding-top: 0.5em;
+    }
+    h3 {
+        font-family: 'Segoe print', cursive, sans-serif;
+        font-size: 1em;
+        padding-top: 3.25em;
+        display: block;
+        position: relative;
+    }
+    //
+    p {
+        font-family: 'Segoe print', cursive, sans-serif;
+        font-size: .75em;
+    }
+    .icon-menu3left:before,
+    .icon-menu3right:before {
+        font-family: 'Project2';
+        font-weight: 500;
+        font-size: 8.5em;
     }
 }
 

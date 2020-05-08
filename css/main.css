@@ -273,6 +273,8 @@ footer .btns a {
 
 .menus__zoom--menu3 h1 {
   font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  font-size: 1.6em;
   background-image: linear-gradient(90deg, #001ed9, #0889fb);
   background-size: 100%;
   background-clip: text;
@@ -288,6 +290,26 @@ footer .btns a {
   font-weight: 500;
   font-size: 2em;
   padding-top: 0.5em;
+}
+
+.menus__zoom--menu3 h3 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: 1em;
+  padding-top: 3.25em;
+  display: block;
+  position: relative;
+}
+
+.menus__zoom--menu3 p {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: .75em;
+}
+
+.menus__zoom--menu3 .icon-menu3left:before,
+.menus__zoom--menu3 .icon-menu3right:before {
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 8.5em;
 }
 
 .menus__zoom--menu4 {
@@ -432,7 +454,7 @@ p span:nth-child(3) {
   font-size: 6em;
 }
 
-.title--top {
+.details--menu1 .title--top {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -440,13 +462,13 @@ p span:nth-child(3) {
   align-content: center;
 }
 
-.title--bottom {
+.details--menu1 .title--bottom {
   display: flex;
   flex-direction: row;
   margin-top: 2em;
 }
 
-.title--bottom .icon-noteblk:before {
+.details--menu1 .title--bottom .icon-noteblk:before {
   font-size: 2em;
 }
 
@@ -494,7 +516,7 @@ p span:nth-child(3) {
   font-size: 8em;
 }
 
-.title--top {
+.details--menu2 .title--top {
   width: 100%;
   font-size: 1.5em;
   display: flex;
@@ -504,17 +526,17 @@ p span:nth-child(3) {
   margin-top: 2em;
 }
 
-.title--bottom {
+.details--menu2 .title--bottom {
   display: flex;
   flex-direction: row;
   margin-top: 0em;
 }
 
-.starters {
+.details--menu2 .starters {
   color: #c67412;
 }
 
-.starters h3::after {
+.details--menu2 .starters h3::after {
   background: none repeat scroll 0 0 transparent;
   bottom: 3.3em;
   content: "";
@@ -527,16 +549,16 @@ p span:nth-child(3) {
   width: 0;
 }
 
-.starters h3:hover::after {
+.details--menu2 .starters h3:hover::after {
   width: 100%;
   left: 0;
 }
 
-.maincourses {
+.details--menu2 .maincourses {
   color: #a56799;
 }
 
-.maincourses h3::after {
+.details--menu2 .maincourses h3::after {
   background: none repeat scroll 0 0 transparent;
   bottom: 3.3em;
   content: "";
@@ -549,16 +571,16 @@ p span:nth-child(3) {
   width: 0;
 }
 
-.maincourses h3:hover::after {
+.details--menu2 .maincourses h3:hover::after {
   width: 100%;
   left: 0;
 }
 
-.desserts {
+.details--menu2 .desserts {
   color: #6e4ccc;
 }
 
-.desserts h3::after {
+.details--menu2 .desserts h3::after {
   background: none repeat scroll 0 0 transparent;
   bottom: 3.3em;
   content: "";
@@ -571,7 +593,266 @@ p span:nth-child(3) {
   width: 0;
 }
 
-.desserts h3:hover::after {
+.details--menu2 .desserts h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.details--menu3 {
+  background: #edefef;
+  color: #000;
+}
+
+.details--menu3 h1 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  font-size: 1.6em;
+  background-image: linear-gradient(90deg, #001ed9, #0889fb);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.details--menu3 h2 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  color: #0887fb;
+  font-weight: 500;
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+.details--menu3 h3 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: 1em;
+  padding-top: 3.25em;
+  display: block;
+  position: relative;
+}
+
+.details--menu3 p {
+  font-family: 'Segoe print', cursive, sans-serif;
+  font-size: .75em;
+}
+
+.details--menu3 .icon-menu3left:before,
+.details--menu3 .icon-menu3right:before {
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 8.5em;
+}
+
+.details--menu3 .title--top {
+  width: 100%;
+  font-size: 2.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2em;
+}
+
+.details--menu3 .title--bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0em;
+}
+
+.details--menu3 .starters {
+  color: #0228dd;
+}
+
+.details--menu3 .starters p {
+  color: #000;
+}
+
+.details--menu3 .starters h3 {
+  color: #000;
+}
+
+.details--menu3 .starters h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #0228dd;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.details--menu3 .starters h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.details--menu3 .maincourses {
+  color: #0670f3;
+}
+
+.details--menu3 .maincourses p {
+  color: #000;
+}
+
+.details--menu3 .maincourses h3 {
+  color: #000;
+}
+
+.details--menu3 .maincourses h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #0670f3;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.details--menu3 .maincourses h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.details--menu3 .desserts {
+  color: #229df9;
+}
+
+.details--menu3 .desserts p {
+  color: #000;
+}
+
+.details--menu3 .desserts h3 {
+  color: #000;
+}
+
+.details--menu3 .desserts h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #229df9;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.details--menu3 .desserts h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.details--menu4 {
+  background: #fdfffd;
+  color: #000;
+}
+
+.details--menu4 h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 700;
+  background-image: linear-gradient(135deg, #3d923a, #beff7f);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.details--menu4 h2 {
+  font-family: 'Segoe print', cursive, sans-serif;
+  color: #72bf56;
+  font-weight: 500;
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+.details--menu4 .title--top {
+  width: 100%;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2em;
+}
+
+.details--menu4 .title--bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0em;
+}
+
+.details--menu4 .starters {
+  color: #c67412;
+}
+
+.details--menu4 .starters h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #c67412;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.details--menu4 .starters h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.details--menu4 .maincourses {
+  color: #a56799;
+}
+
+.details--menu4 .maincourses h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #a56799;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.details--menu4 .maincourses h3:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.details--menu4 .desserts {
+  color: #6e4ccc;
+}
+
+.details--menu4 .desserts h3::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 3.3em;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  left: 0%;
+  background: #6e4ccc;
+  position: absolute;
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+
+.details--menu4 .desserts h3:hover::after {
   width: 100%;
   left: 0;
 }
