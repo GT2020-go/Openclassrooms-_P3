@@ -420,8 +420,9 @@ section {
 
 .menus__zoom--menu4 h3 {
   font-family: 'Segoe print', cursive, sans-serif;
-  font-size: 1em;
-  padding-top: 3.25em;
+  font-size: .8em;
+  letter-spacing: -0.05em;
+  padding-top: 4.4em;
   display: block;
   position: relative;
 }
@@ -446,13 +447,15 @@ section {
 
 .menus__zoom--menu4 p {
   font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .75em;
+  font-size: .66em;
+  padding: 0.2em 0 0.2em 0;
+  letter-spacing: -0.05em;
 }
 
 .menus__zoom--menu4 .icon-menu4left:before {
   font-family: 'Project2';
   font-weight: 500;
-  font-size: 8.5em;
+  font-size: 9em;
   background-image: linear-gradient(90deg, #3d923a, #beff7f);
   background-size: 100%;
   background-clip: text;
@@ -465,7 +468,7 @@ section {
 .menus__zoom--menu4 .icon-menu4right:before {
   font-family: 'Project2';
   font-weight: 500;
-  font-size: 8.5em;
+  font-size: 9em;
   background-image: linear-gradient(90deg, #beff7f, #3d923a);
   background-size: 100%;
   background-clip: text;
@@ -984,8 +987,9 @@ p span:nth-child(3) {
 
 .details--menu4 h3 {
   font-family: 'Segoe print', cursive, sans-serif;
-  font-size: 1em;
-  padding-top: 3.25em;
+  font-size: .8em;
+  letter-spacing: -0.05em;
+  padding-top: 4.4em;
   display: block;
   position: relative;
 }
@@ -1010,13 +1014,15 @@ p span:nth-child(3) {
 
 .details--menu4 p {
   font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .75em;
+  font-size: .66em;
+  padding: 0.2em 0 0.2em 0;
+  letter-spacing: -0.05em;
 }
 
 .details--menu4 .icon-menu4left:before {
   font-family: 'Project2';
   font-weight: 500;
-  font-size: 8.5em;
+  font-size: 9em;
   background-image: linear-gradient(90deg, #3d923a, #beff7f);
   background-size: 100%;
   background-clip: text;
@@ -1029,7 +1035,7 @@ p span:nth-child(3) {
 .details--menu4 .icon-menu4right:before {
   font-family: 'Project2';
   font-weight: 500;
-  font-size: 8.5em;
+  font-size: 9em;
   background-image: linear-gradient(90deg, #beff7f, #3d923a);
   background-size: 100%;
   background-clip: text;
@@ -1041,18 +1047,37 @@ p span:nth-child(3) {
 
 .details--menu4 .title--top {
   width: 100%;
-  font-size: 1.8em;
+  font-size: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 2em;
+  margin: 1.2em 0 1em 0;
 }
 
-.details--menu4 .title--bottom {
+.details--menu4 .starters,
+.details--menu4 .maincourses {
+  margin: 0 0 0.2em 0;
+}
+
+.details--menu4 .starters__title,
+.details--menu4 .maincourses__title,
+.details--menu4 .desserts__title {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  margin-top: 0em;
+  justify-content: space-between;
+  margin: -2.2em 0 -3em 0;
+}
+
+.details--menu4 .dish__name {
+  padding-left: 4em;
+}
+
+.details--menu4 .dish__price {
+  padding-right: 4em;
+  font-size: .85em;
+  font-weight: 700;
+  vertical-align: bottom;
 }
 
 .mentionslegales {

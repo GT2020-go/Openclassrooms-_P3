@@ -172,8 +172,9 @@
     }
     h3 {
         font-family: 'Segoe print', cursive, sans-serif;
-        font-size: 1em;
-        padding-top: 3.25em;
+        font-size: .8em;
+        letter-spacing: -0.05em;
+        padding-top: 4.4em;
         display: block;
         position: relative;
         &::after {
@@ -196,12 +197,14 @@
     //
     p {
         font-family: 'Segoe print', cursive, sans-serif;
-        font-size: .75em;
+        font-size: .66em;
+        padding: 0.2em 0 0.2em 0;
+        letter-spacing: -0.05em;
     }
     .icon-menu4left:before {
         font-family: 'Project2';
         font-weight: 500;
-        font-size: 8.5em;
+        font-size: 9em;
         background-image: linear-gradient(90deg, $goutgradientstartcolor, $goutgradientendcolor);
         background-size: 100%;
         background-clip: text;
@@ -213,7 +216,7 @@
     .icon-menu4right:before {
         font-family: 'Project2';
         font-weight: 500;
-        font-size: 8.5em;
+        font-size: 9em;
         background-image: linear-gradient(90deg, $goutgradientendcolor, $goutgradientstartcolor);
         background-size: 100%;
         background-clip: text;
