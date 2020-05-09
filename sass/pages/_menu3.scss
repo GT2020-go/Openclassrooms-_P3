@@ -3,17 +3,25 @@
     .title {
         &--top {
             width: 100%;
-            font-size: 2.25em;
+            font-size: 1.8em;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
+            margin: 1.8em 0 1em 0;
         }
-        &--bottom {
-            display: flex;
-            flex-direction: row;
-            margin-top: 0em;
-        }
+    }
+    .starters,
+    .maincourses {
+        margin: 0 0 1.2em 0;
+    }
+    .starters__title,
+    .maincourses__title,
+    .desserts__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: -2em 0 -2.2em 0;
     }
     .starters {
         color: $barcolor31;
@@ -38,6 +46,17 @@
                 width: 100%;
                 left: 0;
             }
+        }
+    }
+    .dish {
+        &__name {
+            padding-left: 4em;
+        }
+        &__price {
+            padding-right: 4em;
+            font-size: .85em;
+            font-weight: 700;
+            vertical-align: bottom;
         }
     }
     .maincourses {
