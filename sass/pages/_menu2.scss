@@ -11,8 +11,20 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            margin: 3em 0 3em 0;
+            margin: 3em 0 2em 0;
         }
+    }
+    .starters,
+    .maincourses {
+        margin: 0 0 1.2em 0;
+    }
+    .starters__title,
+    .maincourses__title,
+    .desserts__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: -2em 0 -2.2em 0;
     }
     .starters {
         color: $txtcolor21;
@@ -34,6 +46,16 @@
                 width: 100%;
                 left: 0;
             }
+        }
+    }
+    .dish {
+        &__name {
+            padding-left: 4em;
+        }
+        &__price {
+            padding-right: 4em;
+            font-size: .85em;
+            vertical-align: bottom;
         }
     }
     .maincourses {
