@@ -1,5 +1,5 @@
-$bgclr: #579c87; //main background color
-$txtclr:#fdcb46; //main text color
+$bgcolor: #579c87; //main background color
+$txtcolor:#fdcb46; //main text color
 //fonts:
 //special:
 @font-face {
@@ -28,36 +28,36 @@ $txtclr:#fdcb46; //main text color
 //fonts menu1:
 //font-family: 'Devonshire',cursive;
 @import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
-$bgclr1:#fcdfdb;
-$txtclr1: #3d1319;
-$notegradientstartclr: #ef4860;
-$notegradientendclr: #f6926b;
+$bgcolor1:#fcdfdb;
+$txtcolor1: #3d1319;
+$notegradientstartcolor: #ef4860;
+$notegradientendcolor: #f6926b;
 //fonts menu2:
 //font-family: 'Croissant One', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-$bgclr2:#fff5fe;
-$h2clr2: #c77412;
-$txtclr21: #c67412;
-$txtclr22: #a56799;
-$txtclr23: #6e4ccc;
-$chicgradientstartclr: #e38913;
-$chicgradientendclr: #8f5bfe;
+$bgcolor2:#fff5fe;
+$h2color2: #c77412;
+$txtcolor21: #c67412;
+$txtcolor22: #a56799;
+$txtcolor23: #6e4ccc;
+$chicgradientstartcolor: #e38913;
+$chicgradientendcolor: #8f5bfe;
 //fonts menu3:
 //font-family: 'Dancing Script', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap');
-$bgclr3:#edefef;
-$txtclr3: #000;
-$h2clr3: #0887fb;
-$barclr31: #0228dd;
-$barclr32: #0670f3;
-$barclr33: #229df9;
-$delicegradientstartclr: #001ed9;
-$delicegradientendclr: #0889fb;
+$bgcolor3:#edefef;
+$txtcolor3: #000;
+$h2color3: #0887fb;
+$barcolor31: #0228dd;
+$barcolor32: #0670f3;
+$barcolor33: #229df9;
+$delicegradientstartcolor: #001ed9;
+$delicegradientendcolor: #0889fb;
 //fonts menu4:
 //font-family: 'Kaushan Script', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-$bgclr4:#fdfffd;
-$txtclr4: #000;
-$h2clr4: #72bf56;
-$goutgradientstartclr: #3d923a;
-$goutgradientendclr: #beff7f;
+$bgcolor4:#fdfffd;
+$txtcolor4: #000;
+$h2color4: #72bf56;
+$goutgradientstartcolor: #3d923a;
+$goutgradientendcolor: #beff7f;

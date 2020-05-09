@@ -1,0 +1,112 @@
+.details--menu3 {
+    @include stylemenu3;
+    .title {
+        &--top {
+            width: 100%;
+            font-size: 1.8em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin: 1.8em 0 1em 0;
+        }
+    }
+    .starters,
+    .maincourses {
+        margin: 0 0 1.2em 0;
+    }
+    .starters__title,
+    .maincourses__title,
+    .desserts__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: -2em 0 -2.2em 0;
+    }
+    .starters {
+        color: $barcolor31;
+        p {
+            color: $txtcolor3;
+        }
+        h3 {
+            color: $txtcolor3;
+            &::after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 3.3em;
+                content: "";
+                display: inline-block;
+                height: 2px;
+                left: 0%;
+                background: $barcolor31;
+                position: absolute;
+                transition: width 0.3s ease 0s;
+                width: 0;
+            }
+            &:hover::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+    .dish {
+        &__name {
+            padding-left: 4em;
+        }
+        &__price {
+            padding-right: 4em;
+            font-size: .85em;
+            font-weight: 700;
+            vertical-align: bottom;
+        }
+    }
+    .maincourses {
+        color: $barcolor32;
+        p {
+            color: $txtcolor3;
+        }
+        h3 {
+            color: $txtcolor3;
+            &::after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 3.3em;
+                content: "";
+                display: inline-block;
+                height: 2px;
+                left: 0%;
+                background: $barcolor32;
+                position: absolute;
+                transition: width 0.3s ease 0s;
+                width: 0;
+            }
+            &:hover::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+    .desserts {
+        color: $barcolor33;
+        p {
+            color: $txtcolor3;
+        }
+        h3 {
+            color: $txtcolor3;
+            &::after {
+                background: none repeat scroll 0 0 transparent;
+                bottom: 3.3em;
+                content: "";
+                display: inline-block;
+                height: 2px;
+                left: 0%;
+                background: $barcolor33;
+                position: absolute;
+                transition: width 0.3s ease 0s;
+                width: 0;
+            }
+            &:hover::after {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}

@@ -4,12 +4,12 @@
 @import './layout/header';
 @import './layout/footer';
 //
-//
 html,
 body {
     height: 100%;
     width: 100%;
     font-size: 80%;
+    font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 span,
@@ -24,64 +24,71 @@ main {
     flex-direction: column;
 }
 
+section {
+    flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    position: relative;
+    overflow-y: auto;
+    //for the content: --
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.details {
+    position: relative;
+    //for the content:
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 2.75*119px;
+    height: 2.75*168.4px;
+    padding: 1em;
+    box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.starters,
+.maincourses,
+.desserts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.starters__title,
+.maincourses__title,
+.desserts__title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 -2.2em 0;
+}
+
+.dish {
+    display: flex;
+    justify-content: space-between;
+    &__name {
+        justify-self: flex-start;
+        margin-right: 0.5em;
+        padding-left: 2em;
+    }
+    &__price {
+        justify-self: flex-end;
+        margin-left: 0.5em;
+        padding-right: 2em;
+    }
+}
+
+//
 @import './pages/home';
-// @import './base/reset';
-// @import './utils/variables';
-// @import './utils/mixins';
-// @import './layout/header';
-// @import './layout/footer';
-// @import './pages/home';
-// html,
-// body {
-//     height: 100%;
-// }
-// .page {
-//     height: 100%;
-//     min-height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     position: absolute;
-// }
-// main {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     flex: 1 0 auto;
-// }
-// .container2 {
-//     display: flex;
-//     justify-content: center;
-//     margin: 1vh 0;
-//     p {
-//         font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-//         font-size: 2.7vh;
-//         background: $bgclr;
-//         color: $txtclr;
-//         border-radius: 5px;
-//         padding: 0.5rem 1rem;
-//         margin: 1rem;
-//     }
-// }
-// @keyframes blink {
-//     0% {
-//         opacity: 0.1;
-//     }
-//     50% {
-//         opacity: 1;
-//     }
-//     100% {
-//         opacity: 0.1;
-//     }
-// }
-// p span {
-//     animation-name: blink;
-//     animation-duration: 2s;
-//     animation-iteration-count: infinite;
-//     animation-fill-mode: both;
-// }
-// p span:nth-child(2) {
-//     animation-delay: .5s;
-// }
-// p span:nth-child(3) {
-//     animation-delay: .9s;
-// }
+@import './pages/menu1';
+@import './pages/menu2';
+@import './pages/menu3';
+@import './pages/menu4';
+@import './pages/mentions';
+//
