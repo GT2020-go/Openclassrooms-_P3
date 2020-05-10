@@ -260,7 +260,7 @@ section {
 
 .menus__zoom--menu1 h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 2em;
+  bottom: 2.8em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -429,7 +429,7 @@ section {
 
 .menus__zoom--menu4 h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 3.2em;
+  bottom: 5em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -555,7 +555,7 @@ p span:nth-child(3) {
 
 .details--menu1 h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 2em;
+  bottom: 2.8em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -859,6 +859,17 @@ p span:nth-child(3) {
   margin: -2em 0 -2.2em 0;
 }
 
+.details--menu3 .dish__name {
+  padding-left: 4em;
+}
+
+.details--menu3 .dish__price {
+  padding-right: 4em;
+  font-size: .85em;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
 .details--menu3 .starters {
   color: #0228dd;
 }
@@ -873,7 +884,7 @@ p span:nth-child(3) {
 
 .details--menu3 .starters h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
+  bottom: 4em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -887,17 +898,6 @@ p span:nth-child(3) {
 .details--menu3 .starters h3:hover::after {
   width: 100%;
   left: 0;
-}
-
-.details--menu3 .dish__name {
-  padding-left: 4em;
-}
-
-.details--menu3 .dish__price {
-  padding-right: 4em;
-  font-size: .85em;
-  font-weight: 700;
-  vertical-align: bottom;
 }
 
 .details--menu3 .maincourses {
@@ -914,7 +914,7 @@ p span:nth-child(3) {
 
 .details--menu3 .maincourses h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
+  bottom: 4em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -944,7 +944,7 @@ p span:nth-child(3) {
 
 .details--menu3 .desserts h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
+  bottom: 4em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -996,7 +996,7 @@ p span:nth-child(3) {
 
 .details--menu4 h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 3.2em;
+  bottom: 5em;
   content: "";
   display: inline-block;
   height: 2px;
