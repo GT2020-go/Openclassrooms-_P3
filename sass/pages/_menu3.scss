@@ -23,6 +23,17 @@
         justify-content: space-between;
         margin: -2em 0 -2.2em 0;
     }
+    .dish {
+        &__name {
+            padding-left: 4em;
+        }
+        &__price {
+            padding-right: 4em;
+            font-size: .85em;
+            font-weight: 700;
+            vertical-align: bottom;
+        }
+    }
     .starters {
         color: $barcolor31;
         p {
@@ -32,7 +43,7 @@
             color: $txtcolor3;
             &::after {
                 background: none repeat scroll 0 0 transparent;
-                bottom: 3.3em;
+                bottom: 4em;
                 content: "";
                 display: inline-block;
                 height: 2px;
@@ -48,17 +59,6 @@
             }
         }
     }
-    .dish {
-        &__name {
-            padding-left: 4em;
-        }
-        &__price {
-            padding-right: 4em;
-            font-size: .85em;
-            font-weight: 700;
-            vertical-align: bottom;
-        }
-    }
     .maincourses {
         color: $barcolor32;
         p {
@@ -68,7 +68,7 @@
             color: $txtcolor3;
             &::after {
                 background: none repeat scroll 0 0 transparent;
-                bottom: 3.3em;
+                bottom: 4em;
                 content: "";
                 display: inline-block;
                 height: 2px;
@@ -93,7 +93,7 @@
             color: $txtcolor3;
             &::after {
                 background: none repeat scroll 0 0 transparent;
-                bottom: 3.3em;
+                bottom: 4em;
                 content: "";
                 display: inline-block;
                 height: 2px;
