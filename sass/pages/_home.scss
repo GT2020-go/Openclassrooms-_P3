@@ -1,174 +1,93 @@
-    section {
-        flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-        position: relative;
-        overflow-y: auto;
-        //for the content:
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        height: 100%;
-        .menus {
-            flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-            position: relative;
-            overflow-y: auto;
-            background: #fff;
-            //for the content:
+.menus {
+    flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    position: relative;
+    background: #fff;
+    //for the content:
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    &__zoom {
+        width: 1.25*119px;
+        height: 1.25*168.4px;
+        margin: 10px;
+        box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+        overflow: hidden;
+        &__menu {
             display: flex;
-            flex-flow: wrap;
+            flex-direction: column;
             justify-content: center;
-            align-content: center;
-            &__zoom {
-                width: 1.25*119px;
-                height: 1.25*168.4px;
-                margin: 10px;
-                box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-                overflow: hidden;
-                &__menu {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    height: 100%;
-                    width: 100%;
-                    transform: scale(1);
-                    opacity: 1;
-                    transition: all 1s;
-                }
-                &:hover {
-                    .menus__zoom__menu {
-                        @include zoom-opacity;
-                    }
-                }
-                &--menu1 {
-                    @include stylemenu1;
-                }
-                &--menu2 {
-                    @include stylemenu2;
-                }
-                &--menu3 {
-                    @include stylemenu3;
-                }
-                &--menu4 {
-                    @include stylemenu4;
-                }
+            height: 100%;
+            width: 100%;
+            transform: scale(1);
+            opacity: 1;
+            transition: all 1s;
+        }
+        &:hover {
+            .menus__zoom__menu {
+                @include zoom-opacity;
             }
         }
-        .upnext {
-            width: 9em;
-            height: 2em;
-            flex: 0 0 auto;
-            font-size: 2.7vh;
-            background: $bgclr;
-            color: $txtclr;
-            border-radius: 5px;
-            padding: 0.5rem 1rem;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            align-self: center;
-            margin: 1em 0 1em 0;
-            display: flex;
-            align-content: center;
-            align-items: center;
-            p {
-                font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            }
+        &--menu1 {
+            @include stylemenu1;
         }
-        @keyframes blink {
-            0% {
-                opacity: 0.1;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0.1;
-            }
+        &--menu2 {
+            @include stylemenu2;
         }
-        p span {
-            animation-name: blink;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            animation-fill-mode: both;
+        &--menu3 {
+            @include stylemenu3;
         }
-        p span:nth-child(2) {
-            animation-delay: .5s;
-        }
-        p span:nth-child(3) {
-            animation-delay: .9s;
+        &--menu4 {
+            @include stylemenu4;
         }
     }
-    
-    // .container {
-    //     width: 95vw;
-    //     justify-content: center;
-    //     align-self: center;
-    // }
-    // .grid-menus {
-    //     display: grid;
-    //     grid-template-columns: repeat(2, 1fr);
-    //     place-items: start;
-    //     grid-gap: 3vh;
-    //     margin: 2vh 5vw 0 5vw;
-    //     &__menu {
-    //         display: flex;
-    //         width: 100%;
-    //         overflow: hidden;
-    //         box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-    //         &--linkmenu1 {
-    //             background: url(/dist/img/menu-1b.png);
-    //             @include linkmenu;
-    //         }
-    //         &:hover {
-    //             .grid-menus__menu--linkmenu1 {
-    //                 @include zoom-opacity;
-    //             }
-    //         }
-    //         //-----------------------------
-    //         &--linkmenu2 {
-    //             background: url(/dist/img/menu-2b.png);
-    //             @include linkmenu;
-    //         }
-    //         &:hover {
-    //             .grid-menus__menu--linkmenu2 {
-    //                 @include zoom-opacity;
-    //             }
-    //         }
-    //         //-----------------------------
-    //         &--linkmenu2 {
-    //             background: url(/dist/img/menu-2b.png);
-    //             @include linkmenu;
-    //         }
-    //         &:hover {
-    //             .grid-menus__menu--linkmenu2 {
-    //                 @include zoom-opacity;
-    //             }
-    //         }
-    //         //-----------------------------
-    //         &--linkmenu3 {
-    //             background: url(/dist/img/menu-3b.png);
-    //             @include linkmenu;
-    //         }
-    //         &:hover {
-    //             .grid-menus__menu--linkmenu3 {
-    //                 @include zoom-opacity;
-    //             }
-    //         }
-    //         //-----------------------------
-    //         &--linkmenu4 {
-    //             background: url(/dist/img/menu-4b.png);
-    //             @include linkmenu;
-    //         }
-    //         &:hover {
-    //             .grid-menus__menu--linkmenu4 {
-    //                 @include zoom-opacity;
-    //             }
-    //         }
-    //     }
-    // }
-    // .grid-menus> ::before {
-    //     content: "";
-    //     display: inline-block;
-    //     width: 0;
-    //     height: 0;
-    //     padding-bottom: calc(100% / (1190/1684));
-    // }
+}
+
+.upnext {
+    width: 9em;
+    height: 2em;
+    flex: 0 0 auto;
+    font-size: 2.7vh;
+    background: $bgcolor;
+    color: $txtcolor;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    margin: 1em 0 1em 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    p {
+        font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
+}
+
+p span {
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+p span:nth-child(2) {
+    animation-delay: .5s;
+}
+
+p span:nth-child(3) {
+    animation-delay: .9s;
+}
