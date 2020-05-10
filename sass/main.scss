@@ -92,3 +92,10 @@ section {
 @import './pages/menu4';
 @import './pages/mentions';
 //
+// keep layout on a 2x2 square for any screen size;
+@media (min-width: 30em) {
+    section {
+        width: 40em;
+        align-self: center;
+    }
+}
