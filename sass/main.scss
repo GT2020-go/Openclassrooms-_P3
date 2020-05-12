@@ -25,12 +25,13 @@ main {
 }
 
 section {
-    flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    flex: 0 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
     position: relative;
     overflow-y: auto;
     //for the content: --
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
     align-items: center;
     height: 100%;

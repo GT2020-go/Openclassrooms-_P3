@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap");
@@ -142,11 +143,12 @@ main {
 }
 
 section {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   position: relative;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
   align-items: center;
   height: 100%;
@@ -248,14 +250,14 @@ section {
 }
 
 .menus__zoom--menu1 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: 2em;
   padding-top: 0.2em;
   font-weight: 700;
 }
 
 .menus__zoom--menu1 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: 0.9em;
   padding-top: 2.2em;
   display: block;
@@ -281,7 +283,7 @@ section {
 }
 
 .menus__zoom--menu1 p {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .65em;
   padding: 0.5em 0 0.2em 0;
 }
@@ -370,7 +372,7 @@ section {
 }
 
 .menus__zoom--menu3 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   color: #0887fb;
   font-weight: 500;
   font-size: 2em;
@@ -378,7 +380,7 @@ section {
 }
 
 .menus__zoom--menu3 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   padding-top: 4.4em;
   display: block;
@@ -386,7 +388,7 @@ section {
 }
 
 .menus__zoom--menu3 p {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .64em;
 }
 
@@ -415,7 +417,7 @@ section {
 }
 
 .menus__zoom--menu4 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   color: #72bf56;
   font-weight: 500;
   font-size: 2em;
@@ -423,7 +425,7 @@ section {
 }
 
 .menus__zoom--menu4 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   letter-spacing: -0.05em;
   padding-top: 4.4em;
@@ -450,7 +452,7 @@ section {
 }
 
 .menus__zoom--menu4 p {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .66em;
   padding: 0.2em 0 0.2em 0;
   letter-spacing: -0.05em;
@@ -547,14 +549,14 @@ p span:nth-child(3) {
 }
 
 .details--menu1 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: 2em;
   padding-top: 0.2em;
   font-weight: 700;
 }
 
 .details--menu1 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: 0.9em;
   padding-top: 2.2em;
   display: block;
@@ -580,7 +582,7 @@ p span:nth-child(3) {
 }
 
 .details--menu1 p {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .65em;
   padding: 0.5em 0 0.2em 0;
 }
@@ -816,7 +818,7 @@ p span:nth-child(3) {
 }
 
 .details--menu3 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   color: #0887fb;
   font-weight: 500;
   font-size: 2em;
@@ -824,7 +826,7 @@ p span:nth-child(3) {
 }
 
 .details--menu3 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   padding-top: 4.4em;
   display: block;
@@ -832,7 +834,7 @@ p span:nth-child(3) {
 }
 
 .details--menu3 p {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .64em;
 }
 
@@ -986,7 +988,7 @@ p span:nth-child(3) {
 }
 
 .details--menu4 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   color: #72bf56;
   font-weight: 500;
   font-size: 2em;
@@ -994,7 +996,7 @@ p span:nth-child(3) {
 }
 
 .details--menu4 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   letter-spacing: -0.05em;
   padding-top: 4.4em;
@@ -1021,7 +1023,7 @@ p span:nth-child(3) {
 }
 
 .details--menu4 p {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .66em;
   padding: 0.2em 0 0.2em 0;
   letter-spacing: -0.05em;
