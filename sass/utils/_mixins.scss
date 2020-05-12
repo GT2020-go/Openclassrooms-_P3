@@ -47,7 +47,7 @@
     //
     p {
         font-family: 'Kalam', cursive, sans-serif;
-        font-size: .65em;
+        font-size: .70em;
         padding: 0.5em 0 0.2em 0;
     }
     .icon-noteblk:before {
@@ -96,11 +96,14 @@
         padding-top: 3.25em;
         display: block;
         position: relative;
+        @media (min-width: 30em) {
+            padding-top: 3em;
+        }
     }
     //
     p {
         font-family: 'ogiremaregular';
-        font-size: .8em;
+        font-size: .76em;
         padding: 0.4em 0 0.4em 0;
     }
     .icon-menu2left:before,
@@ -139,11 +142,14 @@
         padding-top: 4.4em;
         display: block;
         position: relative;
+        @media (min-width: 30em) {
+            padding-top: 4.2em;
+        }
     }
     //
     p {
         font-family: 'Kalam', cursive, sans-serif;
-        font-size: .64em;
+        font-size: .70em;
     }
     .icon-menu3left:before,
     .icon-menu3right:before {
@@ -178,7 +184,10 @@
         font-family: 'Kalam', cursive, sans-serif;
         font-size: .8em;
         letter-spacing: -0.05em;
-        padding-top: 4.4em;
+        padding-top: 4.6em;
+        @media (min-width: 30em) {
+            padding-top: 4.4em;
+        }
         display: block;
         position: relative;
         &::after {
@@ -201,7 +210,7 @@
     //
     p {
         font-family: 'Kalam', cursive, sans-serif;
-        font-size: .66em;
+        font-size: .71em;
         padding: 0.2em 0 0.2em 0;
         letter-spacing: -0.05em;
     }

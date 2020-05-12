@@ -284,7 +284,7 @@ section {
 
 .menus__zoom--menu1 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .65em;
+  font-size: .70em;
   padding: 0.5em 0 0.2em 0;
 }
 
@@ -340,9 +340,15 @@ section {
   position: relative;
 }
 
+@media (min-width: 30em) {
+  .menus__zoom--menu2 h3 {
+    padding-top: 3em;
+  }
+}
+
 .menus__zoom--menu2 p {
   font-family: 'ogiremaregular';
-  font-size: .8em;
+  font-size: .76em;
   padding: 0.4em 0 0.4em 0;
 }
 
@@ -387,9 +393,15 @@ section {
   position: relative;
 }
 
+@media (min-width: 30em) {
+  .menus__zoom--menu3 h3 {
+    padding-top: 4.2em;
+  }
+}
+
 .menus__zoom--menu3 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .64em;
+  font-size: .70em;
 }
 
 .menus__zoom--menu3 .icon-menu3left:before,
@@ -428,9 +440,15 @@ section {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   letter-spacing: -0.05em;
-  padding-top: 4.4em;
+  padding-top: 4.6em;
   display: block;
   position: relative;
+}
+
+@media (min-width: 30em) {
+  .menus__zoom--menu4 h3 {
+    padding-top: 4.4em;
+  }
 }
 
 .menus__zoom--menu4 h3::after {
@@ -453,7 +471,7 @@ section {
 
 .menus__zoom--menu4 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .66em;
+  font-size: .71em;
   padding: 0.2em 0 0.2em 0;
   letter-spacing: -0.05em;
 }
@@ -583,7 +601,7 @@ p span:nth-child(3) {
 
 .details--menu1 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .65em;
+  font-size: .70em;
   padding: 0.5em 0 0.2em 0;
 }
 
@@ -682,9 +700,15 @@ p span:nth-child(3) {
   position: relative;
 }
 
+@media (min-width: 30em) {
+  .details--menu2 h3 {
+    padding-top: 3em;
+  }
+}
+
 .details--menu2 p {
   font-family: 'ogiremaregular';
-  font-size: .8em;
+  font-size: .76em;
   padding: 0.4em 0 0.4em 0;
 }
 
@@ -746,11 +770,11 @@ p span:nth-child(3) {
 }
 
 .details--menu2 .dish__name {
-  padding-left: 4em;
+  padding-left: 3.5em;
 }
 
 .details--menu2 .dish__price {
-  padding-right: 4em;
+  padding-right: 3.5em;
   font-size: .85em;
   vertical-align: bottom;
 }
@@ -833,9 +857,15 @@ p span:nth-child(3) {
   position: relative;
 }
 
+@media (min-width: 30em) {
+  .details--menu3 h3 {
+    padding-top: 4.2em;
+  }
+}
+
 .details--menu3 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .64em;
+  font-size: .70em;
 }
 
 .details--menu3 .icon-menu3left:before,
@@ -870,13 +900,13 @@ p span:nth-child(3) {
 }
 
 .details--menu3 .dish__name {
-  padding-left: 4em;
+  padding-left: 3.25em;
 }
 
 .details--menu3 .dish__price {
-  padding-right: 4em;
+  padding-right: 3.25em;
   font-size: .85em;
-  font-weight: 700;
+  font-weight: 500;
   vertical-align: bottom;
 }
 
@@ -999,9 +1029,15 @@ p span:nth-child(3) {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   letter-spacing: -0.05em;
-  padding-top: 4.4em;
+  padding-top: 4.6em;
   display: block;
   position: relative;
+}
+
+@media (min-width: 30em) {
+  .details--menu4 h3 {
+    padding-top: 4.4em;
+  }
 }
 
 .details--menu4 h3::after {
@@ -1024,7 +1060,7 @@ p span:nth-child(3) {
 
 .details--menu4 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .66em;
+  font-size: .71em;
   padding: 0.2em 0 0.2em 0;
   letter-spacing: -0.05em;
 }
@@ -1080,13 +1116,13 @@ p span:nth-child(3) {
 }
 
 .details--menu4 .dish__name {
-  padding-left: 4em;
+  padding-left: 3.5em;
 }
 
 .details--menu4 .dish__price {
-  padding-right: 4em;
+  padding-right: 3.5em;
   font-size: .85em;
-  font-weight: 700;
+  font-weight: 500;
   vertical-align: bottom;
 }
 
@@ -1102,7 +1138,10 @@ p span:nth-child(3) {
   .details {
     width: 357px;
     height: 505.2px;
-    font-size: 110%;
+    font-size: 118%;
+  }
+  .details span {
+    font-size: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */
