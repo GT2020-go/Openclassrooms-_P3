@@ -32,7 +32,7 @@
 
 header {
   width: 100vw;
-  height: 10vh;
+  height: 7.3em;
   padding-top: .2em;
   flex: 0 0 auto;
   background: #579c87;
@@ -50,13 +50,13 @@ header h1 {
   font-weight: 700;
   color: #fdcb46;
   text-align: center;
-  font-size: 5vh;
+  font-size: 3em;
   padding-bottom: 0.2em;
 }
 
 footer {
   width: 100vw;
-  height: 5vh;
+  height: 4em;
   flex: 0 0 auto;
   background: #579c87;
   border-top: 2px #a1c181;
@@ -75,13 +75,13 @@ footer .btns {
 
 footer .btns a {
   color: #fdcb46;
-  font-size: 2.5vh;
+  font-size: 1.5em;
 }
 
 .btns__btn:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
-  /* When the animation is finished, start again */
+  /* When the animation is finished >> start again */
   animation-iteration-count: infinite;
 }
 
@@ -211,9 +211,9 @@ section {
 }
 
 .menus__zoom {
-  width: 148.75px;
-  height: 210.5px;
-  margin: 10px;
+  width: 163.03px;
+  height: 230.708px;
+  margin: 1.425em;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   overflow: hidden;
 }
@@ -237,16 +237,20 @@ section {
 .menus__zoom--menu1 {
   background: #fcdfdb;
   color: #3d1319;
+  padding-top: 1em;
 }
 
 .menus__zoom--menu1 h1 {
   font-family: 'Devonshire', cursive;
+  font-size: 1.35em;
   font-weight: 500;
+  margin-top: -0.25em;
 }
 
 .menus__zoom--menu1 h2 {
   font-family: 'Segoe print', cursive, sans-serif;
-  padding-top: 0.5em;
+  font-size: 2em;
+  padding-top: 0.2em;
   font-weight: 700;
 }
 
@@ -322,7 +326,7 @@ section {
 .menus__zoom--menu2 h2 {
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
-  font-size: 2em;
+  font-size: 2.1em;
   padding-top: 0.5em;
 }
 
@@ -479,19 +483,19 @@ section {
 }
 
 .upnext {
-  width: 9em;
-  height: 2em;
+  font-size: 1.95em;
+  width: 9.85em;
+  height: 1.8em;
   flex: 0 0 auto;
-  font-size: 2.7vh;
   background: #579c87;
   color: #fdcb46;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
   align-self: center;
-  margin: 1em 0 1em 0;
+  margin: auto 0 1.3em 0;
   display: flex;
   align-content: center;
   align-items: center;
@@ -531,17 +535,21 @@ p span:nth-child(3) {
 .details--menu1 {
   background: #fcdfdb;
   color: #3d1319;
+  padding-top: 1em;
   padding: 2em 3em 2em 3em;
 }
 
 .details--menu1 h1 {
   font-family: 'Devonshire', cursive;
+  font-size: 1.35em;
   font-weight: 500;
+  margin-top: -0.25em;
 }
 
 .details--menu1 h2 {
   font-family: 'Segoe print', cursive, sans-serif;
-  padding-top: 0.5em;
+  font-size: 2em;
+  padding-top: 0.2em;
   font-weight: 700;
 }
 
@@ -660,7 +668,7 @@ p span:nth-child(3) {
 .details--menu2 h2 {
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
-  font-size: 2em;
+  font-size: 2.1em;
   padding-top: 0.5em;
 }
 

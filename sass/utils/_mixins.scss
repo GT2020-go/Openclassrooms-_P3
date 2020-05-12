@@ -6,14 +6,18 @@
 @mixin stylemenu1 {
     background: $bgcolor1;
     color: $txtcolor1;
+    padding-top: 1em;
     h1 {
         font-family: 'Devonshire', cursive;
+        font-size: 1.35em;
         font-weight: 500;
+        margin-top: -0.25em;
     }
     h2 {
         font-family: 'Segoe print', cursive, sans-serif;
+        font-size: 2em;
         //font-family: "Comic Sans MS", cursive, sans-serif;
-        padding-top: 0.5em;
+        padding-top: 0.2em;
         font-weight: 700;
     }
     h3 {
@@ -83,7 +87,7 @@
     h2 {
         font-family: 'PT Serif Caption', serif;
         color: $h2color2;
-        font-size: 2em;
+        font-size: 2.1em;
         padding-top: 0.5em;
     }
     h3 {
