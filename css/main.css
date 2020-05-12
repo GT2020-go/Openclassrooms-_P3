@@ -1099,5 +1099,10 @@ p span:nth-child(3) {
     width: 40em;
     align-self: center;
   }
+  .details {
+    width: 357px;
+    height: 505.2px;
+    font-size: 110%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

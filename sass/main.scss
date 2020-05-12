@@ -99,4 +99,15 @@ section {
         width: 40em;
         align-self: center;
     }
+    .details {
+        width: 3*119px;
+        height: 3*168.4px;
+        font-size: 118%;
+        span {
+            font-size: 100%;
+        }
+    }
+}
+
+
 }
