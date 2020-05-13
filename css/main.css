@@ -281,7 +281,7 @@ section .menus .toptitle {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .menus__zoom--menu1 h3::after {
     bottom: 2.4em;
   }
@@ -350,7 +350,7 @@ section .menus .toptitle {
   position: relative;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .menus__zoom--menu2 h3 {
     padding-top: 3em;
   }
@@ -403,7 +403,7 @@ section .menus .toptitle {
   position: relative;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .menus__zoom--menu3 h3 {
     padding-top: 4.2em;
   }
@@ -455,7 +455,7 @@ section .menus .toptitle {
   position: relative;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .menus__zoom--menu4 h3 {
     padding-top: 4.4em;
   }
@@ -474,7 +474,7 @@ section .menus .toptitle {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .menus__zoom--menu4 h3::after {
     bottom: 4em;
   }
@@ -610,7 +610,7 @@ p span:nth-child(3) {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu1 h3::after {
     bottom: 2.4em;
   }
@@ -726,7 +726,7 @@ p span:nth-child(3) {
   position: relative;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu2 h3 {
     padding-top: 3em;
   }
@@ -790,7 +790,7 @@ p span:nth-child(3) {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu2 .starters h3::after {
     bottom: 2.8em;
   }
@@ -828,7 +828,7 @@ p span:nth-child(3) {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu2 .maincourses h3::after {
     bottom: 2.8em;
   }
@@ -856,7 +856,7 @@ p span:nth-child(3) {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu2 .desserts h3::after {
     bottom: 2.8em;
   }
@@ -901,7 +901,7 @@ p span:nth-child(3) {
   position: relative;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu3 h3 {
     padding-top: 4.2em;
   }
@@ -979,7 +979,7 @@ p span:nth-child(3) {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu3 .starters h3::after {
     bottom: 3.6em;
   }
@@ -1015,7 +1015,7 @@ p span:nth-child(3) {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu3 .maincourses h3::after {
     bottom: 3.6em;
   }
@@ -1051,7 +1051,7 @@ p span:nth-child(3) {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu3 .desserts h3::after {
     bottom: 3.6em;
   }
@@ -1096,7 +1096,7 @@ p span:nth-child(3) {
   position: relative;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu4 h3 {
     padding-top: 4.4em;
   }
@@ -1115,7 +1115,7 @@ p span:nth-child(3) {
   width: 0;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   .details--menu4 h3::after {
     bottom: 4em;
   }
@@ -1198,7 +1198,7 @@ p span:nth-child(3) {
   margin: 1em;
 }
 
-@media (min-width: 30em) {
+@media only screen and (min-width: 30em) {
   section {
     width: 40em;
     align-self: center;
