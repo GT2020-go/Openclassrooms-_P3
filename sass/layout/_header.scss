@@ -1,6 +1,6 @@
 header {
     width: 100vw;
-    height: 10vh;
+    height: 7.3em;
     padding-top: .2em;
     flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
     background: $bgcolor;
@@ -16,7 +16,7 @@ header {
         font-weight: 700;
         color: $txtcolor;
         text-align: center;
-        font-size: 5vh;
+        font-size: 3em;
         padding-bottom: 0.2em;
     }
 }

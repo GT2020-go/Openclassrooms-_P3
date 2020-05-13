@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Devonshire&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap");
@@ -32,7 +33,7 @@
 
 header {
   width: 100vw;
-  height: 10vh;
+  height: 7.3em;
   padding-top: .2em;
   flex: 0 0 auto;
   background: #579c87;
@@ -50,13 +51,13 @@ header h1 {
   font-weight: 700;
   color: #fdcb46;
   text-align: center;
-  font-size: 5vh;
+  font-size: 3em;
   padding-bottom: 0.2em;
 }
 
 footer {
   width: 100vw;
-  height: 5vh;
+  height: 4em;
   flex: 0 0 auto;
   background: #579c87;
   border-top: 2px #a1c181;
@@ -75,13 +76,13 @@ footer .btns {
 
 footer .btns a {
   color: #fdcb46;
-  font-size: 2.5vh;
+  font-size: 1.5em;
 }
 
-.btns__btn:hover {
+.btns__btn {
   /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
-  /* When the animation is finished, start again */
+  animation: shake 1s;
+  /* When the animation is finished >> start again */
   animation-iteration-count: infinite;
 }
 
@@ -117,7 +118,7 @@ footer .btns a {
     transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -1px) rotate(-1deg);
   }
 }
 
@@ -142,14 +143,19 @@ main {
 }
 
 section {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   position: relative;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
   align-items: center;
   height: 100%;
+}
+
+section .menus .toptitle {
+  font-size: 1.8em;
 }
 
 .details {
@@ -211,9 +217,9 @@ section {
 }
 
 .menus__zoom {
-  width: 148.75px;
-  height: 210.5px;
-  margin: 10px;
+  width: 163.03px;
+  height: 230.708px;
+  margin: 1.425em;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   overflow: hidden;
 }
@@ -237,21 +243,25 @@ section {
 .menus__zoom--menu1 {
   background: #fcdfdb;
   color: #3d1319;
+  padding-top: 1em;
 }
 
 .menus__zoom--menu1 h1 {
   font-family: 'Devonshire', cursive;
+  font-size: 1.35em;
   font-weight: 500;
+  margin-top: -0.25em;
 }
 
 .menus__zoom--menu1 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
-  padding-top: 0.5em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: 2em;
+  padding-top: 0.2em;
   font-weight: 700;
 }
 
 .menus__zoom--menu1 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: 0.9em;
   padding-top: 2.2em;
   display: block;
@@ -271,14 +281,20 @@ section {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .menus__zoom--menu1 h3::after {
+    bottom: 2.4em;
+  }
+}
+
 .menus__zoom--menu1 h3:hover::after {
   width: 100%;
   left: 0;
 }
 
 .menus__zoom--menu1 p {
-  font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .65em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .70em;
   padding: 0.5em 0 0.2em 0;
 }
 
@@ -322,7 +338,7 @@ section {
 .menus__zoom--menu2 h2 {
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
-  font-size: 2em;
+  font-size: 2.1em;
   padding-top: 0.5em;
 }
 
@@ -334,9 +350,15 @@ section {
   position: relative;
 }
 
+@media (min-width: 30em) {
+  .menus__zoom--menu2 h3 {
+    padding-top: 3em;
+  }
+}
+
 .menus__zoom--menu2 p {
   font-family: 'ogiremaregular';
-  font-size: .8em;
+  font-size: .76em;
   padding: 0.4em 0 0.4em 0;
 }
 
@@ -366,7 +388,7 @@ section {
 }
 
 .menus__zoom--menu3 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   color: #0887fb;
   font-weight: 500;
   font-size: 2em;
@@ -374,16 +396,22 @@ section {
 }
 
 .menus__zoom--menu3 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   padding-top: 4.4em;
   display: block;
   position: relative;
 }
 
+@media (min-width: 30em) {
+  .menus__zoom--menu3 h3 {
+    padding-top: 4.2em;
+  }
+}
+
 .menus__zoom--menu3 p {
-  font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .64em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .70em;
 }
 
 .menus__zoom--menu3 .icon-menu3left:before,
@@ -411,7 +439,7 @@ section {
 }
 
 .menus__zoom--menu4 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   color: #72bf56;
   font-weight: 500;
   font-size: 2em;
@@ -419,12 +447,18 @@ section {
 }
 
 .menus__zoom--menu4 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   letter-spacing: -0.05em;
-  padding-top: 4.4em;
+  padding-top: 4.6em;
   display: block;
   position: relative;
+}
+
+@media (min-width: 30em) {
+  .menus__zoom--menu4 h3 {
+    padding-top: 4.4em;
+  }
 }
 
 .menus__zoom--menu4 h3::after {
@@ -440,14 +474,20 @@ section {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .menus__zoom--menu4 h3::after {
+    bottom: 4em;
+  }
+}
+
 .menus__zoom--menu4 h3:hover::after {
   width: 100%;
   left: 0;
 }
 
 .menus__zoom--menu4 p {
-  font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .66em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .71em;
   padding: 0.2em 0 0.2em 0;
   letter-spacing: -0.05em;
 }
@@ -479,19 +519,19 @@ section {
 }
 
 .upnext {
-  width: 9em;
-  height: 2em;
+  font-size: 1.95em;
+  width: 9.85em;
+  height: 1.8em;
   flex: 0 0 auto;
-  font-size: 2.7vh;
   background: #579c87;
   color: #fdcb46;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
   align-self: center;
-  margin: 1em 0 1em 0;
+  margin: auto 0 1.3em 0;
   display: flex;
   align-content: center;
   align-items: center;
@@ -531,22 +571,26 @@ p span:nth-child(3) {
 .details--menu1 {
   background: #fcdfdb;
   color: #3d1319;
+  padding-top: 1em;
   padding: 2em 3em 2em 3em;
 }
 
 .details--menu1 h1 {
   font-family: 'Devonshire', cursive;
+  font-size: 1.35em;
   font-weight: 500;
+  margin-top: -0.25em;
 }
 
 .details--menu1 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
-  padding-top: 0.5em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: 2em;
+  padding-top: 0.2em;
   font-weight: 700;
 }
 
 .details--menu1 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: 0.9em;
   padding-top: 2.2em;
   display: block;
@@ -566,14 +610,20 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu1 h3::after {
+    bottom: 2.4em;
+  }
+}
+
 .details--menu1 h3:hover::after {
   width: 100%;
   left: 0;
 }
 
 .details--menu1 p {
-  font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .65em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .70em;
   padding: 0.5em 0 0.2em 0;
 }
 
@@ -615,6 +665,10 @@ p span:nth-child(3) {
 
 .details--menu1 .title--bottom .icon-noteblk:before {
   font-size: 2.1em;
+}
+
+.details--menu1 .title--bottom h1 {
+  margin-top: 0;
 }
 
 .details--menu1 .starters,
@@ -660,7 +714,7 @@ p span:nth-child(3) {
 .details--menu2 h2 {
   font-family: 'PT Serif Caption', serif;
   color: #c77412;
-  font-size: 2em;
+  font-size: 2.1em;
   padding-top: 0.5em;
 }
 
@@ -672,9 +726,15 @@ p span:nth-child(3) {
   position: relative;
 }
 
+@media (min-width: 30em) {
+  .details--menu2 h3 {
+    padding-top: 3em;
+  }
+}
+
 .details--menu2 p {
   font-family: 'ogiremaregular';
-  font-size: .8em;
+  font-size: .76em;
   padding: 0.4em 0 0.4em 0;
 }
 
@@ -730,17 +790,23 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu2 .starters h3::after {
+    bottom: 2.8em;
+  }
+}
+
 .details--menu2 .starters h3:hover::after {
   width: 100%;
   left: 0;
 }
 
 .details--menu2 .dish__name {
-  padding-left: 4em;
+  padding-left: 3.5em;
 }
 
 .details--menu2 .dish__price {
-  padding-right: 4em;
+  padding-right: 3.5em;
   font-size: .85em;
   vertical-align: bottom;
 }
@@ -760,6 +826,12 @@ p span:nth-child(3) {
   position: absolute;
   transition: width 0.3s ease 0s;
   width: 0;
+}
+
+@media (min-width: 30em) {
+  .details--menu2 .maincourses h3::after {
+    bottom: 2.8em;
+  }
 }
 
 .details--menu2 .maincourses h3:hover::after {
@@ -782,6 +854,12 @@ p span:nth-child(3) {
   position: absolute;
   transition: width 0.3s ease 0s;
   width: 0;
+}
+
+@media (min-width: 30em) {
+  .details--menu2 .desserts h3::after {
+    bottom: 2.8em;
+  }
 }
 
 .details--menu2 .desserts h3:hover::after {
@@ -808,7 +886,7 @@ p span:nth-child(3) {
 }
 
 .details--menu3 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   color: #0887fb;
   font-weight: 500;
   font-size: 2em;
@@ -816,16 +894,22 @@ p span:nth-child(3) {
 }
 
 .details--menu3 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   padding-top: 4.4em;
   display: block;
   position: relative;
 }
 
+@media (min-width: 30em) {
+  .details--menu3 h3 {
+    padding-top: 4.2em;
+  }
+}
+
 .details--menu3 p {
-  font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .64em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .70em;
 }
 
 .details--menu3 .icon-menu3left:before,
@@ -860,13 +944,13 @@ p span:nth-child(3) {
 }
 
 .details--menu3 .dish__name {
-  padding-left: 4em;
+  padding-left: 3.25em;
 }
 
 .details--menu3 .dish__price {
-  padding-right: 4em;
+  padding-right: 3.25em;
   font-size: .85em;
-  font-weight: 700;
+  font-weight: 500;
   vertical-align: bottom;
 }
 
@@ -893,6 +977,12 @@ p span:nth-child(3) {
   position: absolute;
   transition: width 0.3s ease 0s;
   width: 0;
+}
+
+@media (min-width: 30em) {
+  .details--menu3 .starters h3::after {
+    bottom: 3.6em;
+  }
 }
 
 .details--menu3 .starters h3:hover::after {
@@ -925,6 +1015,12 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu3 .maincourses h3::after {
+    bottom: 3.6em;
+  }
+}
+
 .details--menu3 .maincourses h3:hover::after {
   width: 100%;
   left: 0;
@@ -955,6 +1051,12 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu3 .desserts h3::after {
+    bottom: 3.6em;
+  }
+}
+
 .details--menu3 .desserts h3:hover::after {
   width: 100%;
   left: 0;
@@ -978,7 +1080,7 @@ p span:nth-child(3) {
 }
 
 .details--menu4 h2 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   color: #72bf56;
   font-weight: 500;
   font-size: 2em;
@@ -986,12 +1088,18 @@ p span:nth-child(3) {
 }
 
 .details--menu4 h3 {
-  font-family: 'Segoe print', cursive, sans-serif;
+  font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   letter-spacing: -0.05em;
-  padding-top: 4.4em;
+  padding-top: 4.6em;
   display: block;
   position: relative;
+}
+
+@media (min-width: 30em) {
+  .details--menu4 h3 {
+    padding-top: 4.4em;
+  }
 }
 
 .details--menu4 h3::after {
@@ -1007,14 +1115,20 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu4 h3::after {
+    bottom: 4em;
+  }
+}
+
 .details--menu4 h3:hover::after {
   width: 100%;
   left: 0;
 }
 
 .details--menu4 p {
-  font-family: 'Segoe print', cursive, sans-serif;
-  font-size: .66em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .71em;
   padding: 0.2em 0 0.2em 0;
   letter-spacing: -0.05em;
 }
@@ -1070,13 +1184,13 @@ p span:nth-child(3) {
 }
 
 .details--menu4 .dish__name {
-  padding-left: 4em;
+  padding-left: 3.5em;
 }
 
 .details--menu4 .dish__price {
-  padding-right: 4em;
+  padding-right: 3.5em;
   font-size: .85em;
-  font-weight: 700;
+  font-weight: 500;
   vertical-align: bottom;
 }
 
@@ -1088,6 +1202,14 @@ p span:nth-child(3) {
   section {
     width: 40em;
     align-self: center;
+  }
+  .details {
+    width: 357px;
+    height: 505.2px;
+    font-size: 118%;
+  }
+  .details span {
+    font-size: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */

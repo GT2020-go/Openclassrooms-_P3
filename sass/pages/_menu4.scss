@@ -1,37 +1,37 @@
-    .details--menu4 {
-        @include stylemenu4;
-        .title {
-            &--top {
-                width: 100%;
-                font-size: 2em;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-content: center;
-                margin: 1.2em 0 1em 0;
-            }
-        }
-        .starters,
-        .maincourses {
-            margin: 0 0 0.2em 0;
-        }
-        .starters__title,
-        .maincourses__title,
-        .desserts__title {
+.details--menu4 {
+    @include stylemenu4;
+    .title {
+        &--top {
             width: 100%;
+            font-size: 2em;
             display: flex;
-            justify-content: space-between;
-            margin: -2.2em 0 -3em 0;
-        }
-        .dish {
-            &__name {
-                padding-left: 4em;
-            }
-            &__price {
-                padding-right: 4em;
-                font-size: .85em;
-                font-weight: 700;
-                vertical-align: bottom;
-            }
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            margin: 1.2em 0 1em 0;
         }
     }
+    .starters,
+    .maincourses {
+        margin: 0 0 0.2em 0;
+    }
+    .starters__title,
+    .maincourses__title,
+    .desserts__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: -2.2em 0 -3em 0;
+    }
+    .dish {
+        &__name {
+            padding-left: 3.5em;
+        }
+        &__price {
+            padding-right: 3.5em;
+            font-size: .85em;
+            font-weight: 500;
+            vertical-align: bottom;
+        }
+    }
+}

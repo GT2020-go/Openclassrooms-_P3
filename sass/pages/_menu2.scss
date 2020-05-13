@@ -29,10 +29,12 @@
     .starters {
         color: $txtcolor21;
         h3 {
-            // a mettre en mixin 
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 3.3em;
+                @media (min-width: 30em) {
+                    bottom: 2.8em;
+                }
                 content: "";
                 display: inline-block;
                 height: 2px;
@@ -50,10 +52,10 @@
     }
     .dish {
         &__name {
-            padding-left: 4em;
+            padding-left: 3.5em;
         }
         &__price {
-            padding-right: 4em;
+            padding-right: 3.5em;
             font-size: .85em;
             vertical-align: bottom;
         }
@@ -61,10 +63,12 @@
     .maincourses {
         color: $txtcolor22;
         h3 {
-            // a mettre en mixin 
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 3.3em;
+                @media (min-width: 30em) {
+                    bottom: 2.8em;
+                }
                 content: "";
                 display: inline-block;
                 height: 2px;
@@ -83,10 +87,12 @@
     .desserts {
         color: $txtcolor23;
         h3 {
-            // a mettre en mixin 
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 3.3em;
+                @media (min-width: 30em) {
+                    bottom: 2.8em;
+                }
                 content: "";
                 display: inline-block;
                 height: 2px;

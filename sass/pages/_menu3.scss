@@ -25,12 +25,12 @@
     }
     .dish {
         &__name {
-            padding-left: 4em;
+            padding-left: 3.25em;
         }
         &__price {
-            padding-right: 4em;
+            padding-right: 3.25em;
             font-size: .85em;
-            font-weight: 700;
+            font-weight: 500;
             vertical-align: bottom;
         }
     }
@@ -44,6 +44,9 @@
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 4em;
+                @media (min-width: 30em) {
+                    bottom: 3.6em;
+                }
                 content: "";
                 display: inline-block;
                 height: 2px;
@@ -69,6 +72,9 @@
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 4em;
+                @media (min-width: 30em) {
+                    bottom: 3.6em;
+                }
                 content: "";
                 display: inline-block;
                 height: 2px;
@@ -94,6 +100,9 @@
             &::after {
                 background: none repeat scroll 0 0 transparent;
                 bottom: 4em;
+                @media (min-width: 30em) {
+                    bottom: 3.6em;
+                }
                 content: "";
                 display: inline-block;
                 height: 2px;
