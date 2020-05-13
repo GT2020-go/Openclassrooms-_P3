@@ -79,9 +79,9 @@ footer .btns a {
   font-size: 1.5em;
 }
 
-.btns__btn:hover {
+.btns__btn {
   /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
+  animation: shake 1s;
   /* When the animation is finished >> start again */
   animation-iteration-count: infinite;
 }
@@ -118,7 +118,7 @@ footer .btns a {
     transform: translate(1px, 2px) rotate(0deg);
   }
   100% {
-    transform: translate(1px, -2px) rotate(-1deg);
+    transform: translate(1px, -1px) rotate(-1deg);
   }
 }
 
@@ -279,6 +279,12 @@ section .menus .toptitle {
   background: #3d1319;
   transition: width 0.3s ease 0s;
   width: 0;
+}
+
+@media (min-width: 30em) {
+  .menus__zoom--menu1 h3::after {
+    bottom: 2.4em;
+  }
 }
 
 .menus__zoom--menu1 h3:hover::after {
@@ -468,6 +474,12 @@ section .menus .toptitle {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .menus__zoom--menu4 h3::after {
+    bottom: 4em;
+  }
+}
+
 .menus__zoom--menu4 h3:hover::after {
   width: 100%;
   left: 0;
@@ -596,6 +608,12 @@ p span:nth-child(3) {
   background: #3d1319;
   transition: width 0.3s ease 0s;
   width: 0;
+}
+
+@media (min-width: 30em) {
+  .details--menu1 h3::after {
+    bottom: 2.4em;
+  }
 }
 
 .details--menu1 h3:hover::after {
@@ -772,6 +790,12 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu2 .starters h3::after {
+    bottom: 2.8em;
+  }
+}
+
 .details--menu2 .starters h3:hover::after {
   width: 100%;
   left: 0;
@@ -804,6 +828,12 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu2 .maincourses h3::after {
+    bottom: 2.8em;
+  }
+}
+
 .details--menu2 .maincourses h3:hover::after {
   width: 100%;
   left: 0;
@@ -824,6 +854,12 @@ p span:nth-child(3) {
   position: absolute;
   transition: width 0.3s ease 0s;
   width: 0;
+}
+
+@media (min-width: 30em) {
+  .details--menu2 .desserts h3::after {
+    bottom: 2.8em;
+  }
 }
 
 .details--menu2 .desserts h3:hover::after {
@@ -943,6 +979,12 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu3 .starters h3::after {
+    bottom: 3.6em;
+  }
+}
+
 .details--menu3 .starters h3:hover::after {
   width: 100%;
   left: 0;
@@ -973,6 +1015,12 @@ p span:nth-child(3) {
   width: 0;
 }
 
+@media (min-width: 30em) {
+  .details--menu3 .maincourses h3::after {
+    bottom: 3.6em;
+  }
+}
+
 .details--menu3 .maincourses h3:hover::after {
   width: 100%;
   left: 0;
@@ -1001,6 +1049,12 @@ p span:nth-child(3) {
   position: absolute;
   transition: width 0.3s ease 0s;
   width: 0;
+}
+
+@media (min-width: 30em) {
+  .details--menu3 .desserts h3::after {
+    bottom: 3.6em;
+  }
 }
 
 .details--menu3 .desserts h3:hover::after {
@@ -1059,6 +1113,12 @@ p span:nth-child(3) {
   background: linear-gradient(135deg, #3d923a, #beff7f);
   transition: width 0.3s ease 0s;
   width: 0;
+}
+
+@media (min-width: 30em) {
+  .details--menu4 h3::after {
+    bottom: 4em;
+  }
 }
 
 .details--menu4 h3:hover::after {
