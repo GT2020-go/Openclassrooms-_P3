@@ -35,6 +35,8 @@ header {
   width: 100vw;
   height: 7.3em;
   padding-top: .2em;
+  position: absolute;
+  z-index: 1;
   flex: 0 0 auto;
   background: #579c87;
   border-bottom: 2px #a1c181;
@@ -143,7 +145,6 @@ main {
 }
 
 section {
-  flex: 0 1 auto;
   position: relative;
   overflow-y: auto;
   display: flex;
@@ -151,7 +152,9 @@ section {
   justify-content: center;
   align-content: center;
   align-items: center;
+  align-self: center;
   height: 100%;
+  padding: 1.42em 0 1.42em 0;
 }
 
 section .menus .toptitle {
@@ -207,21 +210,18 @@ section .menus .toptitle {
 }
 
 .menus {
-  flex: 1 1 auto;
-  position: relative;
   background: #fff;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  align-content: center;
+  margin: 0 0 0 0;
 }
 
 .menus__zoom {
   width: 152.32px;
   height: 215.552px;
-  margin: 1.425em;
+  margin: 0 1.42em 1.42em 1.425em;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-  overflow: hidden;
 }
 
 .menus__zoom__menu {
@@ -531,7 +531,6 @@ section .menus .toptitle {
   justify-content: center;
   align-content: center;
   align-self: center;
-  margin: auto 0 1.3em 0;
   display: flex;
   align-content: center;
   align-items: center;
@@ -1195,6 +1194,7 @@ p span:nth-child(3) {
 }
 
 .mentionslegales {
+  position: relative;
   margin: 1em;
 }
 
@@ -1217,10 +1217,35 @@ p span:nth-child(3) {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 769px) {
   section {
-    width: 100vw;
+    width: 80vw;
     align-self: center;
+  }
+  section .menus {
+    padding-top: 15em;
+  }
+  section .details {
+    width: 714px;
+    height: 1010.4px;
+    font-size: 210%;
+  }
+  section .details span {
+    font-size: 90%;
+  }
+  section .menus__zoom {
+    width: 238px;
+    height: 336.8px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (min-width: 1025px) {
+  section {
+    width: 60vw;
+    align-self: center;
+  }
+  .menus {
+    padding-top: 15em;
   }
   .details {
     width: 714px;
