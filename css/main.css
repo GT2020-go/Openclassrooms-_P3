@@ -4,1204 +4,1207 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  text-decoration-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-decoration-style: none;
 }
 
 @font-face {
-  font-family: 'Project2';
-  src: url("/dist/fonts/fonts/Project2.eot"), url("./dist/fonts/fonts/Project2.svg"), url("/dist/fonts/fonts/Project2.ttf"), url("/dist/fonts/fonts/Project2.woff");
+    font-family: 'Project2';
+    src: url("/dist/fonts/fonts/Project2.eot"), url("./dist/fonts/fonts/Project2.svg"), url("/dist/fonts/fonts/Project2.ttf"), url("/dist/fonts/fonts/Project2.woff");
 }
 
 @font-face {
-  font-family: "uniform-5-regular";
-  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("truetype");
+    font-family: "uniform-5-regular";
+    src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "uniform-3-regular";
-  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
+    font-family: "uniform-3-regular";
+    src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'PT Serif Caption', serif;
-  src: url("https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap");
+    font-family: 'PT Serif Caption', serif;
+    src: url("https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap");
 }
 
 header {
-  width: 100vw;
-  height: 7.3em;
-  padding-top: .2em;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  flex: 0 0 auto;
-  background: #579c87;
-  border-bottom: 2px #a1c181;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+    width: 100vw;
+    height: 7.3em;
+    padding-top: .2em;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    flex: 0 0 auto;
+    background: #579c87;
+    border-bottom: 2px #a1c181;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 header h1 {
-  display: inline-block;
-  vertical-align: middle;
-  letter-spacing: -0.1rem;
-  font-weight: 700;
-  color: #fdcb46;
-  text-align: center;
-  font-size: 3em;
-  padding-bottom: 0.2em;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: -0.1rem;
+    font-weight: 700;
+    color: #fdcb46;
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 0.2em;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
-  height: 4em;
-  flex: 0 0 auto;
-  background: #579c87;
-  border-top: 2px #a1c181;
-  display: flex;
-  align-content: center;
-  align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 4em;
+    flex: 0 0 auto;
+    background: #579c87;
+    border-top: 2px #a1c181;
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 
 footer .btns {
-  width: 100vw;
-  padding: 0 1em 0 1em;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
+    width: 100vw;
+    padding: 0 1em 0 1em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 footer .btns a {
-  color: #fdcb46;
-  font-size: 1.5em;
+    color: #fdcb46;
+    font-size: 1.5em;
 }
 
 .btns__btn {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 1s;
-  /* When the animation is finished >> start again */
-  animation-iteration-count: infinite;
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1s;
+    /* When the animation is finished >> start again */
+    animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -1px) rotate(-1deg);
-  }
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -1px) rotate(-1deg);
+    }
 }
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  width: 100%;
-  font-size: 80%;
-  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-  min-height: 100%;
+    width: 100%;
+    font-size: 80%;
+    font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    min-height: 100%;
 }
 
 span,
 h1,
 h2 {
-  text-align: center;
+    text-align: center;
 }
 
 main {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
-  flex: 1 1 auto;
-  margin: 7.3em 0 4em 0;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  align-self: center;
-  padding: 1.42em 0 1.42em 0;
+    flex: 1 1 auto;
+    margin: 7.3em 0 4em 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 1.42em 0 1.42em 0;
 }
 
 section .menus .toptitle {
-  font-size: 1.8em;
+    font-size: 1.8em;
 }
 
 .details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 327.25px;
-  height: 463.1px;
-  padding: 1em;
-  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-  margin-top: 1em;
-  margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 327.25px;
+    height: 463.1px;
+    padding: 1em;
+    box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .starters,
 .maincourses,
 .desserts {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .starters__title,
 .maincourses__title,
 .desserts__title {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 -2.2em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 -2.2em 0;
 }
 
 .dish {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .dish__name {
-  justify-self: flex-start;
-  margin-right: 0.5em;
-  padding-left: 2em;
+    justify-self: flex-start;
+    margin-right: 0.5em;
+    padding-left: 2em;
 }
 
 .dish__price {
-  justify-self: flex-end;
-  margin-left: 0.5em;
-  padding-right: 2em;
+    justify-self: flex-end;
+    margin-left: 0.5em;
+    padding-right: 2em;
 }
 
 .menus {
-  background: #fff;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
-  margin: 0 0 0 0;
+    background: #fff;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    <<<<<<< HEAD margin: 0 0 0 0;
+    =======>>>>>>>develop
 }
 
 .menus__zoom {
-  width: 152.32px;
-  height: 215.552px;
-  margin: 0 1.42em 1.42em 1.425em;
-  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+    width: 152.32px;
+    height: 215.552px;
+    margin: 0 1.42em 1.42em 1.425em;
+    box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
 }
 
 .menus__zoom__menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  transform: scale(1);
-  opacity: 1;
-  transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 1s;
 }
 
 .menus__zoom:hover .menus__zoom__menu {
-  transform: scale(1.2);
-  opacity: 60%;
+    transform: scale(1.2);
+    opacity: 60%;
 }
 
 .menus__zoom--menu1 {
-  background: #fcdfdb;
-  color: #3d1319;
-  padding-top: 1em;
+    background: #fcdfdb;
+    color: #3d1319;
+    padding-top: 1em;
 }
 
 .menus__zoom--menu1 h1 {
-  font-family: 'Devonshire', cursive;
-  font-size: 1.35em;
-  font-weight: 500;
-  margin-top: -0.25em;
+    font-family: 'Devonshire', cursive;
+    font-size: 1.35em;
+    font-weight: 500;
+    margin-top: -0.25em;
 }
 
 .menus__zoom--menu1 h2 {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: 2em;
-  padding-top: 0.2em;
-  font-weight: 700;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: 2em;
+    padding-top: 0.2em;
+    font-weight: 700;
 }
 
 .menus__zoom--menu1 h3 {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: 0.9em;
-  padding-top: 2.2em;
-  display: block;
-  position: relative;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: 0.9em;
+    padding-top: 2.2em;
+    display: block;
+    position: relative;
 }
 
 .menus__zoom--menu1 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 2.8em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  position: absolute;
-  background: #3d1319;
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 2.8em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: #3d1319;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .menus__zoom--menu1 h3::after {
-    bottom: 2.4em;
-  }
+    .menus__zoom--menu1 h3::after {
+        bottom: 2.4em;
+    }
 }
 
 .menus__zoom--menu1 h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .menus__zoom--menu1 p {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .70em;
-  padding: 0.5em 0 0.2em 0;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .70em;
+    padding: 0.5em 0 0.2em 0;
 }
 
 .menus__zoom--menu1 .icon-noteblk:before {
-  font-family: 'Project2';
-  font-weight: 550;
-  font-size: 2.8em;
-  background-image: linear-gradient(90deg, #ef4860, #f6926b);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Project2';
+    font-weight: 550;
+    font-size: 2.8em;
+    background-image: linear-gradient(90deg, #ef4860, #f6926b);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu1 .icon-menu1left:before,
 .menus__zoom--menu1 .icon-menu1right:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 6em;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 6em;
 }
 
 .menus__zoom--menu2 {
-  background: #fff5fe;
+    background: #fff5fe;
 }
 
 .menus__zoom--menu2 h1 {
-  font-family: 'Croissant One', cursive;
-  font-weight: 500;
-  font-size: 1em;
-  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Croissant One', cursive;
+    font-weight: 500;
+    font-size: 1em;
+    background-image: linear-gradient(135deg, #e38913, #8f5bfe);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu2 h2 {
-  font-family: 'PT Serif Caption', serif;
-  color: #c77412;
-  font-size: 2.1em;
-  padding-top: 0.5em;
+    font-family: 'PT Serif Caption', serif;
+    color: #c77412;
+    font-size: 2.1em;
+    padding-top: 0.5em;
 }
 
 .menus__zoom--menu2 h3 {
-  font-family: 'ogiremaregular';
-  font-size: 1em;
-  padding-top: 3.25em;
-  display: block;
-  position: relative;
+    font-family: 'ogiremaregular';
+    font-size: 1em;
+    padding-top: 3.25em;
+    display: block;
+    position: relative;
 }
 
 @media only screen and (min-width: 30em) {
-  .menus__zoom--menu2 h3 {
-    padding-top: 3em;
-  }
+    .menus__zoom--menu2 h3 {
+        padding-top: 3em;
+    }
 }
 
 .menus__zoom--menu2 p {
-  font-family: 'ogiremaregular';
-  font-size: .76em;
-  padding: 0.4em 0 0.4em 0;
+    font-family: 'ogiremaregular';
+    font-size: .76em;
+    padding: 0.4em 0 0.4em 0;
 }
 
 .menus__zoom--menu2 .icon-menu2left:before,
 .menus__zoom--menu2 .icon-menu2right:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 8em;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 8em;
 }
 
 .menus__zoom--menu3 {
-  background: #edefef;
-  color: #000;
+    background: #edefef;
+    color: #000;
 }
 
 .menus__zoom--menu3 h1 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 500;
-  font-size: 1.6em;
-  background-image: linear-gradient(90deg, #001ed9, #0889fb);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 1.6em;
+    background-image: linear-gradient(90deg, #001ed9, #0889fb);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu3 h2 {
-  font-family: 'Kalam', cursive, sans-serif;
-  color: #0887fb;
-  font-weight: 500;
-  font-size: 2em;
-  padding-top: 0.5em;
+    font-family: 'Kalam', cursive, sans-serif;
+    color: #0887fb;
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 0.5em;
 }
 
 .menus__zoom--menu3 h3 {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .8em;
-  padding-top: 4.4em;
-  display: block;
-  position: relative;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .8em;
+    padding-top: 4.4em;
+    display: block;
+    position: relative;
 }
 
 @media only screen and (min-width: 30em) {
-  .menus__zoom--menu3 h3 {
-    padding-top: 4.2em;
-  }
+    .menus__zoom--menu3 h3 {
+        padding-top: 4.2em;
+    }
 }
 
 .menus__zoom--menu3 p {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .70em;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .70em;
 }
 
 .menus__zoom--menu3 .icon-menu3left:before,
 .menus__zoom--menu3 .icon-menu3right:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 8.5em;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 8.5em;
 }
 
 .menus__zoom--menu4 {
-  background: #fdfffd;
-  color: #000;
+    background: #fdfffd;
+    color: #000;
 }
 
 .menus__zoom--menu4 h1 {
-  font-family: 'Kaushan Script', cursive;
-  font-weight: 500;
-  background-image: linear-gradient(135deg, #3d923a, #beff7f);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    background-image: linear-gradient(135deg, #3d923a, #beff7f);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu4 h2 {
-  font-family: 'Kalam', cursive, sans-serif;
-  color: #72bf56;
-  font-weight: 500;
-  font-size: 2em;
-  padding-top: 0.5em;
+    font-family: 'Kalam', cursive, sans-serif;
+    color: #72bf56;
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 0.5em;
 }
 
 .menus__zoom--menu4 h3 {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .8em;
-  letter-spacing: -0.05em;
-  padding-top: 4.6em;
-  display: block;
-  position: relative;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .8em;
+    letter-spacing: -0.05em;
+    padding-top: 4.6em;
+    display: block;
+    position: relative;
 }
 
 @media only screen and (min-width: 30em) {
-  .menus__zoom--menu4 h3 {
-    padding-top: 4.4em;
-  }
+    .menus__zoom--menu4 h3 {
+        padding-top: 4.4em;
+    }
 }
 
 .menus__zoom--menu4 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 5em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  position: absolute;
-  background: linear-gradient(135deg, #3d923a, #beff7f);
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 5em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: linear-gradient(135deg, #3d923a, #beff7f);
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .menus__zoom--menu4 h3::after {
-    bottom: 4em;
-  }
+    .menus__zoom--menu4 h3::after {
+        bottom: 4em;
+    }
 }
 
 .menus__zoom--menu4 h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .menus__zoom--menu4 p {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .71em;
-  padding: 0.2em 0 0.2em 0;
-  letter-spacing: -0.05em;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .71em;
+    padding: 0.2em 0 0.2em 0;
+    letter-spacing: -0.05em;
 }
 
 .menus__zoom--menu4 .icon-menu4left:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 9em;
-  background-image: linear-gradient(90deg, #3d923a, #beff7f);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 9em;
+    background-image: linear-gradient(90deg, #3d923a, #beff7f);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu4 .icon-menu4right:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 9em;
-  background-image: linear-gradient(90deg, #beff7f, #3d923a);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 9em;
+    background-image: linear-gradient(90deg, #beff7f, #3d923a);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .upnext {
-  font-size: 1.95em;
-  width: 9.85em;
-  height: 1.8em;
-  flex: 0 0 auto;
-  background: #579c87;
-  color: #fdcb46;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  display: flex;
-  align-content: center;
-  align-items: center;
+    font-size: 1.95em;
+    width: 9.85em;
+    height: 1.8em;
+    flex: 0 0 auto;
+    background: #579c87;
+    color: #fdcb46;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
 
 .upnext p {
-  font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes blink {
-  0% {
-    opacity: 0.1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.1;
-  }
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.1;
+    }
 }
 
 p span {
-  animation-name: blink;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
 p span:nth-child(2) {
-  animation-delay: .5s;
+    animation-delay: .5s;
 }
 
 p span:nth-child(3) {
-  animation-delay: .9s;
+    animation-delay: .9s;
 }
 
 .details--menu1 {
-  background: #fcdfdb;
-  color: #3d1319;
-  padding-top: 1em;
-  padding: 2em 3em 2em 3em;
+    background: #fcdfdb;
+    color: #3d1319;
+    padding-top: 1em;
+    padding: 2em 3em 2em 3em;
 }
 
 .details--menu1 h1 {
-  font-family: 'Devonshire', cursive;
-  font-size: 1.35em;
-  font-weight: 500;
-  margin-top: -0.25em;
+    font-family: 'Devonshire', cursive;
+    font-size: 1.35em;
+    font-weight: 500;
+    margin-top: -0.25em;
 }
 
 .details--menu1 h2 {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: 2em;
-  padding-top: 0.2em;
-  font-weight: 700;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: 2em;
+    padding-top: 0.2em;
+    font-weight: 700;
 }
 
 .details--menu1 h3 {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: 0.9em;
-  padding-top: 2.2em;
-  display: block;
-  position: relative;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: 0.9em;
+    padding-top: 2.2em;
+    display: block;
+    position: relative;
 }
 
 .details--menu1 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 2.8em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  position: absolute;
-  background: #3d1319;
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 2.8em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: #3d1319;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu1 h3::after {
-    bottom: 2.4em;
-  }
+    .details--menu1 h3::after {
+        bottom: 2.4em;
+    }
 }
 
 .details--menu1 h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .details--menu1 p {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .70em;
-  padding: 0.5em 0 0.2em 0;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .70em;
+    padding: 0.5em 0 0.2em 0;
 }
 
 .details--menu1 .icon-noteblk:before {
-  font-family: 'Project2';
-  font-weight: 550;
-  font-size: 2.8em;
-  background-image: linear-gradient(90deg, #ef4860, #f6926b);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Project2';
+    font-weight: 550;
+    font-size: 2.8em;
+    background-image: linear-gradient(90deg, #ef4860, #f6926b);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .details--menu1 .icon-menu1left:before,
 .details--menu1 .icon-menu1right:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 6em;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 6em;
 }
 
 .details--menu1 .title--top {
-  width: 100%;
-  font-size: 1.4em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+    width: 100%;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .details--menu1 .title--bottom {
-  font-size: 1.1em;
-  display: flex;
-  flex-direction: row;
-  margin: 2.6em 0 0 0;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: row;
+    margin: 2.6em 0 0 0;
 }
 
 .details--menu1 .title--bottom .icon-noteblk:before {
-  font-size: 2.1em;
+    font-size: 2.1em;
 }
 
 .details--menu1 .title--bottom h1 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .details--menu1 .starters,
 .details--menu1 .maincourses {
-  margin: 0 0 1.2em 0;
+    margin: 0 0 1.2em 0;
 }
 
 .details--menu1 .starters__title,
 .details--menu1 .maincourses__title,
 .details--menu1 .desserts__title {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: -1em 0 -1.5em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: -1em 0 -1.5em 0;
 }
 
 .details--menu1 .dish__name {
-  padding-left: 0em;
+    padding-left: 0em;
 }
 
 .details--menu1 .dish__price {
-  font-weight: 700;
-  padding-right: 0em;
+    font-weight: 700;
+    padding-right: 0em;
 }
 
 .details--menu2 {
-  background: #fff5fe;
+    background: #fff5fe;
 }
 
 .details--menu2 h1 {
-  font-family: 'Croissant One', cursive;
-  font-weight: 500;
-  font-size: 1em;
-  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Croissant One', cursive;
+    font-weight: 500;
+    font-size: 1em;
+    background-image: linear-gradient(135deg, #e38913, #8f5bfe);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .details--menu2 h2 {
-  font-family: 'PT Serif Caption', serif;
-  color: #c77412;
-  font-size: 2.1em;
-  padding-top: 0.5em;
+    font-family: 'PT Serif Caption', serif;
+    color: #c77412;
+    font-size: 2.1em;
+    padding-top: 0.5em;
 }
 
 .details--menu2 h3 {
-  font-family: 'ogiremaregular';
-  font-size: 1em;
-  padding-top: 3.25em;
-  display: block;
-  position: relative;
+    font-family: 'ogiremaregular';
+    font-size: 1em;
+    padding-top: 3.25em;
+    display: block;
+    position: relative;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu2 h3 {
-    padding-top: 3em;
-  }
+    .details--menu2 h3 {
+        padding-top: 3em;
+    }
 }
 
 .details--menu2 p {
-  font-family: 'ogiremaregular';
-  font-size: .76em;
-  padding: 0.4em 0 0.4em 0;
+    font-family: 'ogiremaregular';
+    font-size: .76em;
+    padding: 0.4em 0 0.4em 0;
 }
 
 .details--menu2 .icon-menu2left:before,
 .details--menu2 .icon-menu2right:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 8em;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 8em;
 }
 
 .details--menu2 .details {
-  justify-content: center;
+    justify-content: center;
 }
 
 .details--menu2 .title--top {
-  width: 100%;
-  font-size: 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: 3em 0 2em 0;
+    width: 100%;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 3em 0 2em 0;
 }
 
 .details--menu2 .starters,
 .details--menu2 .maincourses {
-  margin: 0 0 1.2em 0;
+    margin: 0 0 1.2em 0;
 }
 
 .details--menu2 .starters__title,
 .details--menu2 .maincourses__title,
 .details--menu2 .desserts__title {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: -2em 0 -2.2em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: -2em 0 -2.2em 0;
 }
 
 .details--menu2 .starters {
-  color: #c67412;
+    color: #c67412;
 }
 
 .details--menu2 .starters h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #c67412;
-  position: absolute;
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 3.3em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    background: #c67412;
+    position: absolute;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu2 .starters h3::after {
-    bottom: 2.8em;
-  }
+    .details--menu2 .starters h3::after {
+        bottom: 2.8em;
+    }
 }
 
 .details--menu2 .starters h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .details--menu2 .dish__name {
-  padding-left: 3.5em;
+    padding-left: 3.5em;
 }
 
 .details--menu2 .dish__price {
-  padding-right: 3.5em;
-  font-size: .85em;
-  vertical-align: bottom;
+    padding-right: 3.5em;
+    font-size: .85em;
+    vertical-align: bottom;
 }
 
 .details--menu2 .maincourses {
-  color: #a56799;
+    color: #a56799;
 }
 
 .details--menu2 .maincourses h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #a56799;
-  position: absolute;
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 3.3em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    background: #a56799;
+    position: absolute;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu2 .maincourses h3::after {
-    bottom: 2.8em;
-  }
+    .details--menu2 .maincourses h3::after {
+        bottom: 2.8em;
+    }
 }
 
 .details--menu2 .maincourses h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .details--menu2 .desserts {
-  color: #6e4ccc;
+    color: #6e4ccc;
 }
 
 .details--menu2 .desserts h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #6e4ccc;
-  position: absolute;
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 3.3em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    background: #6e4ccc;
+    position: absolute;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu2 .desserts h3::after {
-    bottom: 2.8em;
-  }
+    .details--menu2 .desserts h3::after {
+        bottom: 2.8em;
+    }
 }
 
 .details--menu2 .desserts h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .details--menu3 {
-  background: #edefef;
-  color: #000;
+    background: #edefef;
+    color: #000;
 }
 
 .details--menu3 h1 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 500;
-  font-size: 1.6em;
-  background-image: linear-gradient(90deg, #001ed9, #0889fb);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 1.6em;
+    background-image: linear-gradient(90deg, #001ed9, #0889fb);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .details--menu3 h2 {
-  font-family: 'Kalam', cursive, sans-serif;
-  color: #0887fb;
-  font-weight: 500;
-  font-size: 2em;
-  padding-top: 0.5em;
+    font-family: 'Kalam', cursive, sans-serif;
+    color: #0887fb;
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 0.5em;
 }
 
 .details--menu3 h3 {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .8em;
-  padding-top: 4.4em;
-  display: block;
-  position: relative;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .8em;
+    padding-top: 4.4em;
+    display: block;
+    position: relative;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu3 h3 {
-    padding-top: 4.2em;
-  }
+    .details--menu3 h3 {
+        padding-top: 4.2em;
+    }
 }
 
 .details--menu3 p {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .70em;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .70em;
 }
 
 .details--menu3 .icon-menu3left:before,
 .details--menu3 .icon-menu3right:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 8.5em;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 8.5em;
 }
 
 .details--menu3 .title--top {
-  width: 100%;
-  font-size: 1.8em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: 1.8em 0 1em 0;
+    width: 100%;
+    font-size: 1.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 1.8em 0 1em 0;
 }
 
 .details--menu3 .starters,
 .details--menu3 .maincourses {
-  margin: 0 0 1.2em 0;
+    margin: 0 0 1.2em 0;
 }
 
 .details--menu3 .starters__title,
 .details--menu3 .maincourses__title,
 .details--menu3 .desserts__title {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: -2em 0 -2.2em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: -2em 0 -2.2em 0;
 }
 
 .details--menu3 .dish__name {
-  padding-left: 3.25em;
+    padding-left: 3.25em;
 }
 
 .details--menu3 .dish__price {
-  padding-right: 3.25em;
-  font-size: .85em;
-  font-weight: 500;
-  vertical-align: bottom;
+    padding-right: 3.25em;
+    font-size: .85em;
+    font-weight: 500;
+    vertical-align: bottom;
 }
 
 .details--menu3 .starters {
-  color: #0228dd;
+    color: #0228dd;
 }
 
 .details--menu3 .starters p {
-  color: #000;
+    color: #000;
 }
 
 .details--menu3 .starters h3 {
-  color: #000;
+    color: #000;
 }
 
 .details--menu3 .starters h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 4em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #0228dd;
-  position: absolute;
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 4em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    background: #0228dd;
+    position: absolute;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu3 .starters h3::after {
-    bottom: 3.6em;
-  }
+    .details--menu3 .starters h3::after {
+        bottom: 3.6em;
+    }
 }
 
 .details--menu3 .starters h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .details--menu3 .maincourses {
-  color: #0670f3;
+    color: #0670f3;
 }
 
 .details--menu3 .maincourses p {
-  color: #000;
+    color: #000;
 }
 
 .details--menu3 .maincourses h3 {
-  color: #000;
+    color: #000;
 }
 
 .details--menu3 .maincourses h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 4em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #0670f3;
-  position: absolute;
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 4em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    background: #0670f3;
+    position: absolute;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu3 .maincourses h3::after {
-    bottom: 3.6em;
-  }
+    .details--menu3 .maincourses h3::after {
+        bottom: 3.6em;
+    }
 }
 
 .details--menu3 .maincourses h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .details--menu3 .desserts {
-  color: #229df9;
+    color: #229df9;
 }
 
 .details--menu3 .desserts p {
-  color: #000;
+    color: #000;
 }
 
 .details--menu3 .desserts h3 {
-  color: #000;
+    color: #000;
 }
 
 .details--menu3 .desserts h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 4em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #229df9;
-  position: absolute;
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 4em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    background: #229df9;
+    position: absolute;
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu3 .desserts h3::after {
-    bottom: 3.6em;
-  }
+    .details--menu3 .desserts h3::after {
+        bottom: 3.6em;
+    }
 }
 
 .details--menu3 .desserts h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .details--menu4 {
-  background: #fdfffd;
-  color: #000;
+    background: #fdfffd;
+    color: #000;
 }
 
 .details--menu4 h1 {
-  font-family: 'Kaushan Script', cursive;
-  font-weight: 500;
-  background-image: linear-gradient(135deg, #3d923a, #beff7f);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    background-image: linear-gradient(135deg, #3d923a, #beff7f);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .details--menu4 h2 {
-  font-family: 'Kalam', cursive, sans-serif;
-  color: #72bf56;
-  font-weight: 500;
-  font-size: 2em;
-  padding-top: 0.5em;
+    font-family: 'Kalam', cursive, sans-serif;
+    color: #72bf56;
+    font-weight: 500;
+    font-size: 2em;
+    padding-top: 0.5em;
 }
 
 .details--menu4 h3 {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .8em;
-  letter-spacing: -0.05em;
-  padding-top: 4.6em;
-  display: block;
-  position: relative;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .8em;
+    letter-spacing: -0.05em;
+    padding-top: 4.6em;
+    display: block;
+    position: relative;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu4 h3 {
-    padding-top: 4.4em;
-  }
+    .details--menu4 h3 {
+        padding-top: 4.4em;
+    }
 }
 
 .details--menu4 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 5em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  position: absolute;
-  background: linear-gradient(135deg, #3d923a, #beff7f);
-  transition: width 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 5em;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: linear-gradient(135deg, #3d923a, #beff7f);
+    transition: width 0.3s ease 0s;
+    width: 0;
 }
 
 @media only screen and (min-width: 30em) {
-  .details--menu4 h3::after {
-    bottom: 4em;
-  }
+    .details--menu4 h3::after {
+        bottom: 4em;
+    }
 }
 
 .details--menu4 h3:hover::after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .details--menu4 p {
-  font-family: 'Kalam', cursive, sans-serif;
-  font-size: .71em;
-  padding: 0.2em 0 0.2em 0;
-  letter-spacing: -0.05em;
+    font-family: 'Kalam', cursive, sans-serif;
+    font-size: .71em;
+    padding: 0.2em 0 0.2em 0;
+    letter-spacing: -0.05em;
 }
 
 .details--menu4 .icon-menu4left:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 9em;
-  background-image: linear-gradient(90deg, #3d923a, #beff7f);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 9em;
+    background-image: linear-gradient(90deg, #3d923a, #beff7f);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .details--menu4 .icon-menu4right:before {
-  font-family: 'Project2';
-  font-weight: 500;
-  font-size: 9em;
-  background-image: linear-gradient(90deg, #beff7f, #3d923a);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+    font-family: 'Project2';
+    font-weight: 500;
+    font-size: 9em;
+    background-image: linear-gradient(90deg, #beff7f, #3d923a);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .details--menu4 .title--top {
-  width: 100%;
-  font-size: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  margin: 1.2em 0 1em 0;
+    width: 100%;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 1.2em 0 1em 0;
 }
 
 .details--menu4 .starters,
 .details--menu4 .maincourses {
-  margin: 0 0 0.2em 0;
+    margin: 0 0 0.2em 0;
 }
 
 .details--menu4 .starters__title,
 .details--menu4 .maincourses__title,
 .details--menu4 .desserts__title {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: -2.2em 0 -3em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: -2.2em 0 -3em 0;
 }
 
 .details--menu4 .dish__name {
-  padding-left: 3.5em;
+    padding-left: 3.5em;
 }
 
 .details--menu4 .dish__price {
-  padding-right: 3.5em;
-  font-size: .85em;
-  font-weight: 500;
-  vertical-align: bottom;
+    padding-right: 3.5em;
+    font-size: .85em;
+    font-weight: 500;
+    vertical-align: bottom;
 }
 
 .mentionslegales {
-  position: relative;
-  margin: 1em;
+    position: relative;
+    margin: 1em;
 }
+
+
 /*# sourceMappingURL=main.css.map */

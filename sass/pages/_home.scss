@@ -1,13 +1,20 @@
 .menus {
     //flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+<<<<<<< HEAD
     //position: relative;
+=======
+    // position: relative;
+>>>>>>> develop
     background: #fff;
     //for the content:
     display: flex;
     flex-flow: wrap;
     justify-content: center;
     //align-content: center;
+<<<<<<< HEAD
     margin: 0 0 0 0;
+=======
+>>>>>>> develop
     &__zoom {
         width: 1.28*119px;
         height: 1.28*168.4px;
