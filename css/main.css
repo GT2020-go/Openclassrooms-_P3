@@ -207,13 +207,10 @@ section .menus .toptitle {
 }
 
 .menus {
-  flex: 1 1 auto;
-  position: relative;
   background: #fff;
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  align-content: center;
 }
 
 .menus__zoom {

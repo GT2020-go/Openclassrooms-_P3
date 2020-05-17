@@ -1,12 +1,12 @@
 .menus {
-    flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-    position: relative;
+    //flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    // position: relative;
     background: #fff;
     //for the content:
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    align-content: center;
+    //align-content: center;
     &__zoom {
         width: 1.37*119px;
         height: 1.37*168.4px;
