@@ -1,6 +1,6 @@
 .menus {
     ////flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-    margin-top: 7.3em;
+    //margin-top: 7.3em;
     background: #fff;
     //for the content:
     display: flex;
@@ -8,10 +8,11 @@
     justify-content: center;
     //align-content: center;
     &__zoom {
-        width: 1.28*119px;
-        height: 1.28*168.4px;
+        width: 1.27*119px;
+        height: 1.27*168.4px;
         margin: 0 1.42em 1.42em 1.425em;
         box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+        overflow: hidden;
         &__menu {
             display: flex;
             flex-direction: column;
