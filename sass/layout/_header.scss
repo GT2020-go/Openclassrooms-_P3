@@ -2,10 +2,10 @@ header {
     width: 100vw;
     height: 7.3em;
     padding-top: .2em;
-    position: absolute;
+    margin-bottom: auto;
     top: 0;
     z-index: 1;
-    flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    //flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
     background: $bgcolor;
     border-bottom: 2px #a1c181;
     display: flex;

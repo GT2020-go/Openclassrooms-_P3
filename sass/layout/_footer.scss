@@ -1,9 +1,9 @@
         footer {
-            position: absolute;
+            margin-top: auto;
             bottom: 0;
             width: 100vw;
             height: 4em; //exact height footer
-            flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+            //flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
             background: $bgcolor;
             border-top: 2px #a1c181;
             display: flex;

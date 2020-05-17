@@ -25,7 +25,6 @@
         font-size: 0.9em;
         padding-top: 2.2em;
         display: block;
-        position: relative;
         &::after {
             background: none repeat scroll 0 0 transparent;
             bottom: 2.8em; //trait sous les titres h3
@@ -36,7 +35,7 @@
             display: inline-block;
             height: 2px;
             left: 0%;
-            position: absolute;
+            ;
             background: $txtcolor1;
             transition: width 0.3s ease 0s;
             width: 0;
@@ -97,7 +96,6 @@
         font-size: 1em;
         padding-top: 3.25em;
         display: block;
-        position: relative;
         @media only screen and (min-width: 30em) {
             padding-top: 3em;
         }
@@ -143,7 +141,6 @@
         font-size: .8em;
         padding-top: 4.4em;
         display: block;
-        position: relative;
         @media only screen and (min-width: 30em) {
             padding-top: 4.2em;
         }
@@ -191,7 +188,6 @@
             padding-top: 4.4em;
         }
         display: block;
-        position: relative;
         &::after {
             background: none repeat scroll 0 0 transparent;
             bottom: 5em;
@@ -202,7 +198,6 @@
             display: inline-block;
             height: 2px;
             left: 0%;
-            position: absolute;
             background: linear-gradient(135deg, $goutgradientstartcolor, $goutgradientendcolor);
             transition: width 0.3s ease 0s;
             width: 0;
