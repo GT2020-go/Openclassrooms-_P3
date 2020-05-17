@@ -211,6 +211,7 @@ section .menus .toptitle {
 }
 
 .menus {
+  margin-top: 7.3em;
   background: #fff;
   display: flex;
   flex-flow: wrap;
@@ -218,8 +219,8 @@ section .menus .toptitle {
 }
 
 .menus__zoom {
-  width: 142.8px;
-  height: 202.08px;
+  width: 152.32px;
+  height: 215.552px;
   margin: 0 1.42em 1.42em 1.425em;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
 }
