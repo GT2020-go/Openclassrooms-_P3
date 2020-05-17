@@ -1,4 +1,6 @@
         footer {
+            position: absolute;
+            bottom: 0;
             width: 100vw;
             height: 4em; //exact height footer
             flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]

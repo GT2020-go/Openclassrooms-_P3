@@ -3,6 +3,7 @@ header {
     height: 7.3em;
     padding-top: .2em;
     position: absolute;
+    top: 0;
     z-index: 1;
     flex: 0 0 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
     background: $bgcolor;
