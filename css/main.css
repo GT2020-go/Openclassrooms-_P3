@@ -215,12 +215,11 @@ section .menus .toptitle {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  margin: 0 0 0 0;
 }
 
 .menus__zoom {
-  width: 152.32px;
-  height: 215.552px;
+  width: 142.8px;
+  height: 202.08px;
   margin: 0 1.42em 1.42em 1.425em;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
 }
