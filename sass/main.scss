@@ -41,6 +41,7 @@
         padding: 1.42em 0 1.42em 0;
         .menus .toptitle {
             font-size: 1.8em;
+            width: 100vw;
         }
     }
     
@@ -108,12 +109,12 @@
             align-self: center;
         }
         .details {
-            width: 3.75*119px;
-            height: 3.75*168.4px;
+            width: 4*119px;
+            height: 4*168.4px;
             font-size: 140%;
         }
         .details span {
-            font-size: 90%;
+            font-size: 80%;
         }
         .menus__zoom {
             width: 2*119px;
@@ -123,7 +124,7 @@
     
     @media only screen and (min-width: 769px) {
         section {
-            width: 80vw;
+            width: 56em;
             align-self: center;
             .details {
                 width: 6*119px;
@@ -131,7 +132,7 @@
                 font-size: 210%;
             }
             .details span {
-                font-size: 90%;
+                font-size: 75%;
             }
             .menus__zoom {
                 width: 2*119px;
@@ -140,7 +141,7 @@
         }
         @media only screen and (min-width: 1024px) {
             section {
-                width: 56vw;
+                width: 56em;
                 align-self: center;
             }
             .details {
@@ -149,7 +150,7 @@
                 font-size: 210%;
             }
             .details span {
-                font-size: 90%;
+                font-size: 20%;
             }
             .menus__zoom {
                 width: 2*119px;
