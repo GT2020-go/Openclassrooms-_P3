@@ -172,10 +172,13 @@ section .menus .toptitle {
   align-items: center;
   width: 327.25px;
   height: 463.1px;
-  padding: 1em;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   margin-top: 1em;
   margin-bottom: 2em;
+}
+
+.details span {
+  font-size: .725em;
 }
 
 .starters,
@@ -246,12 +249,12 @@ section .menus .toptitle {
 .menus__zoom--menu1 {
   background: #fcdfdb;
   color: #3d1319;
-  padding-top: 1em;
+  padding-top: 0.8em;
 }
 
 .menus__zoom--menu1 h1 {
   font-family: 'Devonshire', cursive;
-  font-size: 1.35em;
+  font-size: 1.15em;
   font-weight: 500;
   margin-top: -0.25em;
 }
@@ -296,7 +299,7 @@ section .menus .toptitle {
 .menus__zoom--menu1 .icon-noteblk:before {
   font-family: 'Project2';
   font-weight: 550;
-  font-size: 2.8em;
+  font-size: 3em;
   background-image: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
   background-clip: text;
@@ -536,13 +539,13 @@ p span:nth-child(3) {
 .details--menu1 {
   background: #fcdfdb;
   color: #3d1319;
-  padding-top: 1em;
-  padding: 2em 3em 2em 3em;
+  padding-top: 0.8em;
+  padding: 0em 2.25em 0 2.25em;
 }
 
 .details--menu1 h1 {
   font-family: 'Devonshire', cursive;
-  font-size: 1.35em;
+  font-size: 1.15em;
   font-weight: 500;
   margin-top: -0.25em;
 }
@@ -587,7 +590,7 @@ p span:nth-child(3) {
 .details--menu1 .icon-noteblk:before {
   font-family: 'Project2';
   font-weight: 550;
-  font-size: 2.8em;
+  font-size: 3em;
   background-image: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
   background-clip: text;
@@ -617,7 +620,6 @@ p span:nth-child(3) {
   font-size: 1.1em;
   display: flex;
   flex-direction: row;
-  margin: 2.6em 0 0 0;
 }
 
 .details--menu1 .title--bottom .icon-noteblk:before {
@@ -639,7 +641,7 @@ p span:nth-child(3) {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: -1em 0 -1.5em 0;
+  margin: -1.5em 0 -1.5em 0;
 }
 
 .details--menu1 .dish__name {

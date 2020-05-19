@@ -54,10 +54,12 @@
         align-items: center;
         width: 2.75*119px;
         height: 2.75*168.4px;
-        padding: 1em;
         box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
         margin-top: 1em;
         margin-bottom: 2em;
+        span {
+            font-size: .725em;
+        }
     }
     
     .starters,

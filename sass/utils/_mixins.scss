@@ -6,10 +6,10 @@
 @mixin stylemenu1 {
     background: $bgcolor1;
     color: $txtcolor1;
-    padding-top: 1em;
+    padding-top: 0.8em;
     h1 {
         font-family: 'Devonshire', cursive;
-        font-size: 1.35em;
+        font-size: 1.15em;
         font-weight: 500;
         margin-top: -0.25em;
     }
@@ -51,7 +51,7 @@
     .icon-noteblk:before {
         font-family: 'Project2';
         font-weight: 550;
-        font-size: 2.8em;
+        font-size: 3em;
         background-image: linear-gradient(90deg, $notegradientstartcolor, $notegradientendcolor);
         background-size: 100%;
         background-clip: text;
