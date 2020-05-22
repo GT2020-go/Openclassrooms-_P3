@@ -1,19 +1,37 @@
 .details--menu4 {
     @include stylemenu4;
+    justify-content: flex-start;
+    padding: 0em 1.2em 0em 2.2em;
     .title {
         &--top {
             width: 100%;
-            font-size: 2em;
+            font-size: 1.6em;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            margin: 1.2em 0 1em 0;
+            margin: 1.8em 0 1.5em 0;
         }
     }
     .starters,
-    .maincourses {
-        margin: 0 0 0.2em 0;
+    .maincourses,
+    .desserts {
+        .content {
+            margin: 1.2em 0 2em 0;
+            .dish {
+                &__name {
+                    padding-right: 0em;
+                }
+                &__price {
+                    padding-left: 0em;
+                    font-weight: 500;
+                    vertical-align: bottom;
+                }
+            }
+        }
+        p {
+            padding: 0 2em;
+        }
     }
     .starters__title,
     .maincourses__title,
@@ -22,16 +40,5 @@
         display: flex;
         justify-content: space-between;
         margin: -2.2em 0 -3em 0;
-    }
-    .dish {
-        &__name {
-            padding-left: 3.5em;
-        }
-        &__price {
-            padding-right: 3.5em;
-            font-size: .85em;
-            font-weight: 500;
-            vertical-align: bottom;
-        }
     }
 }

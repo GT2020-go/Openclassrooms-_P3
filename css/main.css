@@ -426,9 +426,9 @@ section .menus .toptitle {
 
 .menus__zoom--menu4 h3 {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .8em;
+  font-size: .75em;
   letter-spacing: -0.05em;
-  padding-top: 10%;
+  padding-top: 12%;
   display: block;
 }
 
@@ -451,8 +451,7 @@ section .menus .toptitle {
 
 .menus__zoom--menu4 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .71em;
-  padding: 0.2em 0 0.2em 0;
+  font-size: .6em;
   letter-spacing: -0.05em;
 }
 
@@ -1017,6 +1016,8 @@ p span:nth-child(3) {
 .details--menu4 {
   background: #fdfffd;
   color: #000;
+  justify-content: flex-start;
+  padding: 0em 1.2em 0em 2.2em;
 }
 
 .details--menu4 h1 {
@@ -1040,9 +1041,9 @@ p span:nth-child(3) {
 
 .details--menu4 h3 {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .8em;
+  font-size: .75em;
   letter-spacing: -0.05em;
-  padding-top: 10%;
+  padding-top: 12%;
   display: block;
 }
 
@@ -1065,8 +1066,7 @@ p span:nth-child(3) {
 
 .details--menu4 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .71em;
-  padding: 0.2em 0 0.2em 0;
+  font-size: .6em;
   letter-spacing: -0.05em;
 }
 
@@ -1098,17 +1098,38 @@ p span:nth-child(3) {
 
 .details--menu4 .title--top {
   width: 100%;
-  font-size: 2em;
+  font-size: 1.6em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 1.2em 0 1em 0;
+  margin: 1.8em 0 1.5em 0;
 }
 
-.details--menu4 .starters,
-.details--menu4 .maincourses {
-  margin: 0 0 0.2em 0;
+.details--menu4 .starters .content,
+.details--menu4 .maincourses .content,
+.details--menu4 .desserts .content {
+  margin: 1.2em 0 2em 0;
+}
+
+.details--menu4 .starters .content .dish__name,
+.details--menu4 .maincourses .content .dish__name,
+.details--menu4 .desserts .content .dish__name {
+  padding-right: 0em;
+}
+
+.details--menu4 .starters .content .dish__price,
+.details--menu4 .maincourses .content .dish__price,
+.details--menu4 .desserts .content .dish__price {
+  padding-left: 0em;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+
+.details--menu4 .starters p,
+.details--menu4 .maincourses p,
+.details--menu4 .desserts p {
+  padding: 0 2em;
 }
 
 .details--menu4 .starters__title,
@@ -1118,17 +1139,6 @@ p span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   margin: -2.2em 0 -3em 0;
-}
-
-.details--menu4 .dish__name {
-  padding-left: 3.5em;
-}
-
-.details--menu4 .dish__price {
-  padding-right: 3.5em;
-  font-size: .85em;
-  font-weight: 500;
-  vertical-align: bottom;
 }
 
 .mentionslegales {
