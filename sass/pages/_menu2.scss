@@ -1,22 +1,37 @@
 .details--menu2 {
     @include stylemenu2;
-    .details {
-        justify-content: center;
-    }
+    justify-content: flex-start;
+    padding: 0em 0.2em 0em 0.2em;
     .title {
         &--top {
             width: 100%;
-            font-size: 1.5em;
+            font-size: 1.25em;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
-            margin: 3em 0 2em 0;
+            margin: 3em 0 2.2em 0;
         }
     }
     .starters,
-    .maincourses {
-        margin: 0 0 1.2em 0;
+    .maincourses,
+    .desserts {
+        .content {
+            p {
+                padding: .5em 5em;
+            }
+            margin: 1.2em 0 1.5em 0;
+            .dish {
+                &__name {
+                    padding-right: 0;
+                }
+                &__price {
+                    padding-left: 0;
+                    font-size: .6em;
+                    vertical-align: bottom;
+                }
+            }
+        }
     }
     .starters__title,
     .maincourses__title,
@@ -25,6 +40,16 @@
         display: flex;
         justify-content: space-between;
         margin: -2em 0 -2.2em 0;
+    }
+    .dish {
+        &__name {
+            padding-right: 0;
+        }
+        &__price {
+            padding-left: 0;
+            font-size: .6em;
+            vertical-align: bottom;
+        }
     }
     .starters {
         color: $txtcolor21;
@@ -37,7 +62,6 @@
                 height: 2px;
                 left: 0%;
                 background: $txtcolor21;
-                ;
                 transition: width 0.3s ease 0s;
                 width: 0;
             }
@@ -45,16 +69,6 @@
                 width: 100%;
                 left: 0;
             }
-        }
-    }
-    .dish {
-        &__name {
-            padding-left: 3.5em;
-        }
-        &__price {
-            padding-right: 3.5em;
-            font-size: .85em;
-            vertical-align: bottom;
         }
     }
     .maincourses {
@@ -68,7 +82,6 @@
                 height: 2px;
                 left: 0%;
                 background: $txtcolor22;
-                ;
                 transition: width 0.3s ease 0s;
                 width: 0;
             }
@@ -89,7 +102,6 @@
                 height: 2px;
                 left: 0%;
                 background: $txtcolor23;
-                ;
                 transition: width 0.3s ease 0s;
                 width: 0;
             }
@@ -97,6 +109,16 @@
                 width: 100%;
                 left: 0;
             }
+        }
+    }
+    .dish {
+        &__name {
+            padding-right: 0em;
+        }
+        &__price {
+            padding-left: 0em;
+            font-size: .6em;
+            vertical-align: bottom;
         }
     }
 }

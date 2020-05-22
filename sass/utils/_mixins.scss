@@ -14,7 +14,6 @@
     h2 {
         font-family: 'Kalam', cursive, sans-serif;
         font-size: 2em;
-        //font-family: "Comic Sans MS", cursive, sans-serif;
         font-weight: 700;
     }
     h3 {
@@ -23,12 +22,11 @@
         display: block;
         &::after {
             background: none repeat scroll 0 0 transparent;
-            bottom: 2.8em; //trait sous les titres h3
+            bottom: -2em; //trait sous les titres h3 << pourquoi ca ne fonctionne plus?
             content: "";
             display: inline-block;
             height: 2px;
             left: 0%;
-            ;
             background: $txtcolor1;
             transition: width 0.3s ease 0s;
             width: 0;
@@ -86,15 +84,14 @@
     }
     h3 {
         font-family: 'ogiremaregular';
-        font-size: 1em;
-        padding-top: 3.25em;
+        font-size: .8em;
+        padding-top: 10%;
         display: block;
     }
     //
     p {
         font-family: 'ogiremaregular';
-        font-size: .76em;
-        padding: 0.4em 0 0.4em 0;
+        font-size: .65em;
     }
     .icon-menu2left:before,
     .icon-menu2right:before {

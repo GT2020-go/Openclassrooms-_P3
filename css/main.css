@@ -271,7 +271,7 @@ section .menus .toptitle {
 
 .menus__zoom--menu1 h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 2.8em;
+  bottom: -2em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -338,15 +338,14 @@ section .menus .toptitle {
 
 .menus__zoom--menu2 h3 {
   font-family: 'ogiremaregular';
-  font-size: 1em;
-  padding-top: 3.25em;
+  font-size: .8em;
+  padding-top: 10%;
   display: block;
 }
 
 .menus__zoom--menu2 p {
   font-family: 'ogiremaregular';
-  font-size: .76em;
-  padding: 0.4em 0 0.4em 0;
+  font-size: .65em;
 }
 
 .menus__zoom--menu2 .icon-menu2left:before,
@@ -559,7 +558,7 @@ p span:nth-child(3) {
 
 .details--menu1 h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 2.8em;
+  bottom: -2em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -642,9 +641,9 @@ p span:nth-child(3) {
   margin: -0.5em 0 0 0;
 }
 
-.details--menu1 .starters__title h3,
-.details--menu1 .maincourses__title h3,
-.details--menu1 .desserts__title h3 {
+.details--menu1 .starters__title .underline,
+.details--menu1 .maincourses__title .underline,
+.details--menu1 .desserts__title .underline {
   padding-top: 8%;
 }
 
@@ -659,6 +658,8 @@ p span:nth-child(3) {
 
 .details--menu2 {
   background: #fff5fe;
+  justify-content: flex-start;
+  padding: 0em 0.2em 0em 0.2em;
 }
 
 .details--menu2 h1 {
@@ -683,15 +684,14 @@ p span:nth-child(3) {
 
 .details--menu2 h3 {
   font-family: 'ogiremaregular';
-  font-size: 1em;
-  padding-top: 3.25em;
+  font-size: .8em;
+  padding-top: 10%;
   display: block;
 }
 
 .details--menu2 p {
   font-family: 'ogiremaregular';
-  font-size: .76em;
-  padding: 0.4em 0 0.4em 0;
+  font-size: .65em;
 }
 
 .details--menu2 .icon-menu2left:before,
@@ -701,23 +701,40 @@ p span:nth-child(3) {
   font-size: 8em;
 }
 
-.details--menu2 .details {
-  justify-content: center;
-}
-
 .details--menu2 .title--top {
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.25em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 3em 0 2em 0;
+  margin: 3em 0 2.2em 0;
 }
 
-.details--menu2 .starters,
-.details--menu2 .maincourses {
-  margin: 0 0 1.2em 0;
+.details--menu2 .starters .content,
+.details--menu2 .maincourses .content,
+.details--menu2 .desserts .content {
+  margin: 1.2em 0 1.5em 0;
+}
+
+.details--menu2 .starters .content p,
+.details--menu2 .maincourses .content p,
+.details--menu2 .desserts .content p {
+  padding: .5em 5em;
+}
+
+.details--menu2 .starters .content .dish__name,
+.details--menu2 .maincourses .content .dish__name,
+.details--menu2 .desserts .content .dish__name {
+  padding-right: 0;
+}
+
+.details--menu2 .starters .content .dish__price,
+.details--menu2 .maincourses .content .dish__price,
+.details--menu2 .desserts .content .dish__price {
+  padding-left: 0;
+  font-size: .6em;
+  vertical-align: bottom;
 }
 
 .details--menu2 .starters__title,
@@ -727,6 +744,16 @@ p span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   margin: -2em 0 -2.2em 0;
+}
+
+.details--menu2 .dish__name {
+  padding-right: 0;
+}
+
+.details--menu2 .dish__price {
+  padding-left: 0;
+  font-size: .6em;
+  vertical-align: bottom;
 }
 
 .details--menu2 .starters {
@@ -748,16 +775,6 @@ p span:nth-child(3) {
 .details--menu2 .starters h3:hover::after {
   width: 100%;
   left: 0;
-}
-
-.details--menu2 .dish__name {
-  padding-left: 3.5em;
-}
-
-.details--menu2 .dish__price {
-  padding-right: 3.5em;
-  font-size: .85em;
-  vertical-align: bottom;
 }
 
 .details--menu2 .maincourses {
@@ -800,6 +817,16 @@ p span:nth-child(3) {
 .details--menu2 .desserts h3:hover::after {
   width: 100%;
   left: 0;
+}
+
+.details--menu2 .dish__name {
+  padding-right: 0em;
+}
+
+.details--menu2 .dish__price {
+  padding-left: 0em;
+  font-size: .6em;
+  vertical-align: bottom;
 }
 
 .details--menu3 {
