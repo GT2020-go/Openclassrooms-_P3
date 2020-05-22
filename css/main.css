@@ -363,7 +363,7 @@ section .menus .toptitle {
 .menus__zoom--menu3 h1 {
   font-family: 'Dancing Script', cursive;
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.4em;
   background-image: linear-gradient(90deg, #001ed9, #0889fb);
   background-size: 100%;
   background-clip: text;
@@ -378,19 +378,19 @@ section .menus .toptitle {
   color: #0887fb;
   font-weight: 500;
   font-size: 2em;
-  padding-top: 0.5em;
 }
 
 .menus__zoom--menu3 h3 {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
-  padding-top: 4.4em;
+  padding-top: 10%;
   display: block;
 }
 
 .menus__zoom--menu3 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .70em;
+  font-size: .68em;
+  letter-spacing: -0.05em;
 }
 
 .menus__zoom--menu3 .icon-menu3left:before,
@@ -422,14 +422,13 @@ section .menus .toptitle {
   color: #72bf56;
   font-weight: 500;
   font-size: 2em;
-  padding-top: 0.5em;
 }
 
 .menus__zoom--menu4 h3 {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   letter-spacing: -0.05em;
-  padding-top: 4.6em;
+  padding-top: 10%;
   display: block;
 }
 
@@ -744,6 +743,7 @@ p span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   margin: -2em 0 -2.2em 0;
+  padding: 0 2em 0 2em;
 }
 
 .details--menu2 .dish__name {
@@ -783,7 +783,7 @@ p span:nth-child(3) {
 
 .details--menu2 .maincourses h3::after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
+  bottom: 2em;
   content: "";
   display: inline-block;
   height: 2px;
@@ -832,12 +832,14 @@ p span:nth-child(3) {
 .details--menu3 {
   background: #edefef;
   color: #000;
+  justify-content: flex-start;
+  padding: 0em 0.8em 0em 0.8em;
 }
 
 .details--menu3 h1 {
   font-family: 'Dancing Script', cursive;
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.4em;
   background-image: linear-gradient(90deg, #001ed9, #0889fb);
   background-size: 100%;
   background-clip: text;
@@ -852,19 +854,19 @@ p span:nth-child(3) {
   color: #0887fb;
   font-weight: 500;
   font-size: 2em;
-  padding-top: 0.5em;
 }
 
 .details--menu3 h3 {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
-  padding-top: 4.4em;
+  padding-top: 10%;
   display: block;
 }
 
 .details--menu3 p {
   font-family: 'Kalam', cursive, sans-serif;
-  font-size: .70em;
+  font-size: .68em;
+  letter-spacing: -0.05em;
 }
 
 .details--menu3 .icon-menu3left:before,
@@ -876,17 +878,38 @@ p span:nth-child(3) {
 
 .details--menu3 .title--top {
   width: 100%;
-  font-size: 1.8em;
+  font-size: 1.6em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: 1.8em 0 1em 0;
+  margin: 2.2em 0 1.5em 0;
 }
 
-.details--menu3 .starters,
-.details--menu3 .maincourses {
+.details--menu3 .starters .content,
+.details--menu3 .maincourses .content,
+.details--menu3 .desserts .content {
   margin: 0 0 1.2em 0;
+}
+
+.details--menu3 .starters .content .dish__name,
+.details--menu3 .maincourses .content .dish__name,
+.details--menu3 .desserts .content .dish__name {
+  padding-right: 0em;
+}
+
+.details--menu3 .starters .content .dish__price,
+.details--menu3 .maincourses .content .dish__price,
+.details--menu3 .desserts .content .dish__price {
+  padding-left: 0em;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+
+.details--menu3 .starters p,
+.details--menu3 .maincourses p,
+.details--menu3 .desserts p {
+  padding: .25em 4em;
 }
 
 .details--menu3 .starters__title,
@@ -896,17 +919,6 @@ p span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   margin: -2em 0 -2.2em 0;
-}
-
-.details--menu3 .dish__name {
-  padding-left: 3.25em;
-}
-
-.details--menu3 .dish__price {
-  padding-right: 3.25em;
-  font-size: .85em;
-  font-weight: 500;
-  vertical-align: bottom;
 }
 
 .details--menu3 .starters {
@@ -1024,14 +1036,13 @@ p span:nth-child(3) {
   color: #72bf56;
   font-weight: 500;
   font-size: 2em;
-  padding-top: 0.5em;
 }
 
 .details--menu4 h3 {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .8em;
   letter-spacing: -0.05em;
-  padding-top: 4.6em;
+  padding-top: 10%;
   display: block;
 }
 
