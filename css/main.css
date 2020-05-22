@@ -160,7 +160,7 @@ section {
 }
 
 section .menus .toptitle {
-  font-size: 1.8em;
+  font-size: 1.6em;
   width: 100vw;
 }
 
@@ -1146,7 +1146,7 @@ p span:nth-child(3) {
   margin: 1em;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 560px) {
   section {
     width: 56em;
     align-self: center;

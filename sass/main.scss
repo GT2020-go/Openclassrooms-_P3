@@ -27,11 +27,9 @@
     }
     
     section {
-        flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+        flex: 1 1 auto;
         overflow-y: auto;
         height: 74vh;
-        //for the content: --
-        //display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
@@ -39,7 +37,7 @@
         align-self: center;
         padding: 1.42em 0 1.42em 0;
         .menus .toptitle {
-            font-size: 1.8em;
+            font-size: 1.6em;
             width: 100vw;
         }
     }
@@ -104,7 +102,7 @@
     // keep layout on a 2x2 square for any screen size;
     //media querie fonctionnent:
     //
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 560px) {
         section {
             width: 56em;
             align-self: center;
