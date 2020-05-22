@@ -21,19 +21,15 @@
         font-size: 0.9em;
         display: block;
         &::after {
-            background: none repeat scroll 0 0 transparent;
-            bottom: -2em; //trait sous les titres h3 << pourquoi ca ne fonctionne plus?
-            content: "";
-            display: inline-block;
-            height: 2px;
-            left: 0%;
-            background: $txtcolor1;
-            transition: width 0.3s ease 0s;
-            width: 0;
+            display: block;
+            content: '';
+            border-bottom: solid 2px;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
         }
         &:hover::after {
-            width: 100%;
-            left: 0;
+            transform: scaleX(1);
+            transform-origin: 0% 75%;
         }
     }
     //
@@ -85,7 +81,6 @@
     h3 {
         font-family: 'ogiremaregular';
         font-size: .8em;
-        padding-top: 10%;
         display: block;
     }
     //
@@ -166,22 +161,17 @@
         font-family: 'Kalam', cursive, sans-serif;
         font-size: .75em;
         letter-spacing: -0.05em;
-        padding-top: 12%;
         display: block;
         &::after {
-            background: none repeat scroll 0 0 transparent;
-            bottom: 5em;
-            content: "";
-            display: inline-block;
-            height: 2px;
-            left: 0%;
-            background: linear-gradient(135deg, $goutgradientstartcolor, $goutgradientendcolor);
-            transition: width 0.3s ease 0s;
-            width: 0;
+            display: block;
+            content: '';
+            border-bottom: solid 2px $goutgradientstartcolor;
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
         }
         &:hover::after {
-            width: 100%;
-            left: 0;
+            transform: scaleX(1);
+            transform-origin: 0% 75%;
         }
     }
     //

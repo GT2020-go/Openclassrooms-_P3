@@ -55,60 +55,51 @@
     .starters {
         color: $txtcolor21;
         h3 {
+            padding-top: 11%;
             &::after {
-                background: none repeat scroll 0 0 transparent;
-                bottom: 3.3em;
-                content: "";
-                display: inline-block;
-                height: 2px;
-                left: 0%;
-                background: $txtcolor21;
-                transition: width 0.3s ease 0s;
-                width: 0;
+                display: block;
+                content: '';
+                border-bottom: solid 2px;
+                transform: scaleX(0);
+                transition: transform 250ms ease-in-out;
             }
             &:hover::after {
-                width: 100%;
-                left: 0;
+                transform: scaleX(1);
+                transform-origin: 0% 75%;
             }
         }
     }
     .maincourses {
         color: $txtcolor22;
         h3 {
+            padding-top: 11%;
             &::after {
-                background: none repeat scroll 0 0 transparent;
-                bottom: 2em;
-                content: "";
-                display: inline-block;
-                height: 2px;
-                left: 0%;
-                background: $txtcolor22;
-                transition: width 0.3s ease 0s;
-                width: 0;
+                display: block;
+                content: '';
+                border-bottom: solid 2px;
+                transform: scaleX(0);
+                transition: transform 250ms ease-in-out;
             }
             &:hover::after {
-                width: 100%;
-                left: 0;
+                transform: scaleX(1);
+                transform-origin: 0% 75%;
             }
         }
     }
     .desserts {
         color: $txtcolor23;
         h3 {
+            padding-top: 11%;
             &::after {
-                background: none repeat scroll 0 0 transparent;
-                bottom: 3.3em;
-                content: "";
-                display: inline-block;
-                height: 2px;
-                left: 0%;
-                background: $txtcolor23;
-                transition: width 0.3s ease 0s;
-                width: 0;
+                display: block;
+                content: '';
+                border-bottom: solid 2px;
+                transform: scaleX(0);
+                transition: transform 250ms ease-in-out;
             }
             &:hover::after {
-                width: 100%;
-                left: 0;
+                transform: scaleX(1);
+                transform-origin: 0% 75%;
             }
         }
     }

@@ -270,20 +270,16 @@ section .menus .toptitle {
 }
 
 .menus__zoom--menu1 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: -2em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #3d1319;
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .menus__zoom--menu1 h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .menus__zoom--menu1 p {
@@ -339,7 +335,6 @@ section .menus .toptitle {
 .menus__zoom--menu2 h3 {
   font-family: 'ogiremaregular';
   font-size: .8em;
-  padding-top: 10%;
   display: block;
 }
 
@@ -428,25 +423,20 @@ section .menus .toptitle {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .75em;
   letter-spacing: -0.05em;
-  padding-top: 12%;
   display: block;
 }
 
 .menus__zoom--menu4 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 5em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: linear-gradient(135deg, #3d923a, #beff7f);
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #3d923a;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .menus__zoom--menu4 h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .menus__zoom--menu4 p {
@@ -555,20 +545,16 @@ p span:nth-child(3) {
 }
 
 .details--menu1 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: -2em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #3d1319;
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu1 h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu1 p {
@@ -642,7 +628,7 @@ p span:nth-child(3) {
 .details--menu1 .starters__title .underline,
 .details--menu1 .maincourses__title .underline,
 .details--menu1 .desserts__title .underline {
-  padding-top: 8%;
+  padding-top: 7%;
 }
 
 .details--menu1 .dish__name {
@@ -683,7 +669,6 @@ p span:nth-child(3) {
 .details--menu2 h3 {
   font-family: 'ogiremaregular';
   font-size: .8em;
-  padding-top: 10%;
   display: block;
 }
 
@@ -759,63 +744,63 @@ p span:nth-child(3) {
   color: #c67412;
 }
 
+.details--menu2 .starters h3 {
+  padding-top: 11%;
+}
+
 .details--menu2 .starters h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #c67412;
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu2 .starters h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu2 .maincourses {
   color: #a56799;
 }
 
+.details--menu2 .maincourses h3 {
+  padding-top: 11%;
+}
+
 .details--menu2 .maincourses h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 2em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #a56799;
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu2 .maincourses h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu2 .desserts {
   color: #6e4ccc;
 }
 
+.details--menu2 .desserts h3 {
+  padding-top: 11%;
+}
+
 .details--menu2 .desserts h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 3.3em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #6e4ccc;
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu2 .desserts h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu2 .dish__name {
@@ -930,29 +915,20 @@ p span:nth-child(3) {
 
 .details--menu3 .starters h3 {
   color: #000;
+  padding-top: 11%;
 }
 
 .details--menu3 .starters h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 4em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #0228dd;
-  transition: width 0.3s ease 0s;
-  width: 0;
-}
-
-@media only screen and (min-width: 30em) {
-  .details--menu3 .starters h3::after {
-    bottom: 3.6em;
-  }
+  display: block;
+  content: '';
+  border-bottom: solid 2px #0228dd;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu3 .starters h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu3 .maincourses {
@@ -965,23 +941,20 @@ p span:nth-child(3) {
 
 .details--menu3 .maincourses h3 {
   color: #000;
+  padding-top: 11%;
 }
 
 .details--menu3 .maincourses h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 4em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #0670f3;
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #0670f3;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu3 .maincourses h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu3 .desserts {
@@ -994,23 +967,20 @@ p span:nth-child(3) {
 
 .details--menu3 .desserts h3 {
   color: #000;
+  padding-top: 11%;
 }
 
 .details--menu3 .desserts h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 4em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: #229df9;
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #229df9;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu3 .desserts h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu4 {
@@ -1043,25 +1013,20 @@ p span:nth-child(3) {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .75em;
   letter-spacing: -0.05em;
-  padding-top: 12%;
   display: block;
 }
 
 .details--menu4 h3::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 5em;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  left: 0%;
-  background: linear-gradient(135deg, #3d923a, #beff7f);
-  transition: width 0.3s ease 0s;
-  width: 0;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #3d923a;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu4 h3:hover::after {
-  width: 100%;
-  left: 0;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu4 p {
@@ -1139,6 +1104,12 @@ p span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   margin: -2.2em 0 -3em 0;
+}
+
+.details--menu4 .starters__title .underline,
+.details--menu4 .maincourses__title .underline,
+.details--menu4 .desserts__title .underline {
+  padding-top: 12%;
 }
 
 .mentionslegales {
