@@ -6,24 +6,20 @@
 @mixin stylemenu1 {
     background: $bgcolor1;
     color: $txtcolor1;
-    padding-top: 0.8em;
     h1 {
         font-family: 'Devonshire', cursive;
         font-size: 1.15em;
         font-weight: 500;
-        margin-top: -0.25em;
     }
     h2 {
         font-family: 'Kalam', cursive, sans-serif;
         font-size: 2em;
         //font-family: "Comic Sans MS", cursive, sans-serif;
-        padding-top: 0.2em;
         font-weight: 700;
     }
     h3 {
         font-family: 'Kalam', cursive, sans-serif;
         font-size: 0.9em;
-        padding-top: 2.2em;
         display: block;
         &::after {
             background: none repeat scroll 0 0 transparent;
@@ -46,7 +42,7 @@
     p {
         font-family: 'Kalam', cursive, sans-serif;
         font-size: .70em;
-        padding: 0.5em 0 0.2em 0;
+        letter-spacing: -0.1em;
     }
     .icon-noteblk:before {
         font-family: 'Project2';

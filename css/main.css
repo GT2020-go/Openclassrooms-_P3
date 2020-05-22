@@ -249,27 +249,23 @@ section .menus .toptitle {
 .menus__zoom--menu1 {
   background: #fcdfdb;
   color: #3d1319;
-  padding-top: 0.8em;
 }
 
 .menus__zoom--menu1 h1 {
   font-family: 'Devonshire', cursive;
   font-size: 1.15em;
   font-weight: 500;
-  margin-top: -0.25em;
 }
 
 .menus__zoom--menu1 h2 {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: 2em;
-  padding-top: 0.2em;
   font-weight: 700;
 }
 
 .menus__zoom--menu1 h3 {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: 0.9em;
-  padding-top: 2.2em;
   display: block;
 }
 
@@ -293,7 +289,7 @@ section .menus .toptitle {
 .menus__zoom--menu1 p {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .70em;
-  padding: 0.5em 0 0.2em 0;
+  letter-spacing: -0.1em;
 }
 
 .menus__zoom--menu1 .icon-noteblk:before {
@@ -539,28 +535,25 @@ p span:nth-child(3) {
 .details--menu1 {
   background: #fcdfdb;
   color: #3d1319;
-  padding-top: 0.8em;
-  padding: 0em 2.25em 0 2.25em;
+  justify-content: flex-start;
+  padding: 0em 2.2em 0em 2.2em;
 }
 
 .details--menu1 h1 {
   font-family: 'Devonshire', cursive;
   font-size: 1.15em;
   font-weight: 500;
-  margin-top: -0.25em;
 }
 
 .details--menu1 h2 {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: 2em;
-  padding-top: 0.2em;
   font-weight: 700;
 }
 
 .details--menu1 h3 {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: 0.9em;
-  padding-top: 2.2em;
   display: block;
 }
 
@@ -584,7 +577,7 @@ p span:nth-child(3) {
 .details--menu1 p {
   font-family: 'Kalam', cursive, sans-serif;
   font-size: .70em;
-  padding: 0.5em 0 0.2em 0;
+  letter-spacing: -0.1em;
 }
 
 .details--menu1 .icon-noteblk:before {
@@ -614,25 +607,30 @@ p span:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  margin: 1.2em 0 0 0;
 }
 
 .details--menu1 .title--bottom {
   font-size: 1.1em;
   display: flex;
   flex-direction: row;
+  margin: 1em 0 0 0;
 }
 
 .details--menu1 .title--bottom .icon-noteblk:before {
   font-size: 2.1em;
 }
 
-.details--menu1 .title--bottom h1 {
-  margin-top: 0;
+.details--menu1 .starters .content,
+.details--menu1 .maincourses .content,
+.details--menu1 .desserts .content {
+  margin: -1.2em 0 1em 0;
 }
 
-.details--menu1 .starters,
-.details--menu1 .maincourses {
-  margin: 0 0 1.2em 0;
+.details--menu1 .starters p,
+.details--menu1 .maincourses p,
+.details--menu1 .desserts p {
+  padding: .2em 0;
 }
 
 .details--menu1 .starters__title,
@@ -641,7 +639,13 @@ p span:nth-child(3) {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: -1.5em 0 -1.5em 0;
+  margin: -0.5em 0 0 0;
+}
+
+.details--menu1 .starters__title h3,
+.details--menu1 .maincourses__title h3,
+.details--menu1 .desserts__title h3 {
+  padding-top: 8%;
 }
 
 .details--menu1 .dish__name {
