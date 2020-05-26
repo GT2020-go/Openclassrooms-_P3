@@ -1,16 +1,13 @@
 .menus {
-    ////flex: 1 1 auto; // [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-    //margin-top: 7.3em;
     background: #fff;
     //for the content:
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    //align-content: center;
     &__zoom {
-        width: 1.27*119px;
-        height: 1.27*168.4px;
-        margin: 0 1.42em 1.42em 1.425em;
+        width: 1.25*119px;
+        height: 1.25*168.4px;
+        margin: 0 0.5em 1.4em 0.5em;
         box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
         overflow: hidden;
         &__menu {
@@ -23,6 +20,7 @@
             opacity: 1;
             transition: all 1s;
         }
+        // zoom sur menus:
         &:hover {
             .menus__zoom__menu {
                 @include zoom-opacity;
@@ -43,11 +41,11 @@
     }
 }
 
+//prochainement:
 .upnext {
     font-size: 1.95em;
     width: 9.85em;
     height: 1.8em;
-    //flex: 0 0 auto;
     background: $bgcolor;
     color: $txtcolor;
     border-radius: 10px;
@@ -64,6 +62,7 @@
     }
 }
 
+// 3 points clignotants:
 @keyframes blink {
     0% {
         opacity: 0.1;

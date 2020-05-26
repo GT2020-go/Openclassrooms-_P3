@@ -159,6 +159,14 @@ section {
   padding: 1.42em 0 1.42em 0;
 }
 
+section .menus .line1,
+section .menus .line2,
+section .menus .line3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 section .menus .toptitle {
   font-size: 1.6em;
   width: 100vw;
@@ -170,8 +178,8 @@ section .menus .toptitle {
   justify-content: center;
   align-content: center;
   align-items: center;
-  width: 327.25px;
-  height: 463.1px;
+  width: 321.3px;
+  height: 454.68px;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   margin-top: 1em;
   margin-bottom: 2em;
@@ -223,9 +231,9 @@ section .menus .toptitle {
 }
 
 .menus__zoom {
-  width: 151.13px;
-  height: 213.868px;
-  margin: 0 1.42em 1.42em 1.425em;
+  width: 148.75px;
+  height: 210.5px;
+  margin: 0 0.5em 1.4em 0.5em;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   overflow: hidden;
 }
@@ -1117,9 +1125,16 @@ p span:nth-child(3) {
   margin: 1em;
 }
 
+@media only screen and (min-width: 375px) {
+  .menus__zoom {
+    width: 151.13px;
+    height: 213.868px;
+    margin: 0 1.42em 1.42em 1.425em;
+  }
+}
+
 @media only screen and (min-width: 560px) {
   section {
-    width: 56em;
     align-self: center;
   }
   .details {
@@ -1138,7 +1153,6 @@ p span:nth-child(3) {
 
 @media only screen and (min-width: 769px) {
   section {
-    width: 56em;
     align-self: center;
   }
   section .details {
@@ -1157,7 +1171,6 @@ p span:nth-child(3) {
 
 @media only screen and (min-width: 769px) and (min-width: 1024px) {
   section {
-    width: 56em;
     align-self: center;
   }
   .details {
@@ -1171,6 +1184,13 @@ p span:nth-child(3) {
   .menus__zoom {
     width: 238px;
     height: 336.8px;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  section {
+    align-self: center;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

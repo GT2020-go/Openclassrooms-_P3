@@ -1,159 +1,179 @@
-    @import './base/reset';
-    @import './utils/variables';
-    @import './utils/mixins';
-    @import './layout/header';
-    @import './layout/footer';
-    //
-    html {
-        height: 100%;
-    }
-    
-    body {
-        width: 100%;
-        font-size: 80%;
-        font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    span,
-    h1,
-    h2 {
-        text-align: center;
-    }
-    
-    main {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    section {
-        flex: 1 1 auto;
-        overflow-y: auto;
-        height: 74vh;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        align-self: center;
-        padding: 1.42em 0 1.42em 0;
-        .menus .toptitle {
-            font-size: 1.6em;
-            width: 100vw;
-        }
-    }
-    
-    .details {
-        //for the content:
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        width: 2.75*119px;
-        height: 2.75*168.4px;
-        box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-        margin-top: 1em;
-        margin-bottom: 2em;
-        span {
-            font-size: .725em;
-        }
-    }
-    
-    .starters,
-    .maincourses,
-    .desserts {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .starters__title,
-    .maincourses__title,
-    .desserts__title {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 0 -2.2em 0;
-    }
-    
-    .dish {
-        display: flex;
-        justify-content: space-between;
-        &__name {
-            justify-self: flex-start;
-            margin-right: 0.5em;
-            padding-left: 2em;
-        }
-        &__price {
-            justify-self: flex-end;
-            margin-left: 0.5em;
-            padding-right: 2em;
-        }
-    }
-    
-    //
-    @import './pages/home';
-    @import './pages/menu1';
-    @import './pages/menu2';
-    @import './pages/menu3';
-    @import './pages/menu4';
-    @import './pages/mentions';
-    //
-    // keep layout on a 2x2 square for any screen size;
-    //media querie fonctionnent:
-    //
-    @media only screen and (min-width: 560px) {
-        section {
-            width: 56em;
-            align-self: center;
-        }
-        .details {
-            width: 4*119px;
-            height: 4*168.4px;
-            font-size: 140%;
-        }
-        .details span {
-            font-size: 80%;
-        }
-        .menus__zoom {
-            width: 2*119px;
-            height: 2*168.4px;
-        }
-    }
-    
-    @media only screen and (min-width: 769px) {
-        section {
-            width: 56em;
-            align-self: center;
-            .details {
-                width: 6*119px;
-                height: 6*168.4px;
-                font-size: 210%;
+            @import './base/reset';
+            @import './utils/variables';
+            @import './utils/mixins';
+            @import './layout/header';
+            @import './layout/footer';
+            //
+            html {
+                height: 100%;
             }
-            .details span {
-                font-size: 75%;
+            
+            body {
+                width: 100%;
+                font-size: 80%;
+                font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
-            .menus__zoom {
-                width: 2*119px;
-                height: 2*168.4px;
+            
+            span,
+            h1,
+            h2 {
+                text-align: center;
             }
-        }
-        @media only screen and (min-width: 1024px) {
+            
+            main {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+            
             section {
-                width: 56em;
+                flex: 1 1 auto;
+                overflow-y: auto;
+                height: 74vh;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
                 align-self: center;
+                padding: 1.42em 0 1.42em 0; //DESACTIVE 
+                .menus .line1,
+                .menus .line2,
+                .menus .line3 {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+                .menus .toptitle {
+                    font-size: 1.6em;
+                    width: 100vw;
+                }
             }
+            
             .details {
-                width: 6*119px;
-                height: 6*168.4px;
-                font-size: 210%;
+                //for the content:
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 2.7*119px;
+                height: 2.7*168.4px;
+                box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+                margin-top: 1em;
+                margin-bottom: 2em;
+                span {
+                    font-size: .725em;
+                }
             }
-            .details span {
-                font-size: 20%;
+            
+            .starters,
+            .maincourses,
+            .desserts {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
             }
-            .menus__zoom {
-                width: 2*119px;
-                height: 2*168.4px;
+            
+            .starters__title,
+            .maincourses__title,
+            .desserts__title {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin: 0 0 -2.2em 0;
             }
-        }
-    }
+            
+            .dish {
+                display: flex;
+                justify-content: space-between;
+                &__name {
+                    justify-self: flex-start;
+                    margin-right: 0.5em;
+                    padding-left: 2em;
+                }
+                &__price {
+                    justify-self: flex-end;
+                    margin-left: 0.5em;
+                    padding-right: 2em;
+                }
+            }
+            
+            //
+            @import './pages/home';
+            @import './pages/menu1';
+            @import './pages/menu2';
+            @import './pages/menu3';
+            @import './pages/menu4';
+            @import './pages/mentions';
+            //
+            // keep layout on a 2x2 square for any screen size;
+            //media querie fonctionnent:
+            //
+            //iphone X:
+            @media only screen and (min-width: 375px) {
+                .menus__zoom {
+                    width: 1.27*119px;
+                    height: 1.27*168.4px;
+                    margin: 0 1.42em 1.42em 1.425em;
+                }
+            }
+            
+            @media only screen and (min-width: 560px) {
+                section {
+                    align-self: center;
+                }
+                .details {
+                    width: 4*119px;
+                    height: 4*168.4px;
+                    font-size: 140%;
+                }
+                .details span {
+                    font-size: 80%;
+                }
+                .menus__zoom {
+                    width: 2*119px;
+                    height: 2*168.4px;
+                }
+            }
+            
+            @media only screen and (min-width: 769px) {
+                section {
+                    align-self: center;
+                    .details {
+                        width: 6*119px;
+                        height: 6*168.4px;
+                        font-size: 210%;
+                    }
+                    .details span {
+                        font-size: 75%;
+                    }
+                    .menus__zoom {
+                        width: 2*119px;
+                        height: 2*168.4px;
+                    }
+                }
+                @media only screen and (min-width: 1024px) {
+                    section {
+                        align-self: center;
+                    }
+                    .details {
+                        width: 6*119px;
+                        height: 6*168.4px;
+                        font-size: 210%;
+                    }
+                    .details span {
+                        font-size: 20%;
+                    }
+                    .menus__zoom {
+                        width: 2*119px;
+                        height: 2*168.4px;
+                    }
+                }
+            }
+            
+            @media only screen and (min-width: 1240px) {
+                section {
+                    align-self: center;
+                    width: 100%;
+                }
+            }
