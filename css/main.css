@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  text-decoration-style: none;
 }
 
 @font-face {
@@ -298,7 +297,7 @@ section .menus .toptitle {
 
 .menus__zoom--menu1 .icon-noteblk:before {
   font-family: 'Project2';
-  font-weight: 550;
+  font-weight: 500;
   font-size: 3em;
   background-image: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
@@ -573,7 +572,7 @@ p span:nth-child(3) {
 
 .details--menu1 .icon-noteblk:before {
   font-family: 'Project2';
-  font-weight: 550;
+  font-weight: 500;
   font-size: 3em;
   background-image: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
