@@ -36,7 +36,7 @@
                 align-content: center;
                 align-items: center;
                 align-self: center;
-                padding: 1.42em 0 1.42em 0; //DESACTIVE 
+                padding: 1.42em 0 1.42em 0;
                 .menus .line1,
                 .menus .line2,
                 .menus .line3 {
@@ -58,10 +58,13 @@
                 align-content: center;
                 align-items: center;
                 width: 2.7*119px;
-                height: 2.7*168.4px;
+                height: 3.5*168.4px; // more space for reading menus on small screens
                 box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
                 margin-top: 1em;
                 margin-bottom: 2em;
+                .content {
+                    font-size: 130%; //make text more visible for very small screens
+                }
                 span {
                     font-size: .725em;
                 }
@@ -126,7 +129,7 @@
                 .details {
                     width: 4*119px;
                     height: 4*168.4px;
-                    font-size: 140%;
+                    font-size: 80%;
                 }
                 .details span {
                     font-size: 80%;

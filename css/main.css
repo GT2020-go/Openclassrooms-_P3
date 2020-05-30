@@ -179,10 +179,14 @@ section .menus .toptitle {
   align-content: center;
   align-items: center;
   width: 321.3px;
-  height: 454.68px;
+  height: 589.4px;
   box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
   margin-top: 1em;
   margin-bottom: 2em;
+}
+
+.details .content {
+  font-size: 130%;
 }
 
 .details span {
@@ -300,11 +304,9 @@ section .menus .toptitle {
   font-family: 'Project2';
   font-weight: 500;
   font-size: 3em;
-  background-image: linear-gradient(90deg, #ef4860, #f6926b);
+  fill: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
   background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -324,13 +326,7 @@ section .menus .toptitle {
   font-family: 'Croissant One', cursive;
   font-weight: 500;
   font-size: 1em;
-  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(135deg, #e38913, #8f5bfe);
 }
 
 .menus__zoom--menu2 h2 {
@@ -367,13 +363,7 @@ section .menus .toptitle {
   font-family: 'Dancing Script', cursive;
   font-weight: 500;
   font-size: 1.4em;
-  background-image: linear-gradient(90deg, #001ed9, #0889fb);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(90deg, #001ed9, #0889fb);
 }
 
 .menus__zoom--menu3 h2 {
@@ -411,13 +401,7 @@ section .menus .toptitle {
 .menus__zoom--menu4 h1 {
   font-family: 'Kaushan Script', cursive;
   font-weight: 500;
-  background-image: linear-gradient(135deg, #3d923a, #beff7f);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(135deg, #3d923a, #beff7f);
 }
 
 .menus__zoom--menu4 h2 {
@@ -457,26 +441,14 @@ section .menus .toptitle {
   font-family: 'Project2';
   font-weight: 500;
   font-size: 9em;
-  background-image: linear-gradient(90deg, #3d923a, #beff7f);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(90deg, #3d923a, #beff7f);
 }
 
 .menus__zoom--menu4 .icon-menu4right:before {
   font-family: 'Project2';
   font-weight: 500;
   font-size: 9em;
-  background-image: linear-gradient(90deg, #beff7f, #3d923a);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(90deg, #beff7f, #3d923a);
 }
 
 .upnext {
@@ -575,11 +547,9 @@ p span:nth-child(3) {
   font-family: 'Project2';
   font-weight: 500;
   font-size: 3em;
-  background-image: linear-gradient(90deg, #ef4860, #f6926b);
+  fill: linear-gradient(90deg, #ef4860, #f6926b);
   background-size: 100%;
   background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -658,13 +628,7 @@ p span:nth-child(3) {
   font-family: 'Croissant One', cursive;
   font-weight: 500;
   font-size: 1em;
-  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(135deg, #e38913, #8f5bfe);
 }
 
 .details--menu2 h2 {
@@ -832,13 +796,7 @@ p span:nth-child(3) {
   font-family: 'Dancing Script', cursive;
   font-weight: 500;
   font-size: 1.4em;
-  background-image: linear-gradient(90deg, #001ed9, #0889fb);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(90deg, #001ed9, #0889fb);
 }
 
 .details--menu3 h2 {
@@ -1001,13 +959,7 @@ p span:nth-child(3) {
 .details--menu4 h1 {
   font-family: 'Kaushan Script', cursive;
   font-weight: 500;
-  background-image: linear-gradient(135deg, #3d923a, #beff7f);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(135deg, #3d923a, #beff7f);
 }
 
 .details--menu4 h2 {
@@ -1047,26 +999,14 @@ p span:nth-child(3) {
   font-family: 'Project2';
   font-weight: 500;
   font-size: 9em;
-  background-image: linear-gradient(90deg, #3d923a, #beff7f);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(90deg, #3d923a, #beff7f);
 }
 
 .details--menu4 .icon-menu4right:before {
   font-family: 'Project2';
   font-weight: 500;
   font-size: 9em;
-  background-image: linear-gradient(90deg, #beff7f, #3d923a);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  fill: linear-gradient(90deg, #beff7f, #3d923a);
 }
 
 .details--menu4 .title--top {
@@ -1140,7 +1080,7 @@ p span:nth-child(3) {
   .details {
     width: 476px;
     height: 673.6px;
-    font-size: 140%;
+    font-size: 80%;
   }
   .details span {
     font-size: 80%;
