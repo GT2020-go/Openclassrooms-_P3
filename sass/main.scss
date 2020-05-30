@@ -36,7 +36,7 @@
                 align-content: center;
                 align-items: center;
                 align-self: center;
-                padding: 1.42em 0 1.42em 0; //DESACTIVE 
+                padding: 1.42em 0 1.42em 0;
                 .menus .line1,
                 .menus .line2,
                 .menus .line3 {
@@ -58,10 +58,14 @@
                 align-content: center;
                 align-items: center;
                 width: 2.7*119px;
-                height: 2.7*168.4px;
+                height: 4*168.4px;
                 box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
                 margin-top: 1em;
                 margin-bottom: 2em;
+                //font-size: 150%;
+                .content {
+                    font-size: 150%;
+                }
                 span {
                     font-size: .725em;
                 }
@@ -117,6 +121,12 @@
                     height: 1.27*168.4px;
                     margin: 0 1.42em 1.42em 1.425em;
                 }
+                .details {
+                    height: 3*168.4px;
+                    .content {
+                        font-size: 115%;
+                    }
+                }
             }
             
             @media only screen and (min-width: 560px) {
@@ -149,8 +159,9 @@
                         font-size: 75%;
                     }
                     .menus__zoom {
-                        width: 2*119px;
-                        height: 2*168.4px;
+                        width: 3*119px;
+                        height: 3*168.4px;
+                        font-size: 150%;
                     }
                 }
                 @media only screen and (min-width: 1024px) {

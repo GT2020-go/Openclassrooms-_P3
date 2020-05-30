@@ -4,1183 +4,1192 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 @font-face {
-    font-family: 'Project2';
-    src: url("/dist/fonts/fonts/Project2.eot"), url("./dist/fonts/fonts/Project2.svg"), url("/dist/fonts/fonts/Project2.ttf"), url("/dist/fonts/fonts/Project2.woff");
+  font-family: 'Project2';
+  src: url("/dist/fonts/fonts/Project2.eot"), url("./dist/fonts/fonts/Project2.svg"), url("/dist/fonts/fonts/Project2.ttf"), url("/dist/fonts/fonts/Project2.woff");
 }
 
 @font-face {
-    font-family: "uniform-5-regular";
-    src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("truetype");
+  font-family: "uniform-5-regular";
+  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Bold.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "uniform-3-regular";
-    src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
+  font-family: "uniform-3-regular";
+  src: url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("woff"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("opentype"), url("https://dafonttop.com/wp-data/u/592/8592/file/Uniform Medium.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'PT Serif Caption', serif;
-    src: url("https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap");
+  font-family: 'PT Serif Caption', serif;
+  src: url("https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap");
 }
 
 header {
-    width: 100vw;
-    height: 7.3em;
-    padding-top: .2em;
-    margin-bottom: 0;
-    top: 0;
-    z-index: 1;
-    background: #579c87;
-    border-bottom: 2px #a1c181;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 7.3em;
+  padding-top: .2em;
+  margin-bottom: 0;
+  top: 0;
+  z-index: 1;
+  background: #579c87;
+  border-bottom: 2px #a1c181;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 header h1 {
-    display: inline-block;
-    vertical-align: middle;
-    letter-spacing: -0.1rem;
-    font-weight: 700;
-    color: #fdcb46;
-    text-align: center;
-    font-size: 3em;
-    padding-bottom: 0.2em;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: -0.1rem;
+  font-weight: 700;
+  color: #fdcb46;
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 0.2em;
 }
 
 footer {
-    margin-top: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 4em;
-    background: #579c87;
-    border-top: 2px #a1c181;
-    display: flex;
-    align-content: center;
-    align-items: center;
+  margin-top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 4em;
+  background: #579c87;
+  border-top: 2px #a1c181;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 footer .btns {
-    width: 100vw;
-    padding: 0 1em 0 1em;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  width: 100vw;
+  padding: 0 1em 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 footer .btns a {
-    color: #fdcb46;
-    font-size: 1.5em;
+  color: #fdcb46;
+  font-size: 1.5em;
 }
 
 .btns__btn {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 1s;
-    /* When the animation is finished >> start again */
-    animation-iteration-count: infinite;
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1s;
+  /* When the animation is finished >> start again */
+  animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-    0% {
-        transform: translate(1px, 1px) rotate(0deg);
-    }
-    10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
-    }
-    20% {
-        transform: translate(-3px, 0px) rotate(1deg);
-    }
-    30% {
-        transform: translate(3px, 2px) rotate(0deg);
-    }
-    40% {
-        transform: translate(1px, -1px) rotate(1deg);
-    }
-    50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
-    }
-    60% {
-        transform: translate(-3px, 1px) rotate(0deg);
-    }
-    70% {
-        transform: translate(3px, 1px) rotate(-1deg);
-    }
-    80% {
-        transform: translate(-1px, -1px) rotate(1deg);
-    }
-    90% {
-        transform: translate(1px, 2px) rotate(0deg);
-    }
-    100% {
-        transform: translate(1px, -1px) rotate(-1deg);
-    }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -1px) rotate(-1deg);
+  }
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    width: 100%;
-    font-size: 80%;
-    font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  font-size: 80%;
+  font-family: "uniform-3-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 span,
 h1,
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
-    flex: 1 1 auto;
-    overflow-y: auto;
-    height: 74vh;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    padding: 1.42em 0 1.42em 0;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  height: 74vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  padding: 1.42em 0 1.42em 0;
 }
 
 section .menus .line1,
 section .menus .line2,
 section .menus .line3 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 section .menus .toptitle {
-    font-size: 1.6em;
-    width: 100%;
+  font-size: 1.6em;
+  width: 100%;
 }
 
 .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 321.3px;
-    height: 454.68px;
-    box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-    margin-top: 1em;
-    margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 321.3px;
+  height: 673.6px;
+  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.details .content {
+  font-size: 150%;
 }
 
 .details span {
-    font-size: .725em;
+  font-size: .725em;
 }
 
 .starters,
 .maincourses,
 .desserts {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .starters__title,
 .maincourses__title,
 .desserts__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 -2.2em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 -2.2em 0;
 }
 
 .dish {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .dish__name {
-    justify-self: flex-start;
-    margin-right: 0.5em;
-    padding-left: 2em;
+  justify-self: flex-start;
+  margin-right: 0.5em;
+  padding-left: 2em;
 }
 
 .dish__price {
-    justify-self: flex-end;
-    margin-left: 0.5em;
-    padding-right: 2em;
+  justify-self: flex-end;
+  margin-left: 0.5em;
+  padding-right: 2em;
 }
 
 .menus {
-    background: #fff;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+  background: #fff;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .menus__zoom {
-    width: 148.75px;
-    height: 210.5px;
-    margin: 0 0.5em 1.4em 0.5em;
-    box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
-    overflow: hidden;
+  width: 148.75px;
+  height: 210.5px;
+  margin: 0 0.5em 1.4em 0.5em;
+  box-shadow: 1px 1px 10px 0px rgba(204, 204, 204, 0.9);
+  overflow: hidden;
 }
 
 .menus__zoom__menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    transform: scale(1);
-    opacity: 1;
-    transition: all 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 1s;
 }
 
 .menus__zoom:hover .menus__zoom__menu {
-    transform: scale(1.2);
-    opacity: 60%;
+  transform: scale(1.2);
+  opacity: 60%;
 }
 
 .menus__zoom--menu1 {
-    background: #fcdfdb;
-    color: #3d1319;
+  background: #fcdfdb;
+  color: #3d1319;
 }
 
 .menus__zoom--menu1 h1 {
-    font-family: 'Devonshire', cursive;
-    font-size: 1.15em;
-    font-weight: 500;
+  font-family: 'Devonshire', cursive;
+  font-size: 1.15em;
+  font-weight: 500;
 }
 
 .menus__zoom--menu1 h2 {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 2em;
-    font-weight: 700;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .menus__zoom--menu1 h3 {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 0.9em;
-    display: block;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: 0.9em;
+  display: block;
 }
 
 .menus__zoom--menu1 h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .menus__zoom--menu1 h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .menus__zoom--menu1 p {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .70em;
-    letter-spacing: -0.1em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .70em;
+  letter-spacing: -0.1em;
 }
 
 .menus__zoom--menu1 .icon-noteblk:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 3em;
-    background-image: linear-gradient(90deg, #ef4860, #f6926b);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 3em;
+  background-image: linear-gradient(90deg, #ef4860, #f6926b);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu1 .icon-menu1left:before,
 .menus__zoom--menu1 .icon-menu1right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 6em;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 6em;
 }
 
 .menus__zoom--menu2 {
-    background: #fff5fe;
+  background: #fff5fe;
 }
 
 .menus__zoom--menu2 h1 {
-    font-family: 'Croissant One', cursive;
-    font-weight: 500;
-    font-size: 1em;
-    background-image: linear-gradient(135deg, #e38913, #8f5bfe);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Croissant One', cursive;
+  font-weight: 500;
+  font-size: 1em;
+  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu2 h2 {
-    font-family: 'PT Serif Caption', serif;
-    color: #c77412;
-    font-size: 2.1em;
-    padding-top: 0.5em;
+  font-family: 'PT Serif Caption', serif;
+  color: #c77412;
+  font-size: 2.1em;
+  padding-top: 0.5em;
 }
 
 .menus__zoom--menu2 h3 {
-    font-family: 'ogiremaregular';
-    font-size: .8em;
-    display: block;
+  font-family: 'ogiremaregular';
+  font-size: .8em;
+  display: block;
 }
 
 .menus__zoom--menu2 p {
-    font-family: 'ogiremaregular';
-    font-size: .65em;
+  font-family: 'ogiremaregular';
+  font-size: .65em;
 }
 
 .menus__zoom--menu2 .icon-menu2left:before,
 .menus__zoom--menu2 .icon-menu2right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 8em;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 8em;
 }
 
 .menus__zoom--menu3 {
-    background: #edefef;
-    color: #000;
+  background: #edefef;
+  color: #000;
 }
 
 .menus__zoom--menu3 h1 {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 500;
-    font-size: 1.4em;
-    background-image: linear-gradient(90deg, #001ed9, #0889fb);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  font-size: 1.4em;
+  background-image: linear-gradient(90deg, #001ed9, #0889fb);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu3 h2 {
-    font-family: 'Kalam', cursive, sans-serif;
-    color: #0887fb;
-    font-weight: 500;
-    font-size: 2em;
+  font-family: 'Kalam', cursive, sans-serif;
+  color: #0887fb;
+  font-weight: 500;
+  font-size: 2em;
 }
 
 .menus__zoom--menu3 h3 {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .8em;
-    padding-top: 10%;
-    display: block;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .8em;
+  padding-top: 10%;
+  display: block;
 }
 
 .menus__zoom--menu3 p {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .68em;
-    letter-spacing: -0.05em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .68em;
+  letter-spacing: -0.05em;
 }
 
 .menus__zoom--menu3 .icon-menu3left:before,
 .menus__zoom--menu3 .icon-menu3right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 8.5em;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 8.5em;
 }
 
 .menus__zoom--menu4 {
-    background: #fdfffd;
-    color: #000;
+  background: #fdfffd;
+  color: #000;
 }
 
 .menus__zoom--menu4 h1 {
-    font-family: 'Kaushan Script', cursive;
-    font-weight: 500;
-    background-image: linear-gradient(135deg, #3d923a, #beff7f);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 500;
+  background-image: linear-gradient(135deg, #3d923a, #beff7f);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu4 h2 {
-    font-family: 'Kalam', cursive, sans-serif;
-    color: #72bf56;
-    font-weight: 500;
-    font-size: 2em;
+  font-family: 'Kalam', cursive, sans-serif;
+  color: #72bf56;
+  font-weight: 500;
+  font-size: 2em;
 }
 
 .menus__zoom--menu4 h3 {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .75em;
-    letter-spacing: -0.05em;
-    display: block;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .75em;
+  letter-spacing: -0.05em;
+  display: block;
 }
 
 .menus__zoom--menu4 h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px #3d923a;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #3d923a;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .menus__zoom--menu4 h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .menus__zoom--menu4 p {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .6em;
-    letter-spacing: -0.05em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .6em;
+  letter-spacing: -0.05em;
 }
 
 .menus__zoom--menu4 .icon-menu4left:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 9em;
-    background-image: linear-gradient(90deg, #3d923a, #beff7f);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 9em;
+  background-image: linear-gradient(90deg, #3d923a, #beff7f);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .menus__zoom--menu4 .icon-menu4right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 9em;
-    background-image: linear-gradient(90deg, #beff7f, #3d923a);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 9em;
+  background-image: linear-gradient(90deg, #beff7f, #3d923a);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .upnext {
-    font-size: 1.95em;
-    width: 9.85em;
-    height: 1.8em;
-    background: #579c87;
-    color: #fdcb46;
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-    display: flex;
-    align-content: center;
-    align-items: center;
+  font-size: 1.95em;
+  width: 9.85em;
+  height: 1.8em;
+  background: #579c87;
+  color: #fdcb46;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
 
 .upnext p {
-    font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "uniform-5-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes blink {
-    0% {
-        opacity: 0.1;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.1;
-    }
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
 }
 
 p span {
-    animation-name: blink;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
+  animation-name: blink;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
 }
 
 p span:nth-child(2) {
-    animation-delay: .5s;
+  animation-delay: .5s;
 }
 
 p span:nth-child(3) {
-    animation-delay: .9s;
+  animation-delay: .9s;
 }
 
 .details--menu1 {
-    background: #fcdfdb;
-    color: #3d1319;
-    justify-content: flex-start;
-    padding: 0em 2.2em 0em 2.2em;
+  background: #fcdfdb;
+  color: #3d1319;
+  justify-content: flex-start;
+  padding: 0em 2.2em 0em 2.2em;
 }
 
 .details--menu1 h1 {
-    font-family: 'Devonshire', cursive;
-    font-size: 1.15em;
-    font-weight: 500;
+  font-family: 'Devonshire', cursive;
+  font-size: 1.15em;
+  font-weight: 500;
 }
 
 .details--menu1 h2 {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 2em;
-    font-weight: 700;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .details--menu1 h3 {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: 0.9em;
-    display: block;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: 0.9em;
+  display: block;
 }
 
 .details--menu1 h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu1 h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu1 p {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .70em;
-    letter-spacing: -0.1em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .70em;
+  letter-spacing: -0.1em;
 }
 
 .details--menu1 .icon-noteblk:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 3em;
-    background-image: linear-gradient(90deg, #ef4860, #f6926b);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 3em;
+  background-image: linear-gradient(90deg, #ef4860, #f6926b);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .details--menu1 .icon-menu1left:before,
 .details--menu1 .icon-menu1right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 6em;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 6em;
 }
 
 .details--menu1 .title--top {
-    width: 100%;
-    font-size: 1.4em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 1.2em 0 0 0;
+  width: 100%;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 1.2em 0 0 0;
 }
 
 .details--menu1 .title--bottom {
-    font-size: 1.1em;
-    display: flex;
-    flex-direction: row;
-    margin: 1em 0 0 0;
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0 0 0;
 }
 
 .details--menu1 .title--bottom .icon-noteblk:before {
-    font-size: 2.1em;
+  font-size: 2.1em;
 }
 
 .details--menu1 .starters .content,
 .details--menu1 .maincourses .content,
 .details--menu1 .desserts .content {
-    margin: -1.2em 0 1em 0;
+  margin: -1.2em 0 1em 0;
 }
 
 .details--menu1 .starters p,
 .details--menu1 .maincourses p,
 .details--menu1 .desserts p {
-    padding: .2em 0;
+  padding: .2em 0;
 }
 
 .details--menu1 .starters__title,
 .details--menu1 .maincourses__title,
 .details--menu1 .desserts__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: -0.5em 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: -0.5em 0 0 0;
 }
 
 .details--menu1 .starters__title .underline,
 .details--menu1 .maincourses__title .underline,
 .details--menu1 .desserts__title .underline {
-    padding-top: 7%;
+  padding-top: 7%;
 }
 
 .details--menu1 .dish__name {
-    padding-left: 0em;
+  padding-left: 0em;
 }
 
 .details--menu1 .dish__price {
-    font-weight: 700;
-    padding-right: 0em;
+  font-weight: 700;
+  padding-right: 0em;
 }
 
 .details--menu2 {
-    background: #fff5fe;
-    justify-content: flex-start;
-    padding: 0em 0.2em 0em 0.2em;
+  background: #fff5fe;
+  justify-content: flex-start;
+  padding: 0em 0.2em 0em 0.2em;
 }
 
 .details--menu2 h1 {
-    font-family: 'Croissant One', cursive;
-    font-weight: 500;
-    font-size: 1em;
-    background-image: linear-gradient(135deg, #e38913, #8f5bfe);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Croissant One', cursive;
+  font-weight: 500;
+  font-size: 1em;
+  background-image: linear-gradient(135deg, #e38913, #8f5bfe);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .details--menu2 h2 {
-    font-family: 'PT Serif Caption', serif;
-    color: #c77412;
-    font-size: 2.1em;
-    padding-top: 0.5em;
+  font-family: 'PT Serif Caption', serif;
+  color: #c77412;
+  font-size: 2.1em;
+  padding-top: 0.5em;
 }
 
 .details--menu2 h3 {
-    font-family: 'ogiremaregular';
-    font-size: .8em;
-    display: block;
+  font-family: 'ogiremaregular';
+  font-size: .8em;
+  display: block;
 }
 
 .details--menu2 p {
-    font-family: 'ogiremaregular';
-    font-size: .65em;
+  font-family: 'ogiremaregular';
+  font-size: .65em;
 }
 
 .details--menu2 .icon-menu2left:before,
 .details--menu2 .icon-menu2right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 8em;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 8em;
 }
 
 .details--menu2 .title--top {
-    width: 100%;
-    font-size: 1.25em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 3em 0 2.2em 0;
+  width: 100%;
+  font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 3em 0 2.2em 0;
 }
 
 .details--menu2 .starters .content,
 .details--menu2 .maincourses .content,
 .details--menu2 .desserts .content {
-    margin: 1.2em 0 1.5em 0;
+  margin: 1.2em 0 1.5em 0;
 }
 
 .details--menu2 .starters .content p,
 .details--menu2 .maincourses .content p,
 .details--menu2 .desserts .content p {
-    padding: .5em 5em;
+  padding: .5em 5em;
 }
 
 .details--menu2 .starters .content .dish__name,
 .details--menu2 .maincourses .content .dish__name,
 .details--menu2 .desserts .content .dish__name {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 .details--menu2 .starters .content .dish__price,
 .details--menu2 .maincourses .content .dish__price,
 .details--menu2 .desserts .content .dish__price {
-    padding-left: 0;
-    font-size: .6em;
-    vertical-align: bottom;
+  padding-left: 0;
+  font-size: .6em;
+  vertical-align: bottom;
 }
 
 .details--menu2 .starters__title,
 .details--menu2 .maincourses__title,
 .details--menu2 .desserts__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: -2em 0 -2.2em 0;
-    padding: 0 2em 0 2em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: -2em 0 -2.2em 0;
+  padding: 0 2em 0 2em;
 }
 
 .details--menu2 .dish__name {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 .details--menu2 .dish__price {
-    padding-left: 0;
-    font-size: .6em;
-    vertical-align: bottom;
+  padding-left: 0;
+  font-size: .6em;
+  vertical-align: bottom;
 }
 
 .details--menu2 .starters {
-    color: #c67412;
+  color: #c67412;
 }
 
 .details--menu2 .starters h3 {
-    padding-top: 11%;
+  padding-top: 11%;
 }
 
 .details--menu2 .starters h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu2 .starters h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu2 .maincourses {
-    color: #a56799;
+  color: #a56799;
 }
 
 .details--menu2 .maincourses h3 {
-    padding-top: 11%;
+  padding-top: 11%;
 }
 
 .details--menu2 .maincourses h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu2 .maincourses h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu2 .desserts {
-    color: #6e4ccc;
+  color: #6e4ccc;
 }
 
 .details--menu2 .desserts h3 {
-    padding-top: 11%;
+  padding-top: 11%;
 }
 
 .details--menu2 .desserts h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu2 .desserts h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu2 .dish__name {
-    padding-right: 0em;
+  padding-right: 0em;
 }
 
 .details--menu2 .dish__price {
-    padding-left: 0em;
-    font-size: .6em;
-    vertical-align: bottom;
+  padding-left: 0em;
+  font-size: .6em;
+  vertical-align: bottom;
 }
 
 .details--menu3 {
-    background: #edefef;
-    color: #000;
-    justify-content: flex-start;
-    padding: 0em 0.8em 0em 0.8em;
+  background: #edefef;
+  color: #000;
+  justify-content: flex-start;
+  padding: 0em 0.8em 0em 0.8em;
 }
 
 .details--menu3 h1 {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 500;
-    font-size: 1.4em;
-    background-image: linear-gradient(90deg, #001ed9, #0889fb);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  font-size: 1.4em;
+  background-image: linear-gradient(90deg, #001ed9, #0889fb);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .details--menu3 h2 {
-    font-family: 'Kalam', cursive, sans-serif;
-    color: #0887fb;
-    font-weight: 500;
-    font-size: 2em;
+  font-family: 'Kalam', cursive, sans-serif;
+  color: #0887fb;
+  font-weight: 500;
+  font-size: 2em;
 }
 
 .details--menu3 h3 {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .8em;
-    padding-top: 10%;
-    display: block;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .8em;
+  padding-top: 10%;
+  display: block;
 }
 
 .details--menu3 p {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .68em;
-    letter-spacing: -0.05em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .68em;
+  letter-spacing: -0.05em;
 }
 
 .details--menu3 .icon-menu3left:before,
 .details--menu3 .icon-menu3right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 8.5em;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 8.5em;
 }
 
 .details--menu3 .title--top {
-    width: 100%;
-    font-size: 1.6em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 2.2em 0 1.5em 0;
+  width: 100%;
+  font-size: 1.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 2.2em 0 1.5em 0;
 }
 
 .details--menu3 .starters .content,
 .details--menu3 .maincourses .content,
 .details--menu3 .desserts .content {
-    margin: 0 0 1.2em 0;
+  margin: 0 0 1.2em 0;
 }
 
 .details--menu3 .starters .content .dish__name,
 .details--menu3 .maincourses .content .dish__name,
 .details--menu3 .desserts .content .dish__name {
-    padding-right: 0em;
+  padding-right: 0em;
 }
 
 .details--menu3 .starters .content .dish__price,
 .details--menu3 .maincourses .content .dish__price,
 .details--menu3 .desserts .content .dish__price {
-    padding-left: 0em;
-    font-weight: 500;
-    vertical-align: bottom;
+  padding-left: 0em;
+  font-weight: 500;
+  vertical-align: bottom;
 }
 
 .details--menu3 .starters p,
 .details--menu3 .maincourses p,
 .details--menu3 .desserts p {
-    padding: .25em 4em;
+  padding: .25em 4em;
 }
 
 .details--menu3 .starters__title,
 .details--menu3 .maincourses__title,
 .details--menu3 .desserts__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: -2em 0 -2.2em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: -2em 0 -2.2em 0;
 }
 
 .details--menu3 .starters {
-    color: #0228dd;
+  color: #0228dd;
 }
 
 .details--menu3 .starters p {
-    color: #000;
+  color: #000;
 }
 
 .details--menu3 .starters h3 {
-    color: #000;
-    padding-top: 11%;
+  color: #000;
+  padding-top: 11%;
 }
 
 .details--menu3 .starters h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px #0228dd;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #0228dd;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu3 .starters h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu3 .maincourses {
-    color: #0670f3;
+  color: #0670f3;
 }
 
 .details--menu3 .maincourses p {
-    color: #000;
+  color: #000;
 }
 
 .details--menu3 .maincourses h3 {
-    color: #000;
-    padding-top: 11%;
+  color: #000;
+  padding-top: 11%;
 }
 
 .details--menu3 .maincourses h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px #0670f3;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #0670f3;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu3 .maincourses h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu3 .desserts {
-    color: #229df9;
+  color: #229df9;
 }
 
 .details--menu3 .desserts p {
-    color: #000;
+  color: #000;
 }
 
 .details--menu3 .desserts h3 {
-    color: #000;
-    padding-top: 11%;
+  color: #000;
+  padding-top: 11%;
 }
 
 .details--menu3 .desserts h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px #229df9;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #229df9;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu3 .desserts h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu4 {
-    background: #fdfffd;
-    color: #000;
-    justify-content: flex-start;
-    padding: 0em 1.2em 0em 2.2em;
+  background: #fdfffd;
+  color: #000;
+  justify-content: flex-start;
+  padding: 0em 1.2em 0em 2.2em;
 }
 
 .details--menu4 h1 {
-    font-family: 'Kaushan Script', cursive;
-    font-weight: 500;
-    background-image: linear-gradient(135deg, #3d923a, #beff7f);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 500;
+  background-image: linear-gradient(135deg, #3d923a, #beff7f);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .details--menu4 h2 {
-    font-family: 'Kalam', cursive, sans-serif;
-    color: #72bf56;
-    font-weight: 500;
-    font-size: 2em;
+  font-family: 'Kalam', cursive, sans-serif;
+  color: #72bf56;
+  font-weight: 500;
+  font-size: 2em;
 }
 
 .details--menu4 h3 {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .75em;
-    letter-spacing: -0.05em;
-    display: block;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .75em;
+  letter-spacing: -0.05em;
+  display: block;
 }
 
 .details--menu4 h3::after {
-    display: block;
-    content: '';
-    border-bottom: solid 2px #3d923a;
-    transform: scaleX(0);
-    transition: transform 250ms ease-in-out;
+  display: block;
+  content: '';
+  border-bottom: solid 2px #3d923a;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 
 .details--menu4 h3:hover::after {
-    transform: scaleX(1);
-    transform-origin: 0% 75%;
+  transform: scaleX(1);
+  transform-origin: 0% 75%;
 }
 
 .details--menu4 p {
-    font-family: 'Kalam', cursive, sans-serif;
-    font-size: .6em;
-    letter-spacing: -0.05em;
+  font-family: 'Kalam', cursive, sans-serif;
+  font-size: .6em;
+  letter-spacing: -0.05em;
 }
 
 .details--menu4 .icon-menu4left:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 9em;
-    background-image: linear-gradient(90deg, #3d923a, #beff7f);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 9em;
+  background-image: linear-gradient(90deg, #3d923a, #beff7f);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .details--menu4 .icon-menu4right:before {
-    font-family: 'Project2';
-    font-weight: 500;
-    font-size: 9em;
-    background-image: linear-gradient(90deg, #beff7f, #3d923a);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  font-family: 'Project2';
+  font-weight: 500;
+  font-size: 9em;
+  background-image: linear-gradient(90deg, #beff7f, #3d923a);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .details--menu4 .title--top {
-    width: 100%;
-    font-size: 1.6em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 1.8em 0 1.5em 0;
+  width: 100%;
+  font-size: 1.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 1.8em 0 1.5em 0;
 }
 
 .details--menu4 .starters .content,
 .details--menu4 .maincourses .content,
 .details--menu4 .desserts .content {
-    margin: 1.2em 0 2em 0;
+  margin: 1.2em 0 2em 0;
 }
 
 .details--menu4 .starters .content .dish__name,
 .details--menu4 .maincourses .content .dish__name,
 .details--menu4 .desserts .content .dish__name {
-    padding-right: 0em;
+  padding-right: 0em;
 }
 
 .details--menu4 .starters .content .dish__price,
 .details--menu4 .maincourses .content .dish__price,
 .details--menu4 .desserts .content .dish__price {
-    padding-left: 0em;
-    font-weight: 500;
-    vertical-align: bottom;
+  padding-left: 0em;
+  font-weight: 500;
+  vertical-align: bottom;
 }
 
 .details--menu4 .starters p,
 .details--menu4 .maincourses p,
 .details--menu4 .desserts p {
-    padding: 0 2em;
+  padding: 0 2em;
 }
 
 .details--menu4 .starters__title,
 .details--menu4 .maincourses__title,
 .details--menu4 .desserts__title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: -2.2em 0 -3em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: -2.2em 0 -3em 0;
 }
 
 .details--menu4 .starters__title .underline,
 .details--menu4 .maincourses__title .underline,
 .details--menu4 .desserts__title .underline {
-    padding-top: 12%;
+  padding-top: 12%;
 }
 
 .mentionslegales {
-    flex: 1 1 auto;
-    margin: 1em;
+  flex: 1 1 auto;
+  margin: 1em;
 }
 
 @media only screen and (min-width: 375px) {
-    .menus__zoom {
-        width: 151.13px;
-        height: 213.868px;
-        margin: 0 1.42em 1.42em 1.425em;
-    }
+  .menus__zoom {
+    width: 151.13px;
+    height: 213.868px;
+    margin: 0 1.42em 1.42em 1.425em;
+  }
+  .details {
+    height: 505.2px;
+  }
+  .details .content {
+    font-size: 115%;
+  }
 }
 
 @media only screen and (min-width: 560px) {
-    section {
-        align-self: center;
-    }
-    .details {
-        width: 476px;
-        height: 673.6px;
-        font-size: 140%;
-    }
-    .details span {
-        font-size: 80%;
-    }
-    .menus__zoom {
-        width: 238px;
-        height: 336.8px;
-    }
+  section {
+    align-self: center;
+  }
+  .details {
+    width: 476px;
+    height: 673.6px;
+    font-size: 140%;
+  }
+  .details span {
+    font-size: 80%;
+  }
+  .menus__zoom {
+    width: 238px;
+    height: 336.8px;
+  }
 }
 
 @media only screen and (min-width: 769px) {
-    section {
-        align-self: center;
-    }
-    section .details {
-        width: 714px;
-        height: 1010.4px;
-        font-size: 210%;
-    }
-    section .details span {
-        font-size: 75%;
-    }
-    section .menus__zoom {
-        width: 238px;
-        height: 336.8px;
-    }
+  section {
+    align-self: center;
+  }
+  section .details {
+    width: 714px;
+    height: 1010.4px;
+    font-size: 210%;
+  }
+  section .details span {
+    font-size: 75%;
+  }
+  section .menus__zoom {
+    width: 357px;
+    height: 505.2px;
+    font-size: 150%;
+  }
 }
 
 @media only screen and (min-width: 769px) and (min-width: 1024px) {
-    section {
-        align-self: center;
-    }
-    .details {
-        width: 714px;
-        height: 1010.4px;
-        font-size: 210%;
-    }
-    .details span {
-        font-size: 20%;
-    }
-    .menus__zoom {
-        width: 238px;
-        height: 336.8px;
-    }
+  section {
+    align-self: center;
+  }
+  .details {
+    width: 714px;
+    height: 1010.4px;
+    font-size: 210%;
+  }
+  .details span {
+    font-size: 20%;
+  }
+  .menus__zoom {
+    width: 238px;
+    height: 336.8px;
+  }
 }
 
 @media only screen and (min-width: 1240px) {
-    section {
-        align-self: center;
-        width: 100%;
-    }
+  section {
+    align-self: center;
+    width: 100%;
+  }
 }
-
-
 /*# sourceMappingURL=main.css.map */
