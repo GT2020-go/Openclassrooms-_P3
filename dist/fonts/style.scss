@@ -1,8 +1,8 @@
 @import "variables";
 @font-face {
     font-family: '#{$icomoon-font-family}';
-    src : url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?dunp7s');
-    src : url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?dunp7s#iefix') format('embedded-opentype'),
+    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?dunp7s');
+    src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?dunp7s#iefix') format('embedded-opentype'),
     url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?dunp7s') format('truetype'),
     url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?dunp7s') format('woff'),
     url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?dunp7s##{$icomoon-font-family}') format('svg');
@@ -15,7 +15,7 @@
 [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: '#{$icomoon-font-family}' !important;
-    //speak: none;
+    speak: auto;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
