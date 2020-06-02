@@ -18,17 +18,19 @@
     .desserts {
         .content {
             p {
-                padding: .5em 5em;
+                padding: .5em 2em;
             }
             margin: 1.2em 0 1.5em 0;
             .dish {
                 &__name {
                     padding-right: 0;
+                    font-size: 110%;
                 }
                 &__price {
                     padding-left: 0;
                     font-size: .6em;
                     vertical-align: bottom;
+                    font-size: 110%;
                 }
             }
         }
@@ -40,7 +42,14 @@
         display: flex;
         justify-content: space-between;
         margin: -2em 0 -2.2em 0;
-        padding: 0 2em 0 2em;
+        padding: 0 1em 0 1em;
+    }
+    span {
+        font-size: 0.65em;
+    }
+    .underline {
+        font-size: 110%;
+        margin-top: -2%; //put title between the bars
     }
     .dish {
         &__name {

@@ -21,16 +21,18 @@
             .dish {
                 &__name {
                     padding-right: 0em;
+                    font-size: 110%;
                 }
                 &__price {
                     padding-left: 0em;
                     font-weight: 500;
                     vertical-align: bottom;
+                    font-size: 110%;
                 }
             }
         }
         p {
-            padding: 0 2em;
+            padding: 0 1.5em;
         }
     }
     .starters__title,
@@ -40,8 +42,12 @@
         display: flex;
         justify-content: space-between;
         margin: -2.2em 0 -3em 0;
+        span {
+            font-size: 65%;
+        }
         .underline {
-            padding-top: 12%; //put title between the bars
+            font-size: 115%;
+            padding-top: 8%; //put title between the bars
         }
     }
 }

@@ -185,14 +185,6 @@ section .menus .toptitle {
   margin-bottom: 2em;
 }
 
-.details .content {
-  font-size: 150%;
-}
-
-.details span {
-  font-size: .725em;
-}
-
 .starters,
 .maincourses,
 .desserts {
@@ -613,6 +605,7 @@ p span:nth-child(3) {
 .details--menu1 .maincourses .content,
 .details--menu1 .desserts .content {
   margin: -1.2em 0 1em 0;
+  font-size: 140%;
 }
 
 .details--menu1 .starters p,
@@ -627,13 +620,20 @@ p span:nth-child(3) {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: -0.5em 0 0 0;
+  margin: -0.5em 0 0.5em 0;
+}
+
+.details--menu1 .starters__title span,
+.details--menu1 .maincourses__title span,
+.details--menu1 .desserts__title span {
+  font-size: 0.65em;
 }
 
 .details--menu1 .starters__title .underline,
 .details--menu1 .maincourses__title .underline,
 .details--menu1 .desserts__title .underline {
-  padding-top: 7%;
+  font-size: 120%;
+  padding-top: 5%;
 }
 
 .details--menu1 .dish__name {
@@ -707,13 +707,14 @@ p span:nth-child(3) {
 .details--menu2 .starters .content p,
 .details--menu2 .maincourses .content p,
 .details--menu2 .desserts .content p {
-  padding: .5em 5em;
+  padding: .5em 2em;
 }
 
 .details--menu2 .starters .content .dish__name,
 .details--menu2 .maincourses .content .dish__name,
 .details--menu2 .desserts .content .dish__name {
   padding-right: 0;
+  font-size: 110%;
 }
 
 .details--menu2 .starters .content .dish__price,
@@ -722,6 +723,7 @@ p span:nth-child(3) {
   padding-left: 0;
   font-size: .6em;
   vertical-align: bottom;
+  font-size: 110%;
 }
 
 .details--menu2 .starters__title,
@@ -731,7 +733,16 @@ p span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   margin: -2em 0 -2.2em 0;
-  padding: 0 2em 0 2em;
+  padding: 0 1em 0 1em;
+}
+
+.details--menu2 span {
+  font-size: 0.65em;
+}
+
+.details--menu2 .underline {
+  font-size: 110%;
+  margin-top: -2%;
 }
 
 .details--menu2 .dish__name {
@@ -883,6 +894,7 @@ p span:nth-child(3) {
 .details--menu3 .maincourses .content .dish__name,
 .details--menu3 .desserts .content .dish__name {
   padding-right: 0em;
+  font-size: 110%;
 }
 
 .details--menu3 .starters .content .dish__price,
@@ -891,12 +903,13 @@ p span:nth-child(3) {
   padding-left: 0em;
   font-weight: 500;
   vertical-align: bottom;
+  font-size: 110%;
 }
 
 .details--menu3 .starters p,
 .details--menu3 .maincourses p,
 .details--menu3 .desserts p {
-  padding: .25em 4em;
+  padding: .25em 2em;
 }
 
 .details--menu3 .starters__title,
@@ -906,6 +919,19 @@ p span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   margin: -2em 0 -2.2em 0;
+}
+
+.details--menu3 .starters__title span,
+.details--menu3 .maincourses__title span,
+.details--menu3 .desserts__title span {
+  font-size: 0.65em;
+}
+
+.details--menu3 .starters__title .underline,
+.details--menu3 .maincourses__title .underline,
+.details--menu3 .desserts__title .underline {
+  font-size: 115%;
+  padding-top: 8%;
 }
 
 .details--menu3 .starters {
@@ -1081,6 +1107,7 @@ p span:nth-child(3) {
 .details--menu4 .maincourses .content .dish__name,
 .details--menu4 .desserts .content .dish__name {
   padding-right: 0em;
+  font-size: 110%;
 }
 
 .details--menu4 .starters .content .dish__price,
@@ -1089,12 +1116,13 @@ p span:nth-child(3) {
   padding-left: 0em;
   font-weight: 500;
   vertical-align: bottom;
+  font-size: 110%;
 }
 
 .details--menu4 .starters p,
 .details--menu4 .maincourses p,
 .details--menu4 .desserts p {
-  padding: 0 2em;
+  padding: 0 1.5em;
 }
 
 .details--menu4 .starters__title,
@@ -1106,10 +1134,17 @@ p span:nth-child(3) {
   margin: -2.2em 0 -3em 0;
 }
 
+.details--menu4 .starters__title span,
+.details--menu4 .maincourses__title span,
+.details--menu4 .desserts__title span {
+  font-size: 65%;
+}
+
 .details--menu4 .starters__title .underline,
 .details--menu4 .maincourses__title .underline,
 .details--menu4 .desserts__title .underline {
-  padding-top: 12%;
+  font-size: 115%;
+  padding-top: 8%;
 }
 
 .mentionslegales {
@@ -1124,10 +1159,7 @@ p span:nth-child(3) {
     margin: 0 1.42em 1.42em 1.425em;
   }
   .details {
-    height: 505.2px;
-  }
-  .details .content {
-    font-size: 115%;
+    height: 673.6px;
   }
 }
 
@@ -1136,8 +1168,8 @@ p span:nth-child(3) {
     align-self: center;
   }
   .details {
-    width: 476px;
-    height: 673.6px;
+    width: 595px;
+    height: 842px;
     font-size: 140%;
   }
   .details span {
@@ -1149,40 +1181,30 @@ p span:nth-child(3) {
   }
 }
 
-@media only screen and (min-width: 769px) {
-  section {
-    align-self: center;
+@media only screen and (min-width: 768px) {
+  .details {
+    width: 595px;
+    height: 842px;
+    font-size: 140%;
   }
-  section .details {
-    width: 714px;
-    height: 1010.4px;
-    font-size: 210%;
-  }
-  section .details span {
-    font-size: 75%;
-  }
-  section .menus__zoom {
-    width: 357px;
-    height: 505.2px;
-    font-size: 150%;
+  .underline {
+    margin-top: -0.5em;
   }
 }
 
-@media only screen and (min-width: 769px) and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   section {
     align-self: center;
   }
   .details {
-    width: 714px;
-    height: 1010.4px;
+    width: 892.5px;
+    height: 1263px;
     font-size: 210%;
   }
-  .details span {
-    font-size: 20%;
-  }
   .menus__zoom {
-    width: 238px;
-    height: 336.8px;
+    width: 297.5px;
+    height: 421px;
+    font-size: 150%;
   }
 }
 
